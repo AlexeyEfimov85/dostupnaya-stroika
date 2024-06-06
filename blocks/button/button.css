@@ -1,0 +1,26 @@
+.button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #FF9900;
+    color: #000000;
+}
+
+@media screen and (max-width: 950px) {
+    .button {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        padding: 8px 16px;
+    }
+}
+
+

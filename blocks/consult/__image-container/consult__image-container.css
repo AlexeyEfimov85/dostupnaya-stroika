@@ -1,0 +1,9 @@
+.consult__image-container {
+    width: 60%;
+}
+
+@media screen and (max-width: 624px){
+    .consult__image-container {
+        width: 100%;
+    }
+}

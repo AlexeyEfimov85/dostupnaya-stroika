@@ -1,0 +1,18 @@
+.constructed__item {
+    border: 1px solid #565B62;
+    padding: 8px 8px 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.constructed__item .text__main_inactive {
+    margin: 4px 0 12px 0;
+}
+
+@media screen and (max-width: 870px) {
+    .constructed__item {
+        padding: 8px;
+    }
+}
+
+

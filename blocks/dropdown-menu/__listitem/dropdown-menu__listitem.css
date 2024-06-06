@@ -1,0 +1,25 @@
+@media screen and (max-width: 624px) {
+    .dropdown-menu__listitem {
+        position: relative;
+    }
+    .dropdown-menu__listitem::after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        transform: rotate(45deg);
+        width: 8px;
+        height: 1px;
+        top: 11px;
+        right: 10px;
+    }
+    .dropdown-menu__listitem::before {
+        content: "";
+        position: absolute;
+        background-color: black;
+        transform: rotate(-45deg);
+        width: 8px;
+        height: 1px;
+        top: 16px;
+        right: 10px;
+    }
+}

@@ -1,0 +1,10 @@
+.lead__image-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 624px) {
+    .lead__image-mobile {
+        display: block;
+        width: 100%;
+    }
+}

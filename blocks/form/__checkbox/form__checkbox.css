@@ -1,0 +1,27 @@
+.form__checkbox {
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.form__checkbox:checked + label::before{
+    background-color: #FF9900
+}
+
+.form__checkbox:checked + label::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #FFFFFF;
+    border-bottom: 4px solid #FFFFFF;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 5px;
+    left: 4px;
+}

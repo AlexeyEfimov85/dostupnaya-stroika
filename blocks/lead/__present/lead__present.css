@@ -1,0 +1,23 @@
+.lead__present {
+    display: flex;
+    gap: 5px;
+    align-items: flex-end;
+    padding: 17px 20px;
+    background-color: #fff5e6;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    max-width: 423px;
+}
+
+@media screen and (max-width: 768px) {
+    .lead__present .lead__present-image {
+        width: 24px;
+        height: 24px;
+    }
+    .lead__present {
+        gap: 8px;
+        max-width: 338px;
+        padding: 18px 10px 18px 16px;
+        align-items: center;
+    }
+}

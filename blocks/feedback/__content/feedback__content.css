@@ -1,0 +1,15 @@
+.feedback__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .feedback__content {
+        grid-template-columns: 1fr;
+    }
+
+    .feedback__content .feedback__column:nth-child(2) {
+        order: -1;
+    }
+}

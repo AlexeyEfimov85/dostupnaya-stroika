@@ -1,0 +1,25 @@
+.popup {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+
+@media screen and (max-width: 624px) {
+    #button-ok {
+        z-index: 2;
+    }
+
+    #popup-send-form {
+        z-index: 2;
+    }
+}

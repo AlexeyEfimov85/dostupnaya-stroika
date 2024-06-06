@@ -1,0 +1,17 @@
+.gallery__heading {
+    max-width: 551px;
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery__heading {
+        max-width: 365px;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .gallery__heading {
+        max-width: 100%;
+        text-align: left;
+    }
+}

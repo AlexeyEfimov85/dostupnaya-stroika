@@ -1,0 +1,13 @@
+.blog__data {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 32px;
+}
+
+@media screen and (max-width: 624px) {
+    .blog__data {
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+    }
+}

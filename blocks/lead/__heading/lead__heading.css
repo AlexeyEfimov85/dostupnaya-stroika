@@ -1,0 +1,24 @@
+.lead__heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    max-width: 513px;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 770px) {
+    .lead__heading {
+        font-size: 32px;
+        line-height: 36px;
+        max-width: 342px;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .lead__heading {
+        font-size: 24px;
+        line-height: 28px;
+        max-width: 250px;
+    }
+}

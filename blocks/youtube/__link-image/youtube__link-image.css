@@ -1,0 +1,9 @@
+.youtube__link-image {
+    width: 86px;
+}
+
+@media screen and (max-width: 768px) {
+    .youtube__link-image {
+        width: 73px;
+    }
+}

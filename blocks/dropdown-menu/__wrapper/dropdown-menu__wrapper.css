@@ -1,0 +1,18 @@
+.dropdown-menu__wrapper {
+    width: 1180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 624px) {
+    .dropdown-menu__wrapper {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        box-sizing: border-box;
+        padding: 24px 16px;
+    }
+}

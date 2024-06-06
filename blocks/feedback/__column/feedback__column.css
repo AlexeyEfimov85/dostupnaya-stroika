@@ -1,0 +1,23 @@
+.feedback__column {
+    border-top: 2px solid #565B62;
+}
+
+.feedback__column:last-of-type {
+    border-left: 2px solid #565B62;
+    padding: 20px 20px 20px 20px;
+}
+
+.feedback__column .text__subheading {
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .feedback__column {
+        border-top: none;
+    }
+
+    .feedback__column:last-of-type {
+        border-left: none;
+        padding: 0;
+    }
+}

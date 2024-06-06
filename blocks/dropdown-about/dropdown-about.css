@@ -1,0 +1,44 @@
+.dropdown-about {
+    justify-content: space-between;
+    width: 100%;
+    padding: 32px 0;
+    background-color: #ffffff;
+    z-index: 4;
+}
+
+@media screen and (max-width: 624px) {
+    .dropdown-about {
+        padding: 0;
+    }
+
+    .dropdown-about .dropdown-menu__wrapper div .dropdown-about__subheader {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+
+    .dropdown-about .dropdown-menu__wrapper div p {
+        position: relative;
+    }
+
+    .dropdown-about .dropdown-menu__wrapper div p::after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        transform: rotate(45deg);
+        width: 8px;
+        height: 1px;
+        top: 11px;
+        right: 10px;
+    }
+    .dropdown-about .dropdown-menu__wrapper div p::before {
+        content: "";
+        position: absolute;
+        background-color: black;
+        transform: rotate(-45deg);
+        width: 8px;
+        height: 1px;
+        top: 16px;
+        right: 10px;
+    }
+}

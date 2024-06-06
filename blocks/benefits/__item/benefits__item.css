@@ -1,0 +1,27 @@
+.benefits__item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 0 0 16px 15px;
+    box-sizing: border-box;
+    border-right:1px solid #565B62;
+}
+
+.benefits__item:nth-child(1){
+    padding-left: 0;
+}
+
+.benefits__item:nth-child(4){
+    border-right: none;
+}
+
+@media screen and (max-width: 624px) {
+    .benefits__item {
+        width: 100%;
+        border-right:none;
+        border-top:1px solid #565B62;
+        padding: 16px 0;
+    }
+}

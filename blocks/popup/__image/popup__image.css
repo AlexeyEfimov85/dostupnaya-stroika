@@ -1,0 +1,17 @@
+.popup__image {
+    width: 284px;
+    height: 390px;
+    position: absolute;
+    left: -81px;
+    display: none;
+}
+
+
+@media screen and (max-width: 624px) {
+    .popup__image {
+        width: 100%;
+        height: 98%;
+        left: 0;
+        opacity: 0.2;
+    } 
+} 

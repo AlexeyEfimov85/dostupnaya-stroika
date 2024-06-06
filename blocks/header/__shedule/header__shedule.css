@@ -1,0 +1,18 @@
+.header__shedule {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #565b62;
+}
+
+@media screen and (max-width: 768px) {
+    .header__shedule {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .header__shedule {
+        display: none;
+    }
+}

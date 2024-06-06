@@ -1,0 +1,14 @@
+.ipoteka__wrapper-2 .text__main_inactive {
+    margin: 4px 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .ipoteka__wrapper-2 .text__main_inactive {
+        margin: 4px 0 18px;
+    }
+}
+
+.ipoteka__wrapper-2 .text__main_inactive,
+.text__heading_active {
+    padding-left: 10px;
+}

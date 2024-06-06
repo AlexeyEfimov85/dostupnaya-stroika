@@ -1,0 +1,7 @@
+@media screen and (max-width: 624px) {
+    .footer__email-link {
+        display: block;
+        margin: 8px 0 24px;
+    } 
+}
+

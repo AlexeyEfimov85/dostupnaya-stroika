@@ -1,0 +1,38 @@
+.articles__card-text {
+    position: absolute;
+    width: 100%;
+    box-shadow: inset 5em 10em rgba(255, 255, 255, 0.5), 0 -15px 15px rgba(255, 255, 255, 0.5);
+    bottom: 0;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+.articles__card-text p {
+    width: 100%;
+}
+
+.articles__card-text .text__main {
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.articles__card-text a:hover {
+    opacity: 0.8;
+}
+
+.articles__card-text .text__article-preview {
+    min-height: 48px;
+}
+
+@media screen and (max-width: 768px) {
+    .articles__card-text .text__main {
+        font-size: 12px;
+        line-height: 14px;
+        color: #565B62;
+    }
+    .articles__card-text .text__subheading_active {
+        font-size: 12px;
+        line-height: 14px;
+        color: #565B62;
+    }
+}

@@ -1,0 +1,5 @@
+.lead__column-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}

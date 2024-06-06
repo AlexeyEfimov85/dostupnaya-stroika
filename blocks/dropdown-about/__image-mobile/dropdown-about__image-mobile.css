@@ -1,0 +1,13 @@
+.dropdown-about__image-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 624px) {
+    .dropdown-about__image-mobile {
+        display: block;
+        width: 343px;
+        height: 204px;
+        order: -1;
+        margin-bottom: 26px;
+    }
+}

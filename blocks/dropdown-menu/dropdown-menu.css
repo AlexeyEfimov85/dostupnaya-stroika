@@ -1,0 +1,14 @@
+.dropdown-menu {
+    padding: 32px 0;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    background-color: #FFFFFF;
+    z-index: 4;
+}
+
+@media screen and (max-width: 624px) {
+    .dropdown-menu {
+        padding: 0;
+    }
+}

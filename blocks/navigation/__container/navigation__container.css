@@ -1,0 +1,24 @@
+.navigation__container {
+   max-width: 1180px;
+    margin: auto;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation__container {
+        max-width: 735px;
+        margin: 0
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .navigation__container {
+        display: none;
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        background-color: #FFFFFF;
+        top: 1px;
+        box-sizing: border-box;
+    }
+}

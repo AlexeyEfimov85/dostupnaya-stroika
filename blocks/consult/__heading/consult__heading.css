@@ -1,0 +1,18 @@
+.consult__heading {
+    width: 425px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 768px){
+    .consult__heading {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 624px){
+    .consult__heading {
+        width: 215px;
+        text-align: center;
+    }
+}

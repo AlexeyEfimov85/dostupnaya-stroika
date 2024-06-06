@@ -1,0 +1,17 @@
+.excursion__item {
+    margin-bottom: 8px;
+    padding-left: 16px;
+    position: relative;
+}
+
+.excursion__item::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #FF9900;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 6px;
+    left: 0px;
+}

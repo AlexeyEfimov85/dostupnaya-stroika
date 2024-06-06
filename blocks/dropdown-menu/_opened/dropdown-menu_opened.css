@@ -1,0 +1,13 @@
+.dropdown-menu_opened {
+    visibility: visible;
+    display: flex;
+    position: absolute;
+    top: 41px;
+    left: 0;
+}
+
+@media screen and (max-width: 624px) {
+    .dropdown-menu_opened {
+        top: 1px;
+    }
+}

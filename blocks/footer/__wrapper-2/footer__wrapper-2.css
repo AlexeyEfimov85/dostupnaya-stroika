@@ -1,0 +1,23 @@
+.footer__wrapper-2 {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+}
+
+@media screen and (max-width: 800px) {
+    .footer__wrapper-2 {
+        display: flex;
+        gap: 2.5%;
+        align-items: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-bottom: 16px;
+        
+    }
+}
+
+ @media screen and (max-width: 624px) {
+    .footer__wrapper-2 {
+        align-items: start;
+
+    }
+} 

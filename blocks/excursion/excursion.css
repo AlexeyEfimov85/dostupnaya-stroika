@@ -1,0 +1,40 @@
+.excursion {
+    margin-top: 90px;
+    margin-bottom: 120px;
+    display: flex;
+    gap: 7%;
+    align-items: flex-end;
+}
+
+.excursion .heading {
+    display: none;
+}
+
+.excursion .text__subheading {
+    margin-bottom: 16px;
+}
+
+.excursion .excursion__column .text__subheading:nth-last-child() {
+    margin-bottom: 32px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .excursion {
+        margin-top: 90px;
+        margin-bottom: 120px;
+        display: flex;
+        gap: 3%;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .excursion {
+        flex-direction: column;
+    }
+    .excursion .heading {
+        display: block;
+        margin-bottom: 17px;
+    }
+}

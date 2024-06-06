@@ -1,0 +1,21 @@
+.excursion__column .text__subheading:last-of-type {
+    margin-bottom: 32px;
+}
+
+.excursion__column .text__subheading:first-of-type {
+    margin-top: 32px;
+}
+
+.excursion__column {
+    width: 49%;
+}
+
+@media screen and (max-width: 624px) {
+    .excursion__column {
+        width: 100%;
+    }
+
+    .excursion__column .heading {
+        display: none;
+    }
+}

@@ -1,0 +1,23 @@
+.consult__form {
+    padding-right: 100px;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 1015px){
+    .consult__form {
+        padding-right: 0px;
+    }
+
+    .consult__form .text__subheading {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 624px){
+    .consult__form {
+        width: 100%;
+    }
+}

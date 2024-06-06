@@ -1,0 +1,35 @@
+.header__tel {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: end;
+}
+
+.header__tel > img {
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+    .header__tel {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header__tel {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .header__tel > img {
+        display: block;
+    }
+    .header__tel > span {
+        display: none;
+    }
+}

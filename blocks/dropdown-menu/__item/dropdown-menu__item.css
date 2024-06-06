@@ -1,0 +1,14 @@
+.dropdown-menu__item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #000000;
+    margin: 0 0 8px 0;
+    display: inline-block;
+}
+
+.dropdown-menu__item:hover {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}

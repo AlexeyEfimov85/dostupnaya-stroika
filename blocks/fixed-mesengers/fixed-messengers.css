@@ -1,0 +1,12 @@
+.fixed-messengers {
+    position: fixed;
+    right: 42px;
+    bottom: 110px;
+    z-index: 10;
+}
+
+@media screen and (max-width: 768px){
+    .fixed-messengers {
+        right: 12px;
+    }
+}

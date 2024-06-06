@@ -1,0 +1,17 @@
+.ipoteka__row {
+    display: flex;
+    align-items: flex-start;
+    gap: 23px;
+}
+
+@media screen and (max-width: 800px) {
+    .ipoteka__row {
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .ipoteka__row {
+        gap: 0;
+    }
+}

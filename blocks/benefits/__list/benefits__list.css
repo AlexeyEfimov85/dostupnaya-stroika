@@ -1,0 +1,10 @@
+.benefits__list {
+    display: flex;
+}
+
+@media screen and (max-width: 624px) {
+    .benefits__list {
+        flex-direction: column;
+        align-items: center;
+    }
+}

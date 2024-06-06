@@ -1,0 +1,16 @@
+.lead__column-right {
+    position: relative;
+}
+
+@media screen and (max-width: 1150px){
+    .lead__column-right {
+        width: 57%;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 624px){
+    .lead__column-right {
+        width: 100%;
+    }
+}

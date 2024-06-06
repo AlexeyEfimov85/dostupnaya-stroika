@@ -1,0 +1,11 @@
+.accordion__wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .accordion__wrapper {
+        margin-bottom: 0;
+    }
+}

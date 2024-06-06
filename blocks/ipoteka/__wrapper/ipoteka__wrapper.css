@@ -1,0 +1,9 @@
+.ipoteka__wrapper {
+    max-width: 575px;
+}
+
+@media screen and (max-width: 768px) {
+    .ipoteka__wrapper {
+        max-width: 414px;
+    }
+}

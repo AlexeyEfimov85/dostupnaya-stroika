@@ -1,0 +1,12 @@
+.dropdown-menu__image-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 624px) {
+    .dropdown-menu__image-mobile {
+        display: block;
+        width: 343px;
+        height: 204px;
+        order: -1;
+    }
+}

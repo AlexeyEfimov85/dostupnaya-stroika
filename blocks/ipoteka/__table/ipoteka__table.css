@@ -1,0 +1,22 @@
+.ipoteka__table {
+    border-collapse: separate;
+    border-spacing: 12px 4px;
+    margin: 0 0 19px 0;
+    display: flex;
+}
+
+tr .text__main_inactive  {
+    padding-bottom: 6px;
+}
+
+@media screen and (max-width: 768px) {
+    .ipoteka__table {
+        border-collapse: separate;
+        border-spacing: 12px 4px;
+        max-width: 354px;
+        margin: 0 0 24px 0;
+    }
+    .ipoteka__table td:nth-child(1)  {
+        max-width: 120px;
+    }
+}

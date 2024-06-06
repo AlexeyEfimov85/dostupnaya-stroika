@@ -1,0 +1,37 @@
+.ipoteka {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    gap: 29px;
+}
+
+.ipoteka .heading:first-of-type {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .ipoteka {
+        display: grid;
+        grid-template-columns: 39% 56%;
+        gap: 27px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .ipoteka {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .ipoteka .heading:first-of-type {
+        display: block;
+    }
+
+    .ipoteka .ipoteka__content .heading {
+        display: none;
+    }
+}

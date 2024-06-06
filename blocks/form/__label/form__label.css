@@ -1,0 +1,14 @@
+.form__label {
+    margin-bottom: 4px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+.form__label_checkbox::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #FF9900;
+
+}

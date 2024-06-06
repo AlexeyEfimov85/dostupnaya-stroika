@@ -1,0 +1,13 @@
+@media screen and (max-width: 855px) {
+    .excursion__image {
+        width: 403px;
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .excursion__image {
+        display: none;
+    }
+}

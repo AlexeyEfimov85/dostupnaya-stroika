@@ -1,0 +1,23 @@
+.services__heading {
+    width: 745px;
+    text-align: right;
+    margin-bottom: 24px;
+}
+
+.services__heading .heading__text {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .services__heading {
+        width: 475px;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .services__heading {
+        width: 100%;
+    }
+}

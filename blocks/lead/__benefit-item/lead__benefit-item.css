@@ -1,0 +1,44 @@
+.lead__benefit-item:nth-child(1) {
+    grid-area: a;
+    clip-path: polygon(0 0, 100% 0%, 96% 100%, 0% 100%);
+}
+
+.lead__benefit-item:nth-child(2) {
+    grid-area: b;
+    clip-path: polygon(0 0, 100% 0%, 96% 100%, 0% 100%);
+}
+
+.lead__benefit-item:nth-child(3) {
+    grid-area: c;
+    clip-path: polygon(4% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.lead__benefit-item:nth-child(4) {
+    grid-area: d;
+    clip-path: polygon(0 0, 100% 0%, 96% 100%, 0% 100%);
+}
+
+.lead__benefit-item {
+    background-color: #f5f5f5;
+    padding: 8px 16px 10px 11px;
+    box-sizing: border-box;
+}
+
+.lead__benefit-item::before {
+    display: inline-block;
+    content: "\002b";
+    color: #FF9900;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    right: -5px;
+}
+
+@media screen and (max-width: 768px) {
+    .lead__benefit-item {
+        clip-path: polygon(0 0, 100% 0%, 96% 100%, 0% 100%);
+    }
+    .lead__benefit-item:nth-child(3) {
+        clip-path: polygon(0 0, 100% 0%, 96% 100%, 0% 100%);
+    }
+}

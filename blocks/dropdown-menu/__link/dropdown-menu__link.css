@@ -1,0 +1,8 @@
+.dropdown-menu__link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #ff9900;
+    display: inline-block;
+    margin-top: 8px;
+}

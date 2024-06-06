@@ -1,0 +1,12 @@
+.header__wrapper_content {
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 624px) {
+    .header__wrapper_content .button__request-call {
+        display: none;
+    }
+}

@@ -1,0 +1,31 @@
+.ipoteka__heading {
+    text-align: left;
+    width: 573px;
+    margin: 0 0 27px 0;
+}
+
+@media screen and (max-width: 1150px) {
+    .ipoteka__heading {
+        width: 450px;
+        margin: 0 0 26px 0;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .ipoteka__heading {
+        width: 343px;
+        margin: 0 0 26px 0;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .ipoteka__heading {
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .ipoteka__heading {
+        width: 250px;
+    }
+}

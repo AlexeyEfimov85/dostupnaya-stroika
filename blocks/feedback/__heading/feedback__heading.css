@@ -1,0 +1,17 @@
+.feedback__heading {
+    width: 574px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .feedback__heading {
+        width: 374px;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .feedback__heading {
+        width: 285px;
+    }
+}

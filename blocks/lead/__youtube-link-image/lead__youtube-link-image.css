@@ -1,0 +1,10 @@
+.lead__youtube-link-image {
+    width: 86px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .lead__youtube-link-image {
+        width: 61px;
+    }
+}

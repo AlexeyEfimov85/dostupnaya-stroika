@@ -1,0 +1,21 @@
+.gallery__list {
+    display: flex;
+    gap: 28px;
+    margin: 32px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery__list {
+        gap: 26px;
+        margin: 24px 0;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .gallery__list {
+        flex-direction: column;
+        gap: 15px;
+        margin: 24px auto;
+        max-width: 450px;
+    }
+}

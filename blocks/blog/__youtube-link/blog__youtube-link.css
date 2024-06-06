@@ -1,0 +1,18 @@
+.blog__youtube-link {
+    right: 0;
+    top: 40px;
+}
+
+@media screen and (max-width: 900px) {
+    .blog__youtube-link {
+        top: 8px;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .blog__youtube-link {
+        top: 82%;
+        right: 15px;
+    }
+
+}
