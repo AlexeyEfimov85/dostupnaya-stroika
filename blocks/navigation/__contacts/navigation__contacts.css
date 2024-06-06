@@ -1,4 +1,11 @@
 .navigation__contacts {
-    padding: 16px 15px;
-    background-color: #F5F5F5;
+    display: none
+} 
+
+@media screen and (max-width: 624px) {
+    .navigation__contacts {
+        display: block;
+        padding: 16px 15px;
+        background-color: #F5F5F5;
+    } 
 }
