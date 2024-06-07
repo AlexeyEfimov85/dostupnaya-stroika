@@ -30,13 +30,14 @@
     background-repeat: no-repeat;
     position: absolute;
     top: 90%;
-    left: 77%;
+    left: 76%;
     background-size: contain;
     background-position: center;
 }
 
 .blog__link:hover::after {
     background-image: url("../../../images/blog-preview-play-hover.svg");
+    top: 89%;
 }
 
 

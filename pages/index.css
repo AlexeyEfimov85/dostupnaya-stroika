@@ -113,6 +113,7 @@
 @import url("../blocks/articles/__card-text/articles__card-text.css");
 @import url("../blocks/articles/__card/articles__card.css");
 @import url("../blocks/articles/__link/articles__link.css");
+@import url("../blocks/articles/__mobile/articles__mobile.css");
 @import url("../blocks/feedback/feedback.css");
 @import url("../blocks/feedback/__heading/feedback__heading.css");
 @import url("../blocks/feedback/__image/feedback__image.css");
