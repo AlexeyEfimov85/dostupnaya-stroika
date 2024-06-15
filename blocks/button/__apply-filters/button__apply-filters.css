@@ -1,4 +1,11 @@
-.button__apply-filters {
-    display: block;
-    margin: 0 auto;
+
+
+@media screen and (max-width: 625px) {
+    .button__apply-filters {
+        display: block;
+        margin: 0 auto;
+        margin-top: 72px;
+        width: 100%;
+        text-align: center;
+    } 
 }

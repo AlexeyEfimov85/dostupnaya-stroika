@@ -4,3 +4,7 @@
     width: 100%;
     box-sizing: border-box;
 }
+
+.recommendation__item:hover {
+    border: 1px solid #FF9900;
+}
