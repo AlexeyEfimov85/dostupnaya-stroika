@@ -1,0 +1,16 @@
+.sorting__label {
+    white-space: nowrap;
+}
+
+.sorting__field input[type="radio"]:checked ~ .sorting__label {
+    color: #FF9900;
+}
+
+@media screen and (max-width: 768px) {
+    .sorting__label {
+        display: none;
+    }
+    .sorting__field input[type="radio"]:checked ~ .sorting__label {
+        display: block;
+    }
+}

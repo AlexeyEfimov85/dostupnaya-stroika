@@ -1,0 +1,11 @@
+.catalog__wrapper {
+    display: flex;
+    margin-top: 32px;
+    gap: 114px;
+}
+
+@media screen and (max-width: 1050px) {
+    .catalog__wrapper {
+        display: block;
+    }
+}

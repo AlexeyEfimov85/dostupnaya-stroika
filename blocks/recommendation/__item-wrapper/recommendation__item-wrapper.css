@@ -1,0 +1,15 @@
+.recommendation__item-wrapper {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: auto 124px;
+    align-items: center;
+}
+
+@media screen and (max-width: 1050px) {
+    .recommendation__item-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 12px;
+    }
+}

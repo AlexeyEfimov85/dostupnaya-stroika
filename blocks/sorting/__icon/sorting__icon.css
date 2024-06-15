@@ -1,0 +1,3 @@
+.sorting__field input[type="radio"]:checked ~ .sorting__label .sorting__icon {
+    filter: invert(67%) sepia(17%) saturate(7479%) hue-rotate(359deg) brightness(101%) contrast(107%);
+}

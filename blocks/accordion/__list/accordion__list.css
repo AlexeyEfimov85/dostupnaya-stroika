@@ -52,12 +52,12 @@ h2 {
 }
 
 
-input[type="checkbox"] {
+.accordion__list input[type="checkbox"] {
   display: none;
 }
 
 @media screen and (max-width: 624px) {
-  input[type="checkbox"] {
+  .accordion__list input[type="checkbox"] {
     display: block;
   }
   .accordion__list li input[type="checkbox"] {

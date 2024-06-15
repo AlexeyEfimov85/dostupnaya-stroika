@@ -11,13 +11,19 @@
     width: 100%;
 }
 
+
 .articles__card-text .text__main {
+    margin-bottom: 14px;
+}
+
+.articles__card-text .text__article-preview {
     margin-top: 4px;
     margin-bottom: 8px;
 }
 
 .articles__card-text a:hover {
-    opacity: 0.8;
+    font-weight: 700;
+    color: #FF9900;
 }
 
 .articles__card-text .text__article-preview {

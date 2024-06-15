@@ -1,0 +1,6 @@
+.recommendation__item {
+    border: 1px solid #565B62;
+    padding: 12px 12px 24px;
+    width: 100%;
+    box-sizing: border-box;
+}

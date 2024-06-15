@@ -1,0 +1,19 @@
+.catalog__cards {
+    max-width: 776px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+@media screen and (max-width: 1050px) {
+    .catalog__cards {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .catalog__cards {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}

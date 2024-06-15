@@ -1,0 +1,27 @@
+.filters__button {
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-color: #ff9900;
+    border-radius: 50%;
+    border: none;
+    align-items: center;
+    cursor: pointer;
+    z-index: 3;
+}
+
+@media screen and (max-width: 1050px) {
+    .filters__button {
+        display: flex;
+        position: absolute;
+        top: 45px;
+        left: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .filters__button {
+        top: 5px;
+        left: 0px;
+    }
+}

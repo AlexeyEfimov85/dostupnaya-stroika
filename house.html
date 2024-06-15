@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Доступная стройка</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body class="root">
+    <header class="header">
+      <div class="header__container header__wrapper">
+        <div class="header__wrapper_content">
+          <div class="header__nav-burger">
+            <input class="checkbox" type="checkbox" id="burgerButton" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+          </div>
+          <img class="logo" src="./images/logo.png" />
+          <p class="header__text">Строительство каркасных&nbsp;домов</p>
+        </div>
+        <div class="header__wrapper_content">
+          <div class="header__contacts">
+            <a class="header__tel" href="tel:+74994900050"
+              ><span>+7&nbsp;(499)&nbsp;490-00-50</span
+              ><img
+                src="./images/header-call-image.png"
+                alt="телефонная трубка"
+            /></a>
+            <span class="header__shedule">пн-пт: с 10.00 до 18.00;</span>
+            <span class="header__shedule"> сб:&nbsp;с 10.00 до 15.00</span>
+          </div>
+          <button class="button button__request-call">Заказать звонок</button>
+        </div>
+      </div>
+      <nav class="navigation">
+        <div class="navigation__container">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item_catalog">
+              Каталог проектов
+            </li>
+            <li class="navigation__item">Построенные дома</li>
+            <li class="navigation__item navigation__item_about">
+              О&nbsp;компании
+            </li>
+            <li class="navigation__item">Отзывы</li>
+            <li class="navigation__item">Видеоблог</li>
+            <li class="navigation__item">Статья</li>
+            <li class="navigation__item">Контакты</li>
+          </ul>
+          <div class="navigation__contacts">
+            <div class="footer__social">
+              <p class="text__main">Мы в социальных сетях</p>
+              <a href="https://vk.com/dostup_stroi"
+                ><img src="./images/social-vk.svg" alt="значок вк"
+              /></a>
+              <a href="https://ok.ru/group/56738929705017"
+                ><img
+                  src="./images/social-odnoklasniki.svg"
+                  alt="значок оноклассников"
+              /></a>
+              <a href="https://t.me/dostupstroi"
+                ><img src="./images/social-telegram.svg" alt="значок телеграмм"
+              /></a>
+              <a href="https://www.youtube.com/@dostup-stroi"
+                ><img src="./images/social-youtube.svg" alt="значок youtube"
+              /></a>
+            </div>
+            <div class="footer__column">
+              <p class="text__main">
+                г. Коломна, площадь Советская, д.8, ТЦ&nbsp;«Глобус», 3 этаж
+              </p>
+              <a href="tel:+74994900050" class="text__subheading"
+                >+7 (499) 490-00-50</a
+              >
+              <p class="text__small">пн-пт: с 10.00 до 18.00</p>
+              <p class="text__small">сб: с 10.00 до 15.00</p>
+              <a href="mailto:dostup-stroi@mail.ru" class="text__main footer__email-link"
+                >dostup-stroi@mail.ru</a
+              >
+              <button class="button button__request-call">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+        <!--выпадающее меню "каталог"-->
+        <div class="dropdown-menu dropdown-menu_closed">
+          <div class="dropdown-menu__wrapper">
+            <div class="dropdown-menu__container">
+              <p class="dropdown-menu__subheader">Каркасные дома по стилю</p>
+              <ul class="dropdown-menu__list">
+                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">Дачные</a></li>
+                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">Финские</a></li>
+                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">Хайтек</a></li>
+                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">Шале</a></li>
+              </ul>
+              <a href="#" class="dropdown-menu__link"
+                >Посмотреть весь каталог</a
+              >
+            </div>
+            <div class="dropdown-menu__container">
+              <p class="dropdown-menu__subheader">
+                Каркасные дома по этажности
+              </p>
+              <ul class="dropdown-menu__list">
+                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">1-этажные</a></li>
+                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">С мансардой</a></li>
+                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">2-этажные</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-menu__container">
+              <p class="dropdown-menu__subheader">Каркасные дома по размеру</p>
+              <ul class="dropdown-menu__list">
+                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">Небольшие</a></li>
+                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">Большие</a></li>
+                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">до 100 кв м</a></li>
+                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">до 150 кв м</a></li>
+              </ul>
+            </div>
+            <img
+              class="dropdown-menu__image"
+              src="./images/dropdown-menu.png"
+              alt="каркасный дом"
+            />
+            <img
+            class="dropdown-menu__image-mobile"
+            src="./images/dropdown-menu-mobile.png"
+            alt="каркасный дом"
+          />
+          </div>
+        </div>
+        <!--выпадающее меню "о компании"-->
+        <div class="dropdown-about dropdown-menu_closed">
+          <div class="dropdown-menu__wrapper">
+            <div>
+              <p class="dropdown-about__subheader">Наша команда</p>
+              <p class="dropdown-about__text">О компании "Доступная стройка"</p>
+            </div>
+            <img
+              class="dropdown-about__image"
+              src="./images/dropdown-about.png"
+              alt="Каркасный дом"
+            />
+            <img
+            class="dropdown-about__image-mobile"
+            src="./images/dropdown-about-mobile.png"
+            alt="Каркасный дом"
+          />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="main__dropdown-bcgr"></div>
+      <section class="lead lead__container">
+        <!--левая колонка lead-->
+        <div class="lead__column-left">
+          <img
+            class="lead__rating"
+            src="./images/lead-rating.png"
+            alt="рейтинг яндекс"
+          />
+          <h1 class="lead__heading">
+            Строим <span class="lead__heading-text">загородные</span>&nbsp;дома
+          </h1>
+          <p class="lead__subheading">для комфортного проживания</p>
+          <ul class="lead__benefit-list">
+            <li class="lead__benefit-item">
+              <span class="text__main">Гарантия 5 лет по договору</span>
+            </li>
+            <li class="lead__benefit-item">
+              <span class="text__main">Льготная ипотека от 6%</span>
+            </li>
+            <li class="lead__benefit-item">
+              <span class="text__main">Строим в любое время года</span>
+            </li>
+            <li class="lead__benefit-item">
+              <span class="text__main">Сезонные скидки</span>
+            </li>
+          </ul>
+          <div class="lead__present">
+            <img
+              class="lead__present-image"
+              src="./images/lead-present.svg"
+              alt="подарок при заключении догоора на строительство"
+            />
+            <p class="lead__present-text">
+              При заключении договора на строительство&nbsp;— проект дома<span
+                >&nbsp;бесплатно</span
+              >
+            </p>
+          </div>
+          <button class="button button__request-call">
+            Получить консультацию
+          </button>
+        </div>
+        <div class="lead__column-right">
+          <div class="lead__youtube-link">
+            <span class="text__main">Канал</span>
+            <img
+              class="lead__youtube-link-image"
+              src="./images/lead-youtube.png"
+              alt="лого youtube"
+            />
+            <img
+              src="./images/lead-youtube-arrow.svg"
+              alt="стрелочка"
+              class="lead__youtube-arrow"
+            />
+          </div>
+          <img
+            class="lead__image"
+            src="./images/lead-photo.jpg"
+            alt="каркасный дом"
+          />
+          <img
+            class="lead__image-mobile"
+            src="./images/lead-photo-mobile.png"
+            alt="каркасный дом"
+          />
+        </div>
+      </section>
+      <section class="benefits container">
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <img src="./images/benefits-icon-1.svg" alt="банкнота" />
+            <p class="text__subheading">Поэтапная оплата</p>
+            <p class="text__main">
+              У нас нет скрытых платежей. Вы платите только за выполненные
+              работы по акту приёмки.
+            </p>
+          </li>
+          <li class="benefits__item">
+            <img src="./images/benefits-icon-2.svg" alt="банкнота" />
+            <p class="text__subheading">Строительство по ГОСТ И СНиП</p>
+            <p class="text__main">
+              Строим только с использованием правильных материалов, отвечающих
+              современным стандартам загородного строительства.
+            </p>
+          </li>
+          <li class="benefits__item">
+            <img src="./images/benefits-icon-3.svg" alt="банкнота" />
+            <p class="text__subheading">Прочный силовой каркас</p>
+            <p class="text__main">
+              Строим силовой каркас дома только калиброванного пиломатериала
+              камерной сушки.
+            </p>
+          </li>
+          <li class="benefits__item">
+            <img src="./images/benefits-icon-4.svg" alt="банкнота" />
+            <p class="text__subheading">Ежедневный контроль над стройкой</p>
+            <p class="text__main">
+              Предоставляем каждодневный фото - и видеоотчет. Стройка постоянно
+              контролируется лично руководством компании.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!--Галерея-->
+      <section class="gallery container">
+        <h2 class="heading gallery__heading">
+          Строительство
+          <span class="heading__text">загородных</span>&nbsp;домов
+        </h2>
+        <div class="gallery__container">
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <a href="#" class="gallery__item-link">
+                <img
+                  class="gallery__image"
+                  src="./images/gallery-image-1.png"
+                  alt="каркасный дом"
+                />
+                <p class="gallery__item-heading">Каркасные дома</p>
+              </a>
+            </li>
+            <li class="gallery__item" class="gallery__item-link">
+              <a href="#" class="gallery__item-link">
+                <img
+                  class="gallery__image"
+                  src="./images/gallery-image-2.png"
+                  alt="дачный дом"
+                />
+                <p class="gallery__item-heading">Дачные дома</p>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a href="#" class="gallery__item-link">
+                <img
+                  class="gallery__image"
+                  src="./images/gallery-image-3.png"
+                  alt="финский дом"
+                />
+                <p class="gallery__item-heading">Финские дома</p>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a href="#" class="gallery__item-link">
+                <img
+                  class="gallery__image"
+                  src="./images/gallery-image-4.png"
+                  alt="дома хай-тек"
+                />
+                <p class="gallery__item-heading">Дома Хай-тек</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="gallery__link">
+          <a href="#" class="button">Посмотреть все дома</a>
+        </div>
+      </section>
+      <!--Ипотека-->
+      <section class="container ipoteka">
+        <h2 class="heading ipoteka__heading">
+          Строительство домов&nbsp;
+          <span class="heading__text">в ипотеку</span>
+        </h2>
+        <ul class="ipoteka__image">
+          <li class="ipoteka__item">
+            <img src="./images/ipoteka-1.png" alt="пара на фоне дома" />
+          </li>
+          <li class="ipoteka__item">
+            <img src="./images/ipoteka-2.png" alt="пара на фоне дома" />
+          </li>
+          <li class="ipoteka__item">
+            <img src="./images/ipoteka-3.png" alt="пара на фоне дома" />
+          </li>
+        </ul>
+        <div class="ipoteka__content">
+          <h2 class="heading ipoteka__heading">
+            Строительство домов&nbsp;
+            <span class="heading__text">в ипотеку</span>
+          </h2>
+          <div class="ipoteka__wrapper">
+            <div class="ipoteka__row">
+              <img src="./images/ipoteka-icon-1.svg" alt="детская коляска" />
+              <div class="ipoteka__wrapper-2">
+                <p class="text__heading_active">Семейная ипотека</p>
+                <p class="text__main_inactive">для семей с детьми</p>
+                <table class="ipoteka__table">
+                  <tr>
+                    <td class="text__subheading">Процентная ставка</td>
+                    <td class="text__subheading_active">6 %</td>
+                  </tr>
+                  <tr>
+                    <td class="text__subheading">
+                      Максимальная сумма&nbsp;кредита
+                    </td>
+                    <td class="text__subheading_active">
+                      до 12 000 000 &#x20bd;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text__subheading">Срок кредита</td>
+                    <td class="text__subheading_active">до 30 лет</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="ipoteka__row">
+              <img src="./images/ipoteka-icon-2.svg" alt="домик" />
+              <div class="ipoteka__wrapper-2">
+                <p class="text__heading_active">Льготная ипотека</p>
+                <p class="text__main_inactive">для строительства домов ИЖС</p>
+                <table class="ipoteka__table">
+                  <tr>
+                    <td class="text__subheading">Процентная ставка</td>
+                    <td class="text__subheading_active">6 %</td>
+                  </tr>
+                  <tr>
+                    <td class="text__subheading">
+                      Максимальная сумма&nbsp;кредита
+                    </td>
+                    <td class="text__subheading_active">
+                      до 12 000 000 &#x20bd;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text__subheading">Срок кредита</td>
+                    <td class="text__subheading_active">до 30 лет</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <p class="text__subheading ipoteka__text">
+              Строительная компания «Доступная стройка» является аккредитованным
+              застройщиком «Почта Банк».
+            </p>
+            <p class="text__subheading ipoteka__text">
+              Подать заявку на предварительное одобрение ипотеки вы сможете
+              прямо из нашего офиса. Наши специалисты помогут вам с оформлением
+              документов, выбором участка, а также будут сопровождать на всех
+              этапах строительства загородного дома в ипотеку.
+            </p>
+            <button class="button button__request-call">
+              Получить консультацию
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--построенные дома-->
+      <section class="constructed container">
+        <h2 class="heading">построенные дома</h2>
+        <p class="text__subheading_emphasize">проекты</p>
+        <div class="swiper sample-slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="constructed__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-1.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main_inactive">2023</p>
+                <div class="constructed__item-wrapper">
+                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                  <a class="button constructed__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="constructed__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-2.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main_inactive">2023</p>
+                <div class="constructed__item-wrapper">
+                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                  <a class="button constructed__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="constructed__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-3.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main_inactive">2023</p>
+                <div class="constructed__item-wrapper">
+                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                  <a class="button constructed__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="constructed__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-4.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main_inactive">2023</p>
+                <div class="constructed__item-wrapper">
+                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                  <a class="button constructed__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="constructed__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-3.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main_inactive">2023</p>
+                <div class="constructed__item-wrapper">
+                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                  <a class="button constructed__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="constructed__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-4.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main_inactive">2023</p>
+                <div class="constructed__item-wrapper">
+                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                  <a class="button constructed__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- navigation buttons -->
+          <div class="swiper-button-prev"><span>&larr;</span></div>
+          <div class="swiper-button-next"><span>&rarr;</span></div>
+        </div>
+      </section>
+      <!--запись на экскурсию-->
+      <section class="excursion container">
+        <h2 class="heading excursion__heading">
+          Записаться на&nbsp;<span class="heading__text">экскурсию</span>
+        </h2>
+        <div class="excursion__image-container">
+          <img
+            class="excursion__image"
+            src="./images/excursion-image.png"
+            alt="процесс постройки дома"
+          />
+          <img
+            class="excursion__image-mobile"
+            src="./images/excursion-image-mobile.png"
+            alt="процесс постройки дома"
+          />
+        </div>
+        <div class="excursion__column">
+          <h2 class="heading excursion__heading">
+            Записаться на&nbsp;<span class="heading__text">экскурсию</span>
+          </h2>
+          <p class="text__subheading">
+            Хотите лично посмотреть на построенные дома? Мы организуем вам
+            экскурсию на наши объекты.
+          </p>
+          <p class="text__subheading">Во время экскурсии расскажем вам:</p>
+          <ul class="excursion__list">
+            <li class="excursion__item">
+              о материалах, которые мы используем;
+            </li>
+            <li class="excursion__item">о технологии строительства;</li>
+            <li class="excursion__item">о выборе планировки дома;</li>
+            <li class="excursion__item">
+              о лайфхаках, которые мы используем при строительстве.
+            </li>
+          </ul>
+          <p class="text__subheading">
+            Вы можете выбрать к просмотру дом, на любом интересующем вас этапе
+            строительства.
+          </p>
+          <button class="button button__request-excursion">
+            Записаться на экскурсию
+          </button>
+        </div>
+      </section>
+      <!--виды работ-->
+      <section class="services container">
+        <p class="heading services__heading">
+          строительство домов <span class="heading__text">под&nbsp;ключ</span>
+        </p>
+        <p class="text__subheading">
+          Мы предоставляем полный комплекс услуг, начиная от проектирования и
+          заканчивая полностью готовым к проживанию домом. Вам не придется
+          самостоятельно заниматься каждым этапом строительства, искать
+          подрядчиков для разных видов работ и контролировать их выполнение. Все
+          это мы берем на себя и несем ответственность за весь проект и сдачу
+          дома "под ключ". Таким образом, вы получаете дом, готовый к
+          проживанию, без необходимости дополнительных работ и вложений.
+        </p>
+        <ul class="services__list">
+          <li class="services__item">
+            <img
+              class="services__icon"
+              src="./images/services-icon-1.svg"
+              alt="#"
+            />
+            <div>
+              <p class="text__subheading">Электромонтажные работы</p>
+              <ul class="services__type-list">
+                <li class="text__main services__type-item">
+                  Проектирование системы
+                </li>
+                <li class="text__main services__type-item">
+                  Монтаж электрозащиты
+                </li>
+                <li class="text__main services__type-item">
+                  Прокладка кабелей
+                </li>
+                <li class="text__main services__type-item">
+                  Установка розеток и выключателей
+                </li>
+                <li class="text__main services__type-item">Монтаж освещения</li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item">
+            <img
+              class="services__icon"
+              src="./images/services-icon-2.svg"
+              alt="#"
+            />
+            <div>
+              <p class="text__subheading">Водоснабжение и водоотведение</p>
+              <ul class="services__type-list">
+                <li class="text__main services__type-item">
+                  Прокладка водопроводных труб
+                </li>
+                <li class="text__main services__type-item">
+                  Разводка ГВС и ХВС
+                </li>
+                <li class="text__main services__type-item">
+                  Установка сантехники
+                </li>
+                <li class="text__main services__type-item">
+                  Установка септика
+                </li>
+                <li class="text__main services__type-item">Дренажные работы</li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item">
+            <img
+              class="services__icon"
+              src="./images/services-icon-3.svg"
+              alt="#"
+            />
+            <div>
+              <p class="text__subheading">Монтаж систем отопления</p>
+              <ul class="services__type-list">
+                <li class="text__main services__type-item">
+                  Монтаж тёплого пола
+                </li>
+                <li class="text__main services__type-item">
+                  Монтаж радиаторов отопления
+                </li>
+                <li class="text__main services__type-item">
+                  Монтаж газовых, электрических и твердотопливных котлов
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item">
+            <img
+              class="services__icon"
+              src="./images/services-icon-4.svg"
+              alt="#"
+            />
+            <div>
+              <p class="text__subheading">Монтаж систем вентиляции</p>
+              <ul class="services__type-list">
+                <li class="text__main services__type-item">
+                  Проектирование и монтаж систем приточной и вытяжной вентиляции
+                </li>
+                <li class="text__main services__type-item">
+                  Установка кондиционеров
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item">
+            <img
+              class="services__icon"
+              src="./images/services-icon-5.svg"
+              alt="#"
+            />
+            <div>
+              <p class="text__subheading">Системы видеонаблюдения</p>
+              <ul class="services__type-list">
+                <li class="text__main services__type-item">
+                  Проектирование и монтаж системы охранного видеонаблюдения для
+                  загородного дома
+                </li>
+                <li class="text__main services__type-item">
+                  Настройка передачи изображения с камер на сматрфон клиента
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item">
+            <img
+              class="services__icon"
+              src="./images/services-icon-6.svg"
+              alt="#"
+            />
+            <div>
+              <p class="text__subheading">Установка заборов</p>
+              <ul class="services__type-list">
+                <li class="text__main services__type-item">
+                  Установка заборов по границе участка из любых материалов, по
+                  желанию заказчика
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!--блог-->
+      <section class="blog container">
+        <p class="heading">
+          Наш блог&nbsp;<span class="heading__text">о строительстве</span>
+        </p>
+        <p class="text__subheading_emphasize">
+          больше видеообзоров на нашем канале
+        </p>
+        <div class="blog__data">
+          <div class="blog__data-item">
+            <p class="text__subheading">Каркасные дома</p>
+            <a
+              class="blog__link"
+              href="https://www.youtube.com/watch?v=hCNOW2lGmkA"
+              data-fancybox
+            >
+              <img
+                src="./images/blog-preview-1.png"
+                alt="превью видеофайла"
+                class="blog__preview"
+              />
+            </a>
+            <p class="text__main_inactive">от 15.02.2023</p>
+          </div>
+          <div class="blog__data-item">
+            <p class="text__subheading">Монтаж кровли</p>
+            <a
+              class="blog__link"
+              href="https://www.youtube.com/watch?v=hCNOW2lGmkA"
+              data-fancybox
+            >
+              <img
+                src="./images/blog-preview-2.png"
+                alt="превью видеофайла"
+                class="blog__preview"
+              />
+            </a>
+            <p class="text__main_inactive">от 24.01.2024</p>
+          </div>
+          <div class="blog__data-item">
+            <div class="blog__youtube-link youtube__link">
+              <span class="text__main">Подписаться</span>
+              <img
+                class="youtube__link-image"
+                src="./images/lead-youtube.png"
+                alt="лого youtube"
+              />
+              <img
+                src="./images/lead-youtube-arrow.svg"
+                alt="стрелочка"
+                class="youtube__arrow"
+              />
+            </div>
+            <p class="text__subheading">Основатель нашей компании</p>
+            <img
+              src="./images/blog-founder.png"
+              alt="Фото основателя компании"
+              class="blog__image"
+            />
+          </div>
+        </div>
+      </section>
+      <!--статьи-->
+      <section class="container">
+        <div class="articles">
+          <div class="articles__card">
+            <div class="articles__card-text">
+              <p class="text__subheading_active">Выбираем материал</p>
+              <p class="text__main text__article-preview">
+                Кровельные материалы для скатной кровли бывают нескольких видов
+              </p>
+              <a href="#" class="text__main">Подробнее</a>
+            </div>
+            <img
+              class="articles__image"
+              src="./images/articles-1.png"
+              alt="крыша"
+            />
+          </div>
+          <div class="articles__card">
+            <div class="articles__card-text">
+              <p class="text__subheading_active">Каркасные дома</p>
+              <p class="text__main text__article-preview">
+                Технология строительства деревянных домов становится все более
+                популярной
+              </p>
+              <a href="#" class="text__main">Подробнее</a>
+            </div>
+            <img
+              class="articles__image"
+              src="./images/articles-2.png"
+              alt="крыша"
+            />
+          </div>
+          <div class="articles__card">
+            <div class="articles__card-text">
+              <p class="text__subheading_active">Защитная обработка</p>
+              <p class="text__main text__article-preview">
+                Как продлить срок эксплуатации каркасного дома?
+              </p>
+              <a href="#" class="text__main">Подробнее</a>
+            </div>
+            <img
+              class="articles__image"
+              src="./images/articles-3.png"
+              alt="крыша"
+            />
+          </div>
+          <div class="articles__card">
+            <a href="#" class="articles__link"
+              >Больше статей о&nbsp;строительстве</a
+            >
+            <img
+              class="articles__image"
+              src="./images/articles-4.png"
+              alt="крыша"
+            />
+          </div>
+        </div>
+        <div class="articles__mobile">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="articles__card">
+                  <div class="articles__card-text">
+                    <p class="text__subheading_active">Выбираем материал</p>
+                    <p class="text__main text__article-preview">
+                      Кровельные материалы для скатной кровли бывают нескольких
+                      видов
+                    </p>
+                    <a href="#" class="text__main">Подробнее</a>
+                  </div>
+                  <img
+                    class="articles__image"
+                    src="./images/articles-1.png"
+                    alt="крыша"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="articles__card">
+                  <div class="articles__card-text">
+                    <p class="text__subheading_active">Каркасные дома</p>
+                    <p class="text__main text__article-preview">
+                      Технология строительства деревянных домов становится все
+                      более популярной
+                    </p>
+                    <a href="#" class="text__main">Подробнее</a>
+                  </div>
+                  <img
+                    class="articles__image"
+                    src="./images/articles-2.png"
+                    alt="крыша"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="articles__card">
+                  <div class="articles__card-text">
+                    <p class="text__subheading_active">Защитная обработка</p>
+                    <p class="text__main text__article-preview">
+                      Как продлить срок эксплуатации каркасного дома?
+                    </p>
+                    <a href="#" class="text__main">Подробнее</a>
+                  </div>
+                  <img
+                    class="articles__image"
+                    src="./images/articles-3.png"
+                    alt="крыша"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="articles__card">
+                  <a href="#" class="articles__link"
+                    >Больше статей о&nbsp;строительстве</a
+                  >
+                  <img
+                    class="articles__image"
+                    src="./images/articles-4.png"
+                    alt="крыша"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--отзывы-->
+      <section class="feedback container">
+        <p class="heading feedback__heading">
+          отзывы наших&nbsp;<span class="heading__text">клиентов</span>
+        </p>
+        <div class="feedback__content">
+          <div class="feedback__column">
+            <div
+              style="
+                width: 100%;
+                height: 692px;
+                overflow: hidden;
+                position: relative;
+              "
+            >
+              <iframe
+                style="
+                  width: 100%;
+                  height: 100%;
+                  border: none;
+                  box-sizing: border-box;
+                "
+                src="https://yandex.ru/maps-reviews-widget/210269045212?comments"
+              ></iframe
+              ><a
+                href="https://yandex.ru/maps/org/dostupnaya_stroyka/210269045212/"
+                target="_blank"
+                style="
+                  box-sizing: border-box;
+                  text-decoration: none;
+                  color: #b3b3b3;
+                  font-size: 10px;
+                  font-family: YS Text, sans-serif;
+                  padding: 0;
+                  position: absolute;
+                  bottom: 8px;
+                  width: 100%;
+                  text-align: center;
+                  left: 0;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: block;
+                  max-height: 14px;
+                  white-space: nowrap;
+                  padding: 0 16px;
+                  box-sizing: border-box;
+                "
+                >Доступная стройка на карте Коломны — Яндекс Карты</a
+              >
+            </div>
+          </div>
+          <div class="feedback__column">
+            <img
+              src="./images/feedback-image.png"
+              alt="фото сотрудников"
+              class="feedback__image"
+            />
+            <p class="text__subheading">
+              Компания «Доступная стройка» — надежный застройщик, которые
+              заботится о своей репутации.
+            </p>
+            <p class="text__subheading">
+              Мы следим за качеством выполненных работ и готовы пройти любой
+              независимый технический
+            </p>
+            <p class="text__subheading">
+              Мы всегда идем навстречу заказчику и можем построить дом в любой
+              комплектации и с любыми отделочными материалами, которые вы
+              выберете.
+            </p>
+            <p class="text__subheading">
+              Мы обеспечиваем открытый процесс строительства. Вы будете получать
+              ежедневные фото- и видеоотчеты.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--консультация-->
+      <section class="consult container">
+        <p class="heading consult__heading">
+          получить <span class="heading__text">консультацию</span>
+        </p>
+        <div class="consult__wrapper">
+          <form class="form consult__form">
+            <p class="text__subheading">
+              Оставьте заявку и менеджер свяжется с вами в ближайшее время
+            </p>
+            <label class="form__label text__main" for="name">Имя</label>
+            <input class="form__input" id="name" placeholder="Иван" />
+            <label class="form__label" for="tel">Телефон</label>
+            <input
+              class="form__input"
+              id="tel"
+              placeholder="+7(000)000-00-00"
+            />
+            <div class="form__checkbox-field">
+              <input
+                type="checkbox"
+                id="checkbox"
+                class="form__checkbox"
+                checked
+              />
+              <label for="checkbox" class="form__label form__label_checkbox">
+                <div>
+                  <span class="text__small_inactive">Вы даёте согласие на</span>
+                  <a href="#" class="text__small_inactive"
+                    >обработку персональных данных</a
+                  >
+                </div></label
+              >
+            </div>
+            <button type="submit" class="button">Получить консультацию</button>
+          </form>
+          <div class="consult__image-container">
+            <img
+              class="consult__image"
+              src="./images/consult-image.png"
+              alt="большой дом"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--футтер-->
+    <footer class="footer">
+      <div class="footer__wrapper footer__container">
+        <div class="footer__wrapper-2">
+          <img
+            class="footer__logo"
+            src="./images/logo-footer.png"
+            alt="логотип"
+          />
+          <div class="footer__column">
+            <p class="text__subheading">Строительство каркасных&nbsp;домов</p>
+            <div class="footer__social">
+              <p class="text__main">Мы в социальных сетях</p>
+              <a href="https://vk.com/dostup_stroi"
+                ><img src="./images/social-vk.svg" alt="значок вк"
+              /></a>
+              <a href="https://ok.ru/group/56738929705017"
+                ><img
+                  src="./images/social-odnoklasniki.svg"
+                  alt="значок оноклассников"
+              /></a>
+              <a href="https://t.me/dostupstroi"
+                ><img src="./images/social-telegram.svg" alt="значок телеграмм"
+              /></a>
+              <a href="https://www.youtube.com/@dostup-stroi"
+                ><img src="./images/social-youtube.svg" alt="значок youtube"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <ul class="accordion__list">
+          <li class="accordion__item">
+            <input type="checkbox" id="accordionCheckbox" />
+            <i></i>
+            <div class="accordion__wrapper">
+              <p class="accordion__subheading">Каталог</p>
+            </div>
+            <ul class="accordion__text">
+              <li class="text__main"><a href="#">Каркасные дома</a></li>
+              <li class="text__main"><a href="#">Дачные дома</a></li>
+              <li class="text__main"><a href="#">Финские дома</a></li>
+              <li class="text__main"><a href="#">Канадские дома</a></li>
+              <li class="text__main"><a href="#">Дома в стиле Шале</a></li>
+              <li class="text__main"><a href="#">Дома в стиле Хай-тек</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="accordion__list">
+          <li class="accordion__item">
+            <input type="checkbox" id="accordionCheckbox" />
+            <i></i>
+            <div class="accordion__wrapper">
+              <p class="accordion__subheading">Клиентам</p>
+            </div>
+            <ul class="accordion__text">
+              <li class="text__main"><a href="#">О компании</a></li>
+              <li class="text__main"><a href="#">Наша команда</a></li>
+              <li class="text__main"><a href="#">Построенные объекты</a></li>
+              <li class="text__main"><a href="#">Видеоблог</a></li>
+              <li class="text__main"><a href="#">Статьи</a></li>
+              <li class="text__main"><a href="#">Контакты</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="footer__column">
+          <p class="text__subheading">Обратная связь</p>
+          <p class="text__subheading">
+            г. Коломна, площадь Советская, д.8, ТЦ&nbsp;«Глобус», 3 этаж
+          </p>
+          <a href="tel:+74994900050" class="text__subheading"
+            >+7 (499) 490-00-50</a
+          >
+          <a href="tel:+79296100020" class="text__subheading"
+            >+7 (929) 610-00-20</a
+          >
+          <p class="text__small">пн-пт: с 10.00 до 18.00</p>
+          <p class="text__small">сб: с 10.00 до 15.00</p>
+          <a
+            href="mailto:dostup-stroi@mail.ru"
+            class="text__main footer__email-link"
+            >dostup-stroi@mail.ru</a
+          >
+          <button class="button button__request-call">Заказать звонок</button>
+        </div>
+      </div>
+      <p class="text__small footer__container">
+        © 2010—2024. Все права защищены.<a
+          class="text__small footer__politic"
+          href="#"
+          >Политика конфиденциальности</a
+        >
+      </p>
+    </footer>
+    <div class="popup" id="popup-form">
+      <div class="popup__container">
+        <button type="button" class="popup__toggle">
+          <img src="./images/popup-toogle.svg" alt="" />
+        </button>
+        <img
+          class="popup__image"
+          src="./images/popup-image-1.png"
+          alt="картинка с домом"
+          id="call"
+        />
+        <img
+          class="popup__image"
+          src="./images/popup-image-2.png"
+          alt="картинка с домом"
+          id="excursion"
+        />
+
+        <form class="form form__popup" name="popup-form">
+          <p class="text__heading_active">Получить консультацию</p>
+          <p class="text__subheading">
+            Оставьте заявку и менеджер свяжется с вами в ближайшее время
+          </p>
+          <label class="form__label text__main" for="name">Имя</label>
+          <input class="form__input" id="name" placeholder="Иван" />
+          <label class="form__label" for="tel">Телефон</label>
+          <input class="form__input" id="tel" placeholder="+7(000)000-00-00" />
+          <div class="form__checkbox-field">
+            <input
+              type="checkbox"
+              id="checkbox"
+              class="form__checkbox"
+              checked
+            />
+            <label for="checkbox" class="form__label form__label_checkbox">
+              <div>
+                <span class="text__small_inactive">Вы даёте согласие на</span>
+                <a href="#" class="text__small_inactive"
+                  >обработку персональных данных</a
+                >
+              </div></label
+            >
+          </div>
+          <button type="submit" class="button" name="popup-send-form" id="popup-send-form">
+            Получить консультацию
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="popup" id="popup-ok">
+      <div class="popup__container">
+        <button type="button" class="popup__toggle">
+          <img src="./images/popup-toogle.svg" alt="" />
+        </button>
+        <img
+          class="popup__image"
+          src="./images/popup-image-1.png"
+          alt="картинка с домом"
+          id="call"
+        />
+        <img
+          class="popup__image"
+          src="./images/popup-image-2.png"
+          alt="картинка с домом"
+          id="excursion"
+        />
+        <div class="popup__column">
+          <img src="./images/popup-success.svg" alt="значок успеха" />
+          <p class="text__heading_active">
+            Ваша заявка успешно&nbsp;отправлена
+          </p>
+          <p class="text__main">Мы свяжемся с вами в ближайшее время.</p>
+          <button type="button" class="button" id="button-ok">Отлично</button>
+        </div>
+      </div>
+    </div>
+    <div class="fixed-messengers">
+      <ul class="fixed-messengers__list">
+        <li class="fixed-messengers__item">
+          <a
+            target="blank"
+            href="https://t.me/dostupstroi"
+            class="fixed-messengers__link"
+            ><img src="./images/fixed-mesengers-wp.svg" alt="whatsup"
+          /></a>
+        </li>
+        <li class="fixed-messengers__item">
+          <a
+            target="blank"
+            href="https://t.me/dostupstroi"
+            class="fixed-messengers__link"
+            ><img src="./images/fixed-mesengers-tg.svg" alt="telegramm"
+          /></a>
+        </li>
+        <li class="fixed-messengers__item">
+          <a
+            target="blank"
+            href="https://vk.com/dostup_stroi"
+            class="fixed-messengers__link"
+            ><img src="./images/fixed-mesengers-vk.svg" alt="vk"
+          /></a>
+        </li>
+      </ul>
+    </div>
+    <script src="./scripts/popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {});
+    </script>
+    <script src="./scripts/dropdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        spaceBetween: 31,
+        loop: false,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          375: {
+            slidesPerView: 1.5,
+          },
+          475: {
+            slidesPerView: 2.5,
+          },
+          625: {
+            slidesPerView: 3,
+          },
+          1000: {
+            slidesPerView: 3.5,
+          },
+          1190: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

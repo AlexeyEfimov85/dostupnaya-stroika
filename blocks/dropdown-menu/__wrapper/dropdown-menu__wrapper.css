@@ -5,6 +5,17 @@
     justify-content: space-between;
 }
 
+.dropdown-menu__wrapper .dropdown-menu__container {
+    width: 240px;
+}
+
+@media screen and (max-width: 1050px) {
+    .dropdown-menu__wrapper {
+        width: 98%;
+        margin: auto;
+    }
+}
+
 @media screen and (max-width: 624px) {
     .dropdown-menu__wrapper {
         width: 100%;

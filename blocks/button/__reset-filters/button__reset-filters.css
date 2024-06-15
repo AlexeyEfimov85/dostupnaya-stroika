@@ -1,0 +1,10 @@
+.button__reset-filters {
+    border: none;
+    background: none;
+    color: #565b62;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 8px 16px;
+    margin-top: 16px;
+}

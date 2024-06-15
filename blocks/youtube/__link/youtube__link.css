@@ -13,6 +13,12 @@
     justify-content: center;
 }
 
+.youtube__link:hover .youtube__arrow {
+    filter: invert(88%) sepia(88%) saturate(0%) hue-rotate(303deg) brightness(112%) contrast(112%);
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
 .youtube__link .text__main {
     font-size: 12px;
 }

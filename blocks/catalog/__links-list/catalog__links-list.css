@@ -1,0 +1,19 @@
+.catalog__links-list {
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+    z-index: 2;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    left: 0;
+    gap: 12px;
+}
+
+@media screen and (max-width: 900px) {
+    .catalog__links-list {
+      width: calc(100% + 232px);
+    }
+  }

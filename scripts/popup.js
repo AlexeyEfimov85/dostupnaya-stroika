@@ -13,6 +13,7 @@ form.addEventListener("submit", function (evt) {
   evt.preventDefault();
 });
 
+if(openExcursionPopupButton){
 openExcursionPopupButton.addEventListener("click", () => {
     popup.classList.add("popup_opened");
     popupExcursionImgs.forEach((popupExcursionImg) => {
@@ -22,7 +23,7 @@ openExcursionPopupButton.addEventListener("click", () => {
         popupCallimg.classList.remove("popup__image_opened");
     })
   });
-
+}
 openPopupButtons.forEach((openPopupButton) => {
   openPopupButton.addEventListener("click", () => {
     popup.classList.add("popup_opened");

@@ -1,0 +1,79 @@
+
+.sorting__accordion-label {
+    position: absolute;
+    transform: translate(-6px, 0);
+    top: 22px;
+    right: 14px;
+    z-index: 2;
+    cursor: pointer;
+  } 
+
+
+  .sorting__accordion {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .sorting__accordion {
+      display: block;
+    }
+}
+
+
+
+  @media screen and (max-width: 768px) {
+    .sorting .sorting__accordion-label:after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        transform: rotate(-45deg);
+        width: 8px;
+        height: 1px;
+        top: -4px;
+        left: 5px;
+      }
+    
+      .sorting .sorting__accordion-label:before {
+        content: "";
+        position: absolute;
+        background-color: black;
+        transform: rotate(45deg);
+        width: 8px;
+        height: 1px;
+        top: -4px;
+        left: 0px;
+      }
+}
+
+  .sorting input[type="checkbox"]:checked ~ .sorting__accordion-label:before {
+    transform: rotate(-45deg);
+  }
+
+  .sorting input[type="checkbox"]:checked ~ .sorting__accordion-label:after {
+    transform: rotate(45deg);
+  }
+
+  .sorting input[type="checkbox"]:checked ~ .sorting__form  {
+    position: absolute;
+    width: 90px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    top: -7px;
+    right: 0px;
+    background-color: #FFFFFF;
+    z-index: 1;
+    gap: 4px;
+    padding: 4px 0 0 4px;
+  }
+
+  .sorting input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+  }
+
+  .sorting input[type="checkbox"]:checked ~ .sorting__form .sorting__field .sorting__label {
+    display: block;
+  }

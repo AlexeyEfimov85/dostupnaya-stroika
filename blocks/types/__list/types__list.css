@@ -1,0 +1,14 @@
+.types__list {
+    display: flex;
+    width: 100%;
+    margin: 32px 0 0 0;
+    gap: 31px;
+}
+
+@media screen and (max-width: 1100px) {
+    .types__list {
+        display: grid;
+        grid-template-columns: 273px 273px;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,92 @@
+/**** Custom styles for noUiSlider ****/
+.noUi-connect {
+    background: #ff9900;
+}
+.noUi-horizontal .noUi-handle,
+.noUi-vertical .noUi-handle {
+    background: #ff9900;
+    border-radius: 50%;
+}
+
+.noUi-horizontal {
+    height: 4px;
+    width: 254px;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 24px;
+    height: 24px;
+    right: -17px;
+    top: -10px;
+}
+
+/* .noUi-horizontal .noUi-handle-lower {
+    width: 4px;
+    height: 4px;
+    right: -17px;
+    top: -10px;
+} */
+
+
+
+.noUi-handle {
+    width: 24px;
+    height: 24px;
+    border: none;
+    box-shadow: none;
+}
+
+.noUi-handle::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.noUi-handle:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #ff9900;
+    border: 2px solid #ffffff;
+    left: 4.25px;
+    top: 3.5px;
+}
+
+.noUi-handle-upper {
+    width: 24px;
+    height: 24px;
+}
+
+.noUi-origin:nth-of-type(1) .noUi-handle {
+    background-color: #ffffff;
+}
+.noUi-touch-area {
+    width: 24px;
+}
+
+/* .noUi-target.noUi-horizontal .noUi-tooltip {
+	background-color: purple;
+} */
+
+/**** Custom styles for Range ****/
+/* input[type=range]::-webkit-slider-thumb {
+  background-color: skyblue;
+}
+input[type=range]::-moz-range-thumb {
+  background-color: skyblue;
+}
+input[type=range]::-ms-thumb {
+  background-color: skyblue;
+}
+input[type=range] + .thumb {
+  background-color: blue;
+}
+input[type=range] + .thumb.active .value {
+  color: #fff;
+} */

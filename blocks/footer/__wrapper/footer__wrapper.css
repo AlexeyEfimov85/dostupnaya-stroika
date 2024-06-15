@@ -4,6 +4,10 @@
     gap: 2.5%;
 }
 
+.footer__wrapper > .footer__column .text__small {
+    margin: 8px 0;
+}
+
 @media screen and (max-width: 950px) {
     .footer__wrapper {
         gap: 0;

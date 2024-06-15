@@ -1,0 +1,15 @@
+.types {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.types .text__subheading_emphasize {
+    width: 505px;
+}
+
+@media screen and (max-width: 1000px) {
+    .types .text__subheading_emphasize {
+        width: 340px;
+    }
+}

@@ -1,0 +1,33 @@
+.catalog__tabs-list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+  }
+  
+  .catalog__tabs-list::-webkit-scrollbar {
+    width: 0;
+  }
+
+
+  .catalog__tabs-list li input[type="radio"]:checked ~ .catalog__tab {
+        background-color: #FF9900;
+        border: none;
+        color: #000000;
+        padding: 9px 0;
+  }
+
+  
+
+  @media screen and (max-width: 900px) {
+    .catalog__tabs-list {
+      overflow: hidden;
+      grid-template-columns: 104px 79px 111px 116px 103px 71px 120px;
+      width: calc(100% + 82px);
+    }
+  }
+
+  @media screen and (max-width: 624px) {
+    .catalog__tabs-list {
+      width: calc(100% + 182px);
+    }
+  }

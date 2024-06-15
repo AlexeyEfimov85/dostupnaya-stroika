@@ -1,0 +1,23 @@
+.sorting {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #565b62;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+    .sorting {
+        display: grid;
+        grid-template-columns: 100px 90px;
+        grid-template-rows: 25px 25px;
+        justify-content: flex-end;
+        align-items: end;
+        column-gap: 10px;
+        position: relative;
+    }
+}
+

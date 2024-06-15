@@ -1,0 +1,41 @@
+.description__text {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 8px;
+}
+
+.description__text::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: block;
+    background-color: #FF9900;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.description__text:nth-of-type(6)::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: block;
+    background-color: #FF9900;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 16px;
+    left: 0;
+}
+
+.description__text:nth-of-type(7)::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: block;
+    background-color: #FF9900;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 16px;
+    left: 0;
+}

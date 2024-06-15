@@ -15,6 +15,12 @@
     justify-content: center;
 }
 
+.lead__youtube-link:hover .lead__youtube-arrow {
+    filter: invert(88%) sepia(88%) saturate(0%) hue-rotate(303deg) brightness(112%) contrast(112%);
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
 @media screen and (max-width: 768px) {
     .lead__youtube-link {
         width: 100px;

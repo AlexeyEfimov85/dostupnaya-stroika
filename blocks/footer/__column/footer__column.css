@@ -11,9 +11,6 @@
     max-width: 220px;
 }
 
-.footer__column:nth-of-type(2) .text__main {
-    margin-bottom: 8px;
-}
 
 .footer__column:nth-of-type(2) .text__subheading {
     margin-bottom: 16px;
@@ -57,9 +54,9 @@
     .footer__column:nth-of-type(1) {
         padding-right: 0;
         display: flex;
-        gap: 150px;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
     }
 }
 
@@ -68,11 +65,7 @@
         gap: 100px;
     }
 }
-@media screen and (max-width: 750px) {
-    .footer__column:nth-of-type(1) {
-        gap: 75px;
-    }
-}
+
 
 @media screen and (max-width: 624px) {
     .footer__column:nth-of-type(1) {

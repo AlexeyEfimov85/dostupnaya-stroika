@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Доступная стройка</title>
+    <link href="./vendor/nouislider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body class="root">
+    <header class="header">
+      <div class="header__container header__wrapper">
+        <div class="header__wrapper_content">
+          <div class="header__nav-burger">
+            <input class="checkbox" type="checkbox" id="burgerButton" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+          </div>
+          <img class="logo" src="./images/logo.png" />
+          <p class="header__text">Строительство каркасных&nbsp;домов</p>
+        </div>
+        <div class="header__wrapper_content">
+          <div class="header__contacts">
+            <a class="header__tel" href="tel:+74994900050"
+              ><span>+7&nbsp;(499)&nbsp;490-00-50</span
+              ><img
+                src="./images/header-call-image.png"
+                alt="телефонная трубка"
+            /></a>
+            <span class="header__shedule">пн-пт: с 10.00 до 18.00;</span>
+            <span class="header__shedule"> сб:&nbsp;с 10.00 до 15.00</span>
+          </div>
+          <button class="button button__request-call">Заказать звонок</button>
+        </div>
+      </div>
+      <nav class="navigation">
+        <div class="navigation__container">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item_catalog">
+              Каталог проектов
+            </li>
+            <li class="navigation__item">Построенные дома</li>
+            <li class="navigation__item navigation__item_about">
+              О&nbsp;компании
+            </li>
+            <li class="navigation__item">Отзывы</li>
+            <li class="navigation__item">Видеоблог</li>
+            <li class="navigation__item">Статья</li>
+            <li class="navigation__item">Контакты</li>
+          </ul>
+          <div class="navigation__contacts">
+            <div class="footer__social">
+              <p class="text__main">Мы в социальных сетях</p>
+              <a href="https://vk.com/dostup_stroi"
+                ><img src="./images/social-vk.svg" alt="значок вк"
+              /></a>
+              <a href="https://ok.ru/group/56738929705017"
+                ><img
+                  src="./images/social-odnoklasniki.svg"
+                  alt="значок оноклассников"
+              /></a>
+              <a href="https://t.me/dostupstroi"
+                ><img src="./images/social-telegram.svg" alt="значок телеграмм"
+              /></a>
+              <a href="https://www.youtube.com/@dostup-stroi"
+                ><img src="./images/social-youtube.svg" alt="значок youtube"
+              /></a>
+            </div>
+            <div class="footer__column">
+              <p class="text__main">
+                г. Коломна, площадь Советская, д.8, ТЦ&nbsp;«Глобус», 3 этаж
+              </p>
+              <a href="tel:+74994900050" class="text__subheading"
+                >+7 (499) 490-00-50</a
+              >
+              <p class="text__small">пн-пт: с 10.00 до 18.00</p>
+              <p class="text__small">сб: с 10.00 до 15.00</p>
+              <a
+                href="mailto:dostup-stroi@mail.ru"
+                class="text__main footer__email-link"
+                >dostup-stroi@mail.ru</a
+              >
+              <button class="button button__request-call">
+                Заказать звонок
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--выпадающее меню "каталог"-->
+        <div class="dropdown-menu dropdown-menu_closed">
+          <div class="dropdown-menu__wrapper">
+            <div class="dropdown-menu__container">
+              <p class="dropdown-menu__subheader">Каркасные дома по стилю</p>
+              <ul class="dropdown-menu__list">
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Дачные</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Финские</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Хайтек</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Шале</a>
+                </li>
+              </ul>
+              <a href="#" class="dropdown-menu__link"
+                >Посмотреть весь каталог</a
+              >
+            </div>
+            <div class="dropdown-menu__container">
+              <p class="dropdown-menu__subheader">
+                Каркасные дома по этажности
+              </p>
+              <ul class="dropdown-menu__list">
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">1-этажные</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">С мансардой</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">2-этажные</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown-menu__container">
+              <p class="dropdown-menu__subheader">Каркасные дома по размеру</p>
+              <ul class="dropdown-menu__list">
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Небольшие</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Большие</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">до 100 кв м</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">до 150 кв м</a>
+                </li>
+              </ul>
+            </div>
+            <img
+              class="dropdown-menu__image"
+              src="./images/dropdown-menu.png"
+              alt="каркасный дом"
+            />
+            <img
+              class="dropdown-menu__image-mobile"
+              src="./images/dropdown-menu-mobile.png"
+              alt="каркасный дом"
+            />
+          </div>
+        </div>
+        <!--выпадающее меню "о компании"-->
+        <div class="dropdown-about dropdown-menu_closed">
+          <div class="dropdown-menu__wrapper">
+            <div>
+              <p class="dropdown-about__subheader">Наша команда</p>
+              <p class="dropdown-about__text">О компании "Доступная стройка"</p>
+            </div>
+            <img
+              class="dropdown-about__image"
+              src="./images/dropdown-about.png"
+              alt="Каркасный дом"
+            />
+            <img
+              class="dropdown-about__image-mobile"
+              src="./images/dropdown-about-mobile.png"
+              alt="Каркасный дом"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="main__dropdown-bcgr"></div>
+      <!--Каталог-->
+      <section class="catalog container">
+        <h1 class="heading">Каркасные дома</h1>
+        <p class="text__subheading_emphasize">проекты</p>
+        <div class="catalog__tabs">
+          <ul class="catalog__tabs-list">
+            <li class="catalog__tabs-item">
+              <input type="radio" name="tabs" id="floors" checked />
+              <label
+                for="floors"
+                id="floors"
+                class="text__subheading_inactive catalog__tab"
+                >Этажность</label
+              >
+            </li>
+            <li class="catalog__tabs-item">
+              <input type="radio" name="tabs" id="size" />
+              <label
+                for="size"
+                id="size"
+                class="text__subheading_inactive catalog__tab"
+                >Размер</label
+              >
+            </li>
+            <li class="catalog__tabs-item">
+              <input type="radio" name="tabs" id="plan" />
+              <label
+                for="plan"
+                id="plan"
+                class="text__subheading_inactive catalog__tab"
+                >Планировка</label
+              >
+            </li>
+            <li class="catalog__tabs-item">
+              <input type="radio" name="tabs" id="constructive" />
+              <label
+                for="constructive"
+                id="constructive"
+                class="text__subheading_inactive catalog__tab"
+                >Конструктив</label
+              >
+            </li>
+            <li class="catalog__tabs-item">
+              <input type="radio" name="tabs" id="roof" />
+              <label
+                for="roof"
+                id="roof"
+                class="text__subheading_inactive catalog__tab"
+                >Тип крыши</label
+              >
+            </li>
+            <li class="catalog__tabs-item">
+              <input type="radio" name="tabs" id="style" />
+              <label
+                for="style"
+                id="style"
+                class="text__subheading_inactive catalog__tab"
+                >Стиль</label
+              >
+            </li>
+            <li class="catalog__tabs-item">
+              <input type="radio" name="tabs" id="features" />
+              <label
+                for="features"
+                id="features"
+                class="text__subheading_inactive catalog__tab"
+                >Особенности</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="catalog__links">
+          <ul
+            class="catalog__links-list catalog__links-list_visible"
+            id="floors"
+          >
+            <li class="catalog__links-item"><a href="#">Одноэтажные</a></li>
+            <li class="catalog__links-item">
+              <a href="#">Полутораэтажные</a>
+            </li>
+            <li class="catalog__links-item"><a href="#">Двухэтажные</a></li>
+          </ul>
+          <ul class="catalog__links-list" id="size">
+            <li class="catalog__links-item"><a href="#">6x6</a></li>
+            <li class="catalog__links-item"><a href="#">6x9</a></li>
+            <li class="catalog__links-item"><a href="#">6x10</a></li>
+            <li class="catalog__links-item"><a href="#">6x11</a></li>
+            <li class="catalog__links-item"><a href="#">6x14</a></li>
+            <li class="catalog__links-item"><a href="#">7x7</a></li>
+            <li class="catalog__links-item"><a href="#">7x8</a></li>
+            <li class="catalog__links-item"><a href="#">7x9</a></li>
+            <li class="catalog__links-item"><a href="#">7x10</a></li>
+            <li class="catalog__links-item"><a href="#">7x11</a></li>
+            <li class="catalog__links-item"><a href="#">7x12</a></li>
+            <li class="catalog__links-item"><a href="#">7x13</a></li>
+            <li class="catalog__links-item"><a href="#">8x8</a></li>
+            <li class="catalog__links-item"><a href="#">8x9</a></li>
+            <li class="catalog__links-item"><a href="#">8x10</a></li>
+            <li class="catalog__links-item"><a href="#">8x11</a></li>
+            <li class="catalog__links-item"><a href="#">8x12</a></li>
+            <li class="catalog__links-item"><a href="#">8x13</a></li>
+            <li class="catalog__links-item"><a href="#">8x14</a></li>
+            <li class="catalog__links-item"><a href="#">9x10</a></li>
+            <li class="catalog__links-item"><a href="#">9x11</a></li>
+            <li class="catalog__links-item"><a href="#">9x14</a></li>
+            <li class="catalog__links-item"><a href="#">10x10</a></li>
+            <li class="catalog__links-item"><a href="#">10x11</a></li>
+            <li class="catalog__links-item"><a href="#">10x12</a></li>
+            <li class="catalog__links-item"><a href="#">10x14</a></li>
+            <li class="catalog__links-item"><a href="#">10x18</a></li>
+            <li class="catalog__links-item"><a href="#">11x12</a></li>
+            <li class="catalog__links-item"><a href="#">11x13</a></li>
+            <li class="catalog__links-item"><a href="#">11x19</a></li>
+            <li class="catalog__links-item"><a href="#">12x12</a></li>
+            <li class="catalog__links-item"><a href="#">12x14</a></li>
+          </ul>
+          <ul class="catalog__links-list" id="plan">
+            <li class="catalog__links-item"><a href="#">2 спальни</a></li>
+            <li class="catalog__links-item"><a href="#">3 спальни</a></li>
+            <li class="catalog__links-item"><a href="#">4 спальни</a></li>
+            <li class="catalog__links-item"><a href="#">2 санузла</a></li>
+          </ul>
+          <ul class="catalog__links-list" id="constructive">
+            <li class="catalog__links-item"><a href="#">С террасовой</a></li>
+            <li class="catalog__links-item">
+              <a href="#">Со вторым светом</a>
+            </li>
+            <li class="catalog__links-item">
+              <a href="#">С панорамной крышей</a>
+            </li>
+            <li class="catalog__links-item"><a href="#">С мансардой</a></li>
+            <li class="catalog__links-item"><a href="#">С балконом</a></li>
+          </ul>
+          <ul class="catalog__links-list" id="roof">
+            <li class="catalog__links-item">
+              <a href="#">С вальмовой крышей</a>
+            </li>
+            <li class="catalog__links-item">
+              <a href="#">С двухскатной крышей</a>
+            </li>
+            <li class="catalog__links-item">
+              <a href="#">С ломаной крышей</a>
+            </li>
+            <li class="catalog__links-item">
+              <a href="#">С прямой крышей</a>
+            </li>
+          </ul>
+          <ul class="catalog__links-list" id="style">
+            <li class="catalog__links-item"><a href="#">Барнхаус</a></li>
+            <li class="catalog__links-item"><a href="#">Финские</a></li>
+            <li class="catalog__links-item">
+              <a href="#">В скандинавском стиле</a>
+            </li>
+            <li class="catalog__links-item"><a href="#">Современные</a></li>
+            <li class="catalog__links-item"><a href="#">Канадские</a></li>
+            <li class="catalog__links-item"><a href="#">Шале</a></li>
+            <li class="catalog__links-item"><a href="#">Хай-тек</a></li>
+            <li class="catalog__links-item"><a href="#">Американские</a></li>
+            <li class="catalog__links-item"><a href="#">В стиле лофт</a></li>
+          </ul>
+          <ul class="catalog__links-list" id="features">
+            <li class="catalog__links-item"><a href="#">Летние</a></li>
+            <li class="catalog__links-item"><a href="#">Зимние</a></li>
+            <li class="catalog__links-item"><a href="#">Дачные</a></li>
+            <li class="catalog__links-item"><a href="#">Гостевые</a></li>
+            <li class="catalog__links-item"><a href="#">Садовые</a></li>
+            <li class="catalog__links-item"><a href="#">Коттеджи</a></li>
+            <li class="catalog__links-item">
+              <a href="#">Каркасно-шитовые</a>
+            </li>
+            <li class="catalog__links-item">
+              <a href="#">Каркасно-панельные</a>
+            </li>
+            <li class="catalog__links-item"><a href="#">Под отделку</a></li>
+            <li class="catalog__links-item">
+              <a href="#">С коммуникациями</a>
+            </li>
+            <li class="catalog__links-item"><a href="#">На сваях</a></li>
+            <li class="catalog__links-item">
+              <a href="#">Для постоянного проживания</a>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog__wrapper">
+          <div class="filters">
+            <p class="filters__heading">Фильтры</p>
+            <button type="button" class="popup__toggle" id="filters-toogle">
+              <img src="./images/popup-toogle.svg" alt="" />
+            </button>
+
+            <div class="filters__range-wrapper">
+              <p class="text__subheading_active">Цена</p>
+              <div class="filters__input-wrapper">
+                <input type="text" id="input-select" />
+                <input type="text" id="input-number" step="100" />
+              </div>
+              <div id="html5" class="slider"></div>
+            </div>
+            <div class="filters__range-wrapper">
+              <p class="text__subheading_active">Площадь</p>
+              <div class="filters__input-wrapper">
+                <input type="text" id="input-select-square" />
+                <input type="text" id="input-number-square" step="100" />
+              </div>
+              <div id="html-5" class="slider"></div>
+            </div>
+            <div class="filters__accordion">
+              <ul class="filters__accordion-list">
+                <li class="accordion__item">
+                  <input type="checkbox" id="accordionCheckbox" />
+                  <i></i>
+                  <div class="accordion__wrapper">
+                    <p class="text__subheading_active">Размер</p>
+                  </div>
+                  <ul
+                    class="filters__accordion-text filters__button-checkbox-wrapper"
+                  >
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="6x6"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="6x6"
+                        >6x6</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="6x9"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="6x9"
+                        >6x9</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="6x10"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="6x10"
+                        >6x10</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="6x11"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="6x11"
+                        >6x11</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="6x14"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="6x14"
+                        >6x14</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="7x7"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="7x7"
+                        >7x7</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="7x8"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="7x8"
+                        >7x8</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="7x9"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="7x9"
+                        >7x9</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="7x10"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="7x10"
+                        >7x10</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="7x11"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="7x11"
+                        >7x11</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="7x12"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="7x12"
+                        >7x12</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="7x13"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="7x13"
+                        >7x13</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="8x8"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="8x8"
+                        >8x8</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="8x9"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="8x9"
+                        >8x9</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="8x10"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="8x10"
+                        >8x10</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="8x11"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="8x11"
+                        >8x11</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="8x12"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="8x12"
+                        >8x12</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="8x13"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="8x13"
+                        >8x13</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="8x14"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="8x14"
+                        >8x14</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="9x10"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="9x10"
+                        >9x10</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="9x11"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="9x11"
+                        >9x11</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="9x14"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="9x14"
+                        >9x14</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="10x10"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="10x10"
+                        >10x10</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="10x11"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="10x11"
+                        >10x11</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="10x12"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="10x12"
+                        >10x12</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="10x14"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="10x14"
+                        >10x14</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="10x18"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="10x18"
+                        >10x18</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="11x12"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="11x12"
+                        >11x12</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="11x13"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="11x13"
+                        >11x13</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="11x19"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="11x19"
+                        >11x19</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="12x12"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="12x12"
+                        >12x12</label
+                      >
+                    </li>
+                    <li class="text__main">
+                      <input
+                        type="checkbox"
+                        id="12x14"
+                        class="filters__button-checkbox"
+                      />
+                      <label class="filters__button-checkbox-label" for="12x14"
+                        >12x14</label
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="filters__accordion">
+              <ul class="filters__accordion-list">
+                <li class="accordion__item">
+                  <input type="checkbox" id="accordionCheckbox" />
+                  <i></i>
+                  <div class="accordion__wrapper">
+                    <p class="text__subheading_active">Количество спален</p>
+                  </div>
+                  <ul class="filters__accordion-text">
+                    <li class="text__subheading">
+                      <input
+                        type="checkbox"
+                        id="terrasa"
+                        class="form__checkbox"
+                      />
+                      <label class="filters__styled-checkbox" for="terrasa"
+                        >2</label
+                      >
+                    </li>
+                    <li class="text__subheading">
+                      <input
+                        type="checkbox"
+                        id="second-light"
+                        class="form__checkbox"
+                      />
+                      <label class="filters__styled-checkbox" for="second-light"
+                        >3</label
+                      >
+                    </li>
+                    <li class="text__subheading">
+                      <input
+                        type="checkbox"
+                        id="panorama"
+                        class="form__checkbox"
+                      />
+                      <label class="filters__styled-checkbox" for="panorama"
+                        >4</label
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="filters__accordion">
+              <ul class="filters__accordion-list">
+                <li class="accordion__item">
+                  <input type="checkbox" id="accordionCheckbox" />
+                  <i></i>
+                  <div class="accordion__wrapper">
+                    <p class="text__subheading_active">Количество санузлов</p>
+                  </div>
+                  <ul class="filters__accordion-text">
+                    <li class="text__subheading">
+                      <input
+                        type="checkbox"
+                        id="terrasa"
+                        class="form__checkbox"
+                      />
+                      <label class="filters__styled-checkbox" for="terrasa"
+                        >1</label
+                      >
+                    </li>
+                    <li class="text__subheading">
+                      <input
+                        type="checkbox"
+                        id="second-light"
+                        class="form__checkbox"
+                      />
+                      <label class="filters__styled-checkbox" for="second-light"
+                        >2</label
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <button type="submit" class="button" id="apply-filters">
+              Применить фильтры
+            </button>
+            <div>
+              <button type="button" class="button__reset-filters">
+                Сбросить фильтры
+              </button>
+            </div>
+          </div>
+          <div class="projects">
+            <button class="filters__button">
+              <img src="./images/filters-union.svg" alt="" />
+            </button>
+            <div class="sorting">
+              <p class="sorting__heading">Сортировать по:</p>
+              <input
+                class="sorting__accordion"
+                type="checkbox"
+                id="accordionSortingCheckbox"
+              />
+              <label
+                class="sorting__accordion-label"
+                for="accordionSortingCheckbox"
+              ></label>
+
+              <form class="sorting__form">
+                <div class="sorting__field">
+                  <input
+                    type="radio"
+                    class="sorting__input"
+                    id="price-asc"
+                    value="price-asc"
+                    name="sorting"
+                    checked
+                  />
+                  <label for="price-asc" class="sorting__label"
+                    >Цене
+                    <img
+                      class="sorting__icon"
+                      src="./images/sorting-icon-asc.svg"
+                      alt=""
+                  /></label>
+                </div>
+                <div class="sorting__field">
+                  <input
+                    type="radio"
+                    class="sorting__input"
+                    id="price-desc"
+                    value="price-desc"
+                    name="sorting"
+                  />
+                  <label for="price-desc" class="sorting__label"
+                    >Цене
+                    <img
+                      class="sorting__icon"
+                      src="./images/sorting-icon-desc.svg"
+                      alt=""
+                  /></label>
+                </div>
+                <div class="sorting__field">
+                  <input
+                    type="radio"
+                    class="sorting__input"
+                    id="square-asc"
+                    value="square-asc"
+                    name="sorting"
+                  />
+                  <label for="square-asc" class="sorting__label"
+                    >Площади
+                    <img
+                      class="sorting__icon"
+                      src="./images/sorting-icon-asc.svg"
+                      alt=""
+                  /></label>
+                </div>
+                <div class="sorting__field">
+                  <input
+                    type="radio"
+                    class="sorting__input"
+                    id="square-desc"
+                    value="square-desc"
+                    name="sorting"
+                  />
+                  <label for="square-desc" class="sorting__label"
+                    >Площади
+                    <img
+                      class="sorting__icon"
+                      src="./images/sorting-icon-desc.svg"
+                      alt=""
+                  /></label>
+                </div>
+                <div class="sorting__field">
+                  <input
+                    type="radio"
+                    class="sorting__input"
+                    id="popularity"
+                    value="popularity"
+                    name="sorting"
+                  />
+                  <label for="popularity" class="sorting__label"
+                    >Популярности</label
+                  >
+                </div>
+              </form>
+              <p class="sorting__found">Найдено товаров: 23</p>
+            </div>
+            <ul class="catalog__cards">
+              <li class="recommendation__item">
+                <img
+                  class="constructed__image"
+                  src="./images/catalog-image-1.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
+                </div>
+              </li>
+              <li class="recommendation__item">
+                <img
+                  class="constructed__image"
+                  src="./images/catalog-image-2.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
+                </div>
+              </li>
+              <li class="recommendation__item">
+                <img
+                  class="constructed__image"
+                  src="./images/catalog-image-3.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
+                </div>
+              </li>
+              <li class="recommendation__item">
+                <img
+                  class="constructed__image"
+                  src="./images/catalog-image-4.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
+                </div>
+              </li>
+              <li class="recommendation__item">
+                <img
+                  class="constructed__image"
+                  src="./images/catalog-image-5.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
+                </div>
+              </li>
+              <li class="recommendation__item">
+                <img
+                  class="constructed__image"
+                  src="./images/catalog-image-6.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
+                </div>
+              </li>
+            </ul>
+            <button class="button">Загрузить еще</button>
+          </div>
+        </div>
+      </section>
+      <!--рекомендация-->
+      <section class="recommendation container">
+        <h2 class="heading">рекомендуем</h2>
+        <div class="swiper recommendation__slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="recommendation__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-1.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="recommendation__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-2.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="recommendation__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-3.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="recommendation__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-4.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="recommendation__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-3.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="recommendation__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-4.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- navigation buttons -->
+          <div class="swiper-button-prev"><span>&larr;</span></div>
+          <div class="swiper-button-next"><span>&rarr;</span></div>
+        </div>
+      </section>
+      <!--Описание-->
+      <section class="description container">
+        <p class="text__heading_active">Каркасные дома под ключ</p>
+        <p class="text__subheading">
+          Каркасные дома становятся всё более популярными. Почему многие хотят
+          их купить? Они экономичны, экологичны, и строительство занимает
+          минимумвремени. Давайте рассмотрим преимущества:
+        </p>
+        <p class="text__subheading description__text">
+          Экологичность: используются натуральные материалы, такие как дерево,
+          что снижает воздействие на окружающую среду.
+        </p>
+        <p class="text__subheading description__text">
+          Скорость возведения: строятся быстрее, чем традиционные каменные дома,
+          что экономит время и деньги.
+        </p>
+        <p class="text__subheading description__text">
+          Фундамент: свайно-винтовой или опорно-столбчатый. Постройка лёгкая – в
+          дорогостоящем фундаменте нет необходимости.
+        </p>
+        <p class="text__subheading description__text">
+          Возведение каркаса из вертикальных и горизонтальных деревянных балок и
+          стоек для создания ячеек. Каркас крепкий: выдерживает сильные ветры.
+        </p>
+        <p class="text__subheading description__text">
+          Заполнение ячеек утеплителем, возведение стен, защита конструкции от
+          внешних воздействий, сооружение кровли. Здание тёплое и экологичное.
+        </p>
+        <p class="text__subheading description__text">
+          Внутренние и внешние отделочные работы начинаются сразу после
+          основных: дом не даёт усадку. Экономия времени.
+        </p>
+        <p class="text__heading_active">Проекты каркасных домов</p>
+        <p class="text__subheading">
+          Предлагаем выбор проектов каркасных домов различной площади и
+          этажности. Вы можете выбрать готовый проект или заказать
+          индивидуальный. Наши специалисты учтут все ваши пожелания.
+        </p>
+        <p class="text__heading_active">Строительство каркасных домов</p>
+        <p class="text__subheading">
+          Стоимость каркасного дома зависит от многих факторов, таких как
+          площадь, количество этажей, используемых материалов и технологий.
+          Однако наша компания стремится предложить доступные цены и выгодные
+          условия сотрудничества для клиентов. Подберём дом, в котором вы
+          захотите жить, недорого.
+        </p>
+        <p class="text__subheading">
+          Каркасные дома — это отличный вариант для тех, кто хочет построить
+          свой дом быстро, экономично и с учётом всех современных требований к
+          комфорту и экологичности жилья.
+        </p>
+      </section>
+
+      <!--построенные дома-->
+      <section class="constructed container">
+        <h2 class="heading">построенные дома</h2>
+        <p class="text__subheading_emphasize">рекомендуем посмотреть</p>
+        <div class="swiper sample-slider">
+          <!-- Additional required wrapper -->
+          <div class="constructed swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="constructed__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-1.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main_inactive">2023</p>
+                <div class="constructed__item-wrapper">
+                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                  <a class="button constructed__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="constructed__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-2.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main_inactive">2023</p>
+                <div class="constructed__item-wrapper">
+                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                  <a class="button constructed__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="constructed__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-3.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main_inactive">2023</p>
+                <div class="constructed__item-wrapper">
+                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                  <a class="button constructed__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="constructed__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-4.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main_inactive">2023</p>
+                <div class="constructed__item-wrapper">
+                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                  <a class="button constructed__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="constructed__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-3.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main_inactive">2023</p>
+                <div class="constructed__item-wrapper">
+                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                  <a class="button constructed__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="constructed__item">
+                <img
+                  class="constructed__image"
+                  src="./images/constructed-4.png"
+                  alt="каркасный дом"
+                />
+                <p class="text__subheading">Каркасный дом</p>
+                <p class="text__main_inactive">2023</p>
+                <div class="constructed__item-wrapper">
+                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                  <a class="button constructed__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- navigation buttons -->
+          <div class="swiper-button-prev"><span>&larr;</span></div>
+          <div class="swiper-button-next"><span>&rarr;</span></div>
+        </div>
+      </section>
+
+      <!--Видеообзоры-->
+      <section class="videoreviews container">
+        <p class="heading">
+          Видеообзоры <span class="heading__text">построенных&nbsp;домов</span>
+        </p>
+        <div class="blog__data">
+          <div class="blog__data-item">
+            <p class="text__subheading">Каркасный дом в д. Александровке</p>
+            <a
+              class="blog__link"
+              href="https://www.youtube.com/watch?v=hCNOW2lGmkA"
+              data-fancybox
+            >
+              <img
+                src="./images/video-preview-1.png"
+                alt="превью видеофайла"
+                class="blog__preview"
+              />
+            </a>
+            <p class="text__main_inactive">от 15.02.2023</p>
+          </div>
+          <div class="blog__data-item">
+            <p class="text__subheading">Каркасный дом в д. Александровке</p>
+            <a
+              class="blog__link"
+              href="https://www.youtube.com/watch?v=hCNOW2lGmkA"
+              data-fancybox
+            >
+              <img
+                src="./images/video-preview-2.png"
+                alt="превью видеофайла"
+                class="blog__preview"
+              />
+            </a>
+            <p class="text__main_inactive">от 24.01.2024</p>
+          </div>
+          <div class="blog__data-item">
+            <p class="text__subheading">Каркасный дом в д. Александровке</p>
+            <a
+              class="blog__link"
+              href="https://www.youtube.com/watch?v=hCNOW2lGmkA"
+              data-fancybox
+            >
+              <img
+                src="./images/video-preview-3.png"
+                alt="превью видеофайла"
+                class="blog__preview"
+              />
+            </a>
+            <p class="text__main_inactive">от 24.01.2024</p>
+          </div>
+        </div>
+        <div class="videoreviews__button">
+          <a href="https://www.youtube.com/watch?v=hCNOW2lGmkA" class="button"
+            >Посмотреть все видеообзоры</a
+          >
+        </div>
+      </section>
+      <!--Виды работ-->
+      <section class="types container">
+        <h2 class="heading types__heading">
+          Строительство каркасного&nbsp;<span class="heading__text">дома</span>
+        </h2>
+        <p class="text__subheading_emphasize">под ключ</p>
+        <ul class="types__list">
+          <li class="types__item">
+            <img class="types__image" src="./images/types-icon-1.svg" alt="" />
+            <p class="text__subheading">Фундаменты</p>
+            <p class="text__main_inactive">
+              Строительство фундаментов под ключ
+            </p>
+            <p class="text__main_inactive">
+              Строительство фундаментов под ключ
+            </p>
+            <p class="text__main_inactive">
+              Строительство фундаментов под ключ
+            </p>
+            <p class="text__main_inactive">
+              Строительство фундаментов под ключ
+            </p>
+            <p class="text__main_inactive">
+              Строительство фундаментов под ключ
+            </p>
+          </li>
+          <li class="types__item">
+            <img class="types__image" src="./images/types-icon-2.svg" alt="" />
+            <p class="text__subheading">Строительство каркасного дома</p>
+            <p class="text__main_inactive">
+              Строительство каркаса дома из калиброванного пиломатериала
+              камерной сушки.
+            </p>
+          </li>
+          <li class="types__item">
+            <img class="types__image" src="./images/types-icon-3.svg" alt="" />
+            <p class="text__subheading">Внешняя и внутренняя отделка</p>
+            <p class="text__main_inactive">
+              Отделка дома материалами по выбору заказчика
+            </p>
+          </li>
+          <li class="types__item">
+            <img class="types__image" src="./images/types-icon-4.svg" alt="" />
+            <p class="text__subheading">Инженерные коммуникации</p>
+            <p class="text__main_inactive">Водоснабжение и водоотведение</p>
+            <p class="text__main_inactive">
+              Монтаж систем отопления и вентиляции
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!--консультация-->
+      <section class="consult container">
+        <p class="heading consult__heading">
+          получить <span class="heading__text">консультацию</span>
+        </p>
+        <div class="consult__wrapper">
+          <form class="form consult__form">
+            <p class="text__subheading">
+              Оставьте заявку и менеджер свяжется с вами в ближайшее время
+            </p>
+            <label class="form__label text__main" for="name">Имя</label>
+            <input class="form__input" id="name" placeholder="Иван" />
+            <label class="form__label" for="tel">Телефон</label>
+            <input
+              class="form__input"
+              id="tel"
+              placeholder="+7(000)000-00-00"
+            />
+            <div class="form__checkbox-field">
+              <input
+                type="checkbox"
+                id="checkbox"
+                class="form__checkbox"
+                checked
+              />
+              <label for="checkbox" class="form__label form__label_checkbox">
+                <div>
+                  <span class="text__small_inactive">Вы даёте согласие на</span>
+                  <a href="#" class="text__small_inactive"
+                    >обработку персональных данных</a
+                  >
+                </div></label
+              >
+            </div>
+            <button type="submit" class="button">Получить консультацию</button>
+          </form>
+          <div class="consult__image-container">
+            <img
+              class="consult__image"
+              src="./images/consult-image.png"
+              alt="большой дом"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--футтер-->
+    <footer class="footer">
+      <div class="footer__wrapper footer__container">
+        <div class="footer__wrapper-2">
+          <img
+            class="footer__logo"
+            src="./images/logo-footer.png"
+            alt="логотип"
+          />
+          <div class="footer__column">
+            <p class="text__subheading">Строительство каркасных&nbsp;домов</p>
+            <div class="footer__social">
+              <p class="text__main">Мы в социальных сетях</p>
+              <a href="https://vk.com/dostup_stroi"
+                ><img src="./images/social-vk.svg" alt="значок вк"
+              /></a>
+              <a href="https://ok.ru/group/56738929705017"
+                ><img
+                  src="./images/social-odnoklasniki.svg"
+                  alt="значок оноклассников"
+              /></a>
+              <a href="https://t.me/dostupstroi"
+                ><img src="./images/social-telegram.svg" alt="значок телеграмм"
+              /></a>
+              <a href="https://www.youtube.com/@dostup-stroi"
+                ><img src="./images/social-youtube.svg" alt="значок youtube"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <ul class="accordion__list">
+          <li class="accordion__item">
+            <input type="checkbox" id="accordionCheckbox" />
+            <i></i>
+            <div class="accordion__wrapper">
+              <p class="accordion__subheading">Каталог</p>
+            </div>
+            <ul class="accordion__text">
+              <li class="text__main"><a href="#">Каркасные дома</a></li>
+              <li class="text__main"><a href="#">Дачные дома</a></li>
+              <li class="text__main"><a href="#">Финские дома</a></li>
+              <li class="text__main"><a href="#">Канадские дома</a></li>
+              <li class="text__main"><a href="#">Дома в стиле Шале</a></li>
+              <li class="text__main"><a href="#">Дома в стиле Хай-тек</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="accordion__list">
+          <li class="accordion__item">
+            <input type="checkbox" id="accordionCheckbox" />
+            <i></i>
+            <div class="accordion__wrapper">
+              <p class="accordion__subheading">Клиентам</p>
+            </div>
+            <ul class="accordion__text">
+              <li class="text__main"><a href="#">О компании</a></li>
+              <li class="text__main"><a href="#">Наша команда</a></li>
+              <li class="text__main"><a href="#">Построенные объекты</a></li>
+              <li class="text__main"><a href="#">Видеоблог</a></li>
+              <li class="text__main"><a href="#">Статьи</a></li>
+              <li class="text__main"><a href="#">Контакты</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="footer__column">
+          <p class="text__subheading">Обратная связь</p>
+          <p class="text__subheading">
+            г. Коломна, площадь Советская, д.8, ТЦ&nbsp;«Глобус», 3 этаж
+          </p>
+          <a href="tel:+74994900050" class="footer__tel-link"
+            >+7 (499) 490-00-50</a
+          >
+          <a href="tel:+79296100020" class="footer__tel-link"
+            >+7 (929) 610-00-20</a
+          >
+          <p class="text__small">пн-пт: с 10.00 до 18.00</p>
+          <p class="text__small">сб: с 10.00 до 15.00</p>
+          <a
+            href="mailto:dostup-stroi@mail.ru"
+            class="text__main footer__email-link"
+            >dostup-stroi@mail.ru</a
+          >
+          <button class="button button__request-call">Заказать звонок</button>
+        </div>
+      </div>
+      <p class="text__small footer__container">
+        © 2010—2024. Все права защищены.<a
+          class="text__small footer__politic"
+          href="#"
+          >Политика конфиденциальности</a
+        >
+      </p>
+    </footer>
+    <div class="fixed-messengers">
+      <ul class="fixed-messengers__list">
+        <li class="fixed-messengers__item">
+          <a
+            target="blank"
+            href="https://t.me/dostupstroi"
+            class="fixed-messengers__link"
+            ><img src="./images/fixed-mesengers-wp.svg" alt="whatsup"
+          /></a>
+        </li>
+        <li class="fixed-messengers__item">
+          <a
+            target="blank"
+            href="https://t.me/dostupstroi"
+            class="fixed-messengers__link"
+            ><img src="./images/fixed-mesengers-tg.svg" alt="telegramm"
+          /></a>
+        </li>
+        <li class="fixed-messengers__item">
+          <a
+            target="blank"
+            href="https://vk.com/dostup_stroi"
+            class="fixed-messengers__link"
+            ><img src="./images/fixed-mesengers-vk.svg" alt="vk"
+          /></a>
+        </li>
+      </ul>
+    </div>
+    <div class="popup" id="popup-form">
+      <div class="popup__container">
+        <button type="button" class="popup__toggle">
+          <img src="./images/popup-toogle.svg" alt="" />
+        </button>
+        <img
+          class="popup__image"
+          src="./images/popup-image-1.png"
+          alt="картинка с домом"
+          id="call"
+        />
+        <img
+          class="popup__image"
+          src="./images/popup-image-2.png"
+          alt="картинка с домом"
+          id="excursion"
+        />
+
+        <form class="form form__popup" name="popup-form">
+          <p class="text__heading_active">Получить консультацию</p>
+          <p class="text__subheading">
+            Оставьте заявку и менеджер свяжется с вами в ближайшее время
+          </p>
+          <label class="form__label text__main" for="name">Имя</label>
+          <input class="form__input" id="name" placeholder="Иван" />
+          <label class="form__label" for="tel">Телефон</label>
+          <input class="form__input" id="tel" placeholder="+7(000)000-00-00" />
+          <div class="form__checkbox-field">
+            <input
+              type="checkbox"
+              id="checkbox"
+              class="form__checkbox"
+              checked
+            />
+            <label for="checkbox" class="form__label form__label_checkbox">
+              <div>
+                <span class="text__small_inactive">Вы даёте согласие на</span>
+                <a href="#" class="text__small_inactive"
+                  >обработку персональных данных</a
+                >
+              </div></label
+            >
+          </div>
+          <button
+            type="submit"
+            class="button"
+            name="popup-send-form"
+            id="popup-send-form"
+          >
+            Получить консультацию
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="popup" id="popup-ok">
+      <div class="popup__container">
+        <button type="button" class="popup__toggle">
+          <img src="./images/popup-toogle.svg" alt="" />
+        </button>
+        <img
+          class="popup__image"
+          src="./images/popup-image-1.png"
+          alt="картинка с домом"
+          id="call"
+        />
+        <img
+          class="popup__image"
+          src="./images/popup-image-2.png"
+          alt="картинка с домом"
+          id="excursion"
+        />
+        <div class="popup__column">
+          <img src="./images/popup-success.svg" alt="значок успеха" />
+          <p class="text__heading_active">
+            Ваша заявка успешно&nbsp;отправлена
+          </p>
+          <p class="text__main">Мы свяжемся с вами в ближайшее время.</p>
+          <button type="button" class="button" id="button-ok">Отлично</button>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/tabs.js"></script>
+    <script src="./scripts/dropdown.js"></script>
+    <script src="./scripts/filters.js"></script>
+    <script src="./scripts/popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/nouislider.js"></script>
+    <script>
+      var html5Slider = document.getElementById("html5");
+
+      noUiSlider.create(html5Slider, {
+        start: [75000, 12000000],
+        connect: true,
+        range: {
+          min: 75000,
+          max: 12000000,
+        },
+        step: 1,
+      });
+      var select = document.getElementById("input-select");
+      var inputNumber = document.getElementById("input-number");
+
+      html5Slider.noUiSlider.on("update", function (values, handle) {
+        var value = values[handle];
+
+        if (handle) {
+          inputNumber.value = Math.round(value);
+        } else {
+          select.value = Math.round(value);
+        }
+      });
+
+      select.addEventListener("change", function () {
+        html5Slider.noUiSlider.set([this.value, null]);
+      });
+
+      inputNumber.addEventListener("change", function () {
+        html5Slider.noUiSlider.set([null, this.value]);
+      });
+    </script>
+    <!--Скрипт для слайдера площадь дома-->
+    <script>
+      var squareSlider = document.getElementById("html-5");
+
+      noUiSlider.create(squareSlider, {
+        start: [50, 300],
+        connect: true,
+        range: {
+          min: 25,
+          max: 300,
+        },
+        step: 1,
+      });
+      var selectSquare = document.getElementById("input-select-square");
+      var inputNumberSquare = document.getElementById("input-number-square");
+
+      squareSlider.noUiSlider.on("update", function (values, handle) {
+        var value = values[handle];
+
+        if (handle) {
+          inputNumberSquare.value = Math.round(value);
+        } else {
+          selectSquare.value = Math.round(value);
+        }
+      });
+
+      selectSquare.addEventListener("change", function () {
+        squareSlider.noUiSlider.set([this.value, null]);
+      });
+
+      inputNumberSquare.addEventListener("change", function () {
+        squareSlider.noUiSlider.set([null, this.value]);
+      });
+    </script>
+    <script>
+      const swiper1 = new Swiper(".sample-slider", {
+        direction: "horizontal",
+        spaceBetween: 31,
+        loop: false,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          375: {
+            slidesPerView: 1.5,
+          },
+          475: {
+            slidesPerView: 2.5,
+          },
+          625: {
+            slidesPerView: 3,
+          },
+          1000: {
+            slidesPerView: 3.5,
+          },
+          1190: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    </script>
+    <script>
+      const swiper2 = new Swiper(".recommendation__slider", {
+        direction: "horizontal",
+        spaceBetween: 31,
+        loop: false,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          375: {
+            slidesPerView: 1.5,
+          },
+          625: {
+            slidesPerView: 2.5,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1190: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

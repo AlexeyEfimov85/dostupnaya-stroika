@@ -1,0 +1,10 @@
+.catalog__links {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.catalog__links::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}

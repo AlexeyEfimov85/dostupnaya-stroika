@@ -3,6 +3,7 @@
     padding: 8px 8px 16px;
     width: 100%;
     box-sizing: border-box;
+    display: block;
 }
 
 .constructed__item .text__main_inactive {

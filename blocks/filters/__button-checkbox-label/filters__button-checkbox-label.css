@@ -1,0 +1,13 @@
+
+.filters__button-checkbox-label {
+    position: relative;
+    background-color:  #F5F5F5;
+    cursor: pointer;
+    padding: 6px 12px;
+    display: inline-block;
+}
+
+.filters__button-checkbox:checked + .filters__button-checkbox-label{
+    background-color:  #FFF5E6;
+    border-radius: 4px;
+}

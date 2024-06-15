@@ -6,3 +6,7 @@
     display: inline-block;
     margin-top: 8px;
 }
+
+.dropdown-menu__link:hover {
+    font-weight: 700;
+}

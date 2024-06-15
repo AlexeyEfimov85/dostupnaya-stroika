@@ -15,15 +15,28 @@
     background-color: #f5f5f5;
 }
 
-.services__item:nth-of-type(2),
-.services__item:nth-of-type(5) {
+.services__item:nth-of-type(2) {
     margin-top: 49px;
+}
+
+.services__item:nth-of-type(5) {
+    margin-top: 32px;
+}
+
+.services__item:nth-of-type(4), .services__item:nth-of-type(6) {
+    margin-top: -17px;
 }
 
 @media screen and (max-width: 1179px) {
     .services__item {
         padding: 32px 16px 38px 16px;
         gap: 28px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .services__item:nth-of-type(2), .services__item:nth-of-type(4), .services__item:nth-of-type(6) {
+        margin-top: 40px;
     }
 }
 

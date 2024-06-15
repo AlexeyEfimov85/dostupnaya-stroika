@@ -4,3 +4,9 @@
     line-height: 20px;
     margin: 0 0 8px 0;
 }
+
+@media screen and (max-width: 625px) {
+    .dropdown-about__subheader {
+        margin: 0 0 22px 0;
+    }
+}

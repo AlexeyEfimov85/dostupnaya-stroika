@@ -2,3 +2,16 @@
     display: flex;
     flex-direction: column;
 }
+
+.gallery__item-link:hover {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery__item-link:hover .gallery__item-heading{
+    background-color: #FF9900;
+}
+
+.gallery__item-link:hover .gallery__image{
+    width: 100%;
+}

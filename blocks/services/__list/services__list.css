@@ -3,20 +3,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    gap: 32px;
+    column-gap: 32px;
     padding-bottom: 49px;
 }
 
 @media screen and (max-width: 1179px) {
     .services__list {
-        gap: 24px;
+        column-gap: 24px;
     }
 }
 
 @media screen and (max-width: 1050px) {
     .services__list {
         grid-template-columns: 1fr 1fr;
-        gap: 24px;
+        column-gap: 24px;
     }
 }
 

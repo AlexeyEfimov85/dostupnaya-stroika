@@ -1,7 +1,14 @@
+.footer__email-link {
+    display: block;
+    margin: 0 0 26px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
 @media screen and (max-width: 624px) {
     .footer__email-link {
         display: block;
         margin: 8px 0 24px;
-    } 
+    }
 }
-
