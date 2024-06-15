@@ -12,3 +12,11 @@
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 625px) {
+    .types__list {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+}

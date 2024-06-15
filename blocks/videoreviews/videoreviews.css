@@ -2,3 +2,10 @@
     width: 600px;
     text-align: center;
 }
+
+@media screen and (max-width: 625px) {
+    .videoreviews .heading {
+        width: 100%;
+        text-align: left;
+    }
+}

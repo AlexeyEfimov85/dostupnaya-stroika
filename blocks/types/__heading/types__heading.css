@@ -2,3 +2,10 @@
     max-width: 551px;
     text-align: right;
 }
+
+@media screen and (max-width: 625px) {
+    .types__heading {
+        max-width: 100%;
+        text-align: left;
+    }
+}

@@ -101,4 +101,14 @@
         top:   24px;
         right: 10px;
       }
+
+      .navigation__item:nth-child(3):hover {
+        font-weight: 400;
+        border-bottom: none;
+        padding-right: 13px;
+        padding-bottom: 13px;
+        position: relative;
+        top: 0;
+        box-shadow: none;
+    }
 }

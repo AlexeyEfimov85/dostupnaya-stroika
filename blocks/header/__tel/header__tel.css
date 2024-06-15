@@ -7,18 +7,23 @@
     text-align: end;
     grid-column-start: 1;
     grid-column-end: 3;
-    padding-right: 15px;
+    padding-right: 0;
 }
 
 .header__tel > img {
     display: none;
 }
 
+@media screen and (max-width: 1050px) {
+    .header__tel {
+        padding-right: 0;
+    }
+}
+
 @media screen and (max-width: 950px) {
     .header__tel {
         font-size: 16px;
         line-height: 20px;
-        padding-right: 0;
     }
 }
 

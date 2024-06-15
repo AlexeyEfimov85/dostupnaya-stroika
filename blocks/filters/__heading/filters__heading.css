@@ -4,3 +4,10 @@ font-weight: 700;
 line-height: 24px;
 margin: 32px 0;
 }
+
+@media screen and (max-width: 625px) {
+    .filters__heading {
+        margin: 25px auto 13px;
+        text-align: center;
+        }
+}

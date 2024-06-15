@@ -40,7 +40,9 @@
 @import url("../blocks/sorting/__form/sorting__form.css");
 @import url("../blocks/sorting/__accordion/sorting__accordion.css");
 @import url("../blocks/projects/projects.css");
+@import url("../blocks/projects/__button/projects__button.css");
 @import url("../blocks/sorting/__found/sorting__found.css");
 @import url("../blocks/filters/__button/filters__button.css");
+@import url("../blocks/button/__apply-filters/button__apply-filters.css");
 @import url("../blocks/filters/__heading/filters__heading.css");
 @import url("../blocks/filters/_opened/filters_opened.css");
