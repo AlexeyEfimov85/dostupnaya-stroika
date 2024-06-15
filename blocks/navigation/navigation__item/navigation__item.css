@@ -62,6 +62,11 @@
 }
 
 @media screen and (max-width: 624px) {
+    .navigation__item {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
     .navigation__item:nth-child(1) {
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
         padding-left: 8px;
@@ -111,4 +116,5 @@
         top: 0;
         box-shadow: none;
     }
+    
 }

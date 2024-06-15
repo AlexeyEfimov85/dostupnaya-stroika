@@ -26,4 +26,8 @@
         box-sizing: border-box;
         padding: 24px 16px;
     }
+
+    .dropdown-menu__wrapper .dropdown-menu__container {
+        width: 100%;
+    }
 }

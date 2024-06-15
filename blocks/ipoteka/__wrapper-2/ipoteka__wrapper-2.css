@@ -8,7 +8,10 @@
     }
 }
 
-.ipoteka__wrapper-2 .text__main_inactive,
-.text__heading_active {
+.ipoteka__wrapper-2 .text__main_inactive {
+    padding-left: 10px;
+}
+
+.ipoteka__wrapper-2 .text__heading_active {
     padding-left: 10px;
 }

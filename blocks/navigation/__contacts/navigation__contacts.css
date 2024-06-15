@@ -4,8 +4,18 @@
 
 @media screen and (max-width: 624px) {
     .navigation__contacts {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
         padding: 16px 15px;
         background-color: #F5F5F5;
     } 
+
+    .navigation__contacts .footer__column .text__heading_active {
+        margin: 8px 0;
+    }
+
+    .navigation__contacts .footer__column .text__small {
+        margin: 0 0 4px 0;
+    }
 }

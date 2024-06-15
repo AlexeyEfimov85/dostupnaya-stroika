@@ -1,6 +1,6 @@
 .header__contacts {
     display: grid;
-    grid-template-columns: 145px 135px;
+    grid-template-columns: 145px 120px;
     margin-right: 51px;
     text-align: end;
 }

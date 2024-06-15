@@ -6,6 +6,10 @@
     display: block;
 }
 
+.constructed__item:hover {
+    border: 1px solid #FF9900;
+}
+
 .constructed__item .text__main_inactive {
     margin: 4px 0 12px 0;
 }

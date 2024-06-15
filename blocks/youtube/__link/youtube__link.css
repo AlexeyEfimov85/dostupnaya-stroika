@@ -21,6 +21,7 @@
 
 .youtube__link .text__main {
     font-size: 12px;
+    margin-top: 5px;
 }
 
 @media screen and (max-width: 768px) {

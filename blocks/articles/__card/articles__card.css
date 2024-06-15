@@ -1,4 +1,10 @@
 .articles__card {
     position: relative;
     max-width:  272px;
+    box-shadow: inset 15em 20em rgba(255, 255, 255, 0.5), 0 -15px 15px rgba(255, 255, 255, 0.5);
+
+}
+
+.articles__card:hover .articles__card-text {
+    box-shadow: inset 5em 10em rgba(255, 255, 255, 0.5), 0 -95px 15px rgba(255, 255, 255, 0.5);
 }
