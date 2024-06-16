@@ -19,6 +19,7 @@
     .header__tel {
         padding-right: 0;
         padding-left: 0;
+        text-align: end;
     }
 }
 

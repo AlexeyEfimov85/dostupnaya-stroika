@@ -1,6 +1,6 @@
 .lead {
     display: flex;
-    padding: 24px 0 0 0;
+    padding: 24px 0 0 5px;
     gap: 105px;
     justify-content: space-between;
 }
@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 768px) {
     .lead {
-        padding: 20px 0 0 0;
+        padding: 20px 0 0 5px;
     }
 }
 
