@@ -3,6 +3,13 @@
     text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+    .videoreviews .heading {
+        width: 50%;
+        text-align: left;
+    }
+}
+
 @media screen and (max-width: 625px) {
     .videoreviews .heading {
         width: 100%;

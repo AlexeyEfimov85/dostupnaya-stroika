@@ -49,13 +49,14 @@
     content: "";
     display: block;
     position: absolute;
+    box-sizing: border-box;
     height: 12px;
     width: 12px;
     border-radius: 50%;
     background: #ff9900;
     border: 2px solid #ffffff;
-    left: 4.75px;
-    top: 4.75px;
+    left: 6px;
+    top: 6px;
 }
 
 .noUi-handle-upper {

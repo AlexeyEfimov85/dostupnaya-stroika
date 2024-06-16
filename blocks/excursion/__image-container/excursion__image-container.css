@@ -16,6 +16,6 @@
 
 @media screen and (max-width: 625px) {
     .excursion__image-container {
-        height: calc(100vw * 0.545);
+        height: calc(100vw * 0.70);
     }
 }

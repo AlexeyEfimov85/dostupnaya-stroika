@@ -4,7 +4,7 @@
 .filters__accordion-list {
     list-style: none;
     padding: 0;
-    margin: 12px 0 0 0;
+    margin: 16px 0 0 0;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -74,7 +74,7 @@
 }
 
 .filters__accordion-list li input[type="checkbox"]:checked ~ .filters__accordion-text {
-    margin-top: 0;
+    margin-top: 16px;
     margin-bottom: 0;
     max-height: 800px;
     opacity: 1;

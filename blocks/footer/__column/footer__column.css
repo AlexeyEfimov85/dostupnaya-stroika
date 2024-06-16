@@ -11,8 +11,11 @@
     max-width: 220px;
 }
 
+.footer__column:nth-of-type(2) .text__subheading{
+    margin-bottom: 16px;
+}
 
-.footer__column:nth-of-type(2) .text__subheading {
+.footer__column:nth-of-type(2) .text__main {
     margin-bottom: 16px;
 }
 
