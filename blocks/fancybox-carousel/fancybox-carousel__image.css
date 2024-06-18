@@ -1,6 +1,6 @@
 .fancybox-carousel__image {
     width: 674px;
-    height: auto;
+    height: 100%;
     max-width: 100%;
 }
 #myCarousel {
@@ -12,6 +12,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 1050px) {
+    #myCarousel .f-carousel__slide {
+        justify-content: flex-start;
+    } 
 }
 
 .f-thumbs.is-vertical {

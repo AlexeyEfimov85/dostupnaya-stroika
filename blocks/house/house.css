@@ -3,7 +3,7 @@
     margin: 28px auto 120px;
     position: relative;
     display: grid;
-    grid-template-columns: 775px 405px;
+    grid-template-columns: 66fr 34fr;
     column-gap: 32px;
 }
 
