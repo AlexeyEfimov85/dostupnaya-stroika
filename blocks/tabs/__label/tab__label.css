@@ -1,0 +1,26 @@
+.tab__label {
+    padding: 8px 10px;
+    text-align: center;
+    display: inline-block;
+    background-color: #f5f5f5;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1050px) {
+    .tab__label {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .tab__label {
+        width: auto;
+    }
+}

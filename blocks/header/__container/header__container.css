@@ -1,6 +1,6 @@
 .header__container {
     max-width: 1180px;
-    margin: 0 auto;
+    margin: 0 auto 12px;
     position: relative;
 }
 
@@ -19,5 +19,6 @@
 @media screen and (max-width: 624px) {
     .header__container {
         max-width: 92vw;
+        margin: 0 auto 0;
     }
 }

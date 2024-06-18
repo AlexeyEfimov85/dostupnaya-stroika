@@ -1,0 +1,12 @@
+.house__ipoteka-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 12px 0 20px;
+}
+
+.house__ipoteka-text > span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}

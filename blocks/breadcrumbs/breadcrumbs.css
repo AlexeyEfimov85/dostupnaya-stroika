@@ -1,0 +1,31 @@
+.breadcrumbs {
+    padding: 24px 0 0 0;
+    max-width: 1180px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1179px) {
+    .breadcrumbs {
+        max-width: 98vw;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .breadcrumbs {
+        max-width: 702px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .breadcrumbs {
+        max-width: 98vw;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .breadcrumbs {
+        max-width: 92vw;
+    }
+}

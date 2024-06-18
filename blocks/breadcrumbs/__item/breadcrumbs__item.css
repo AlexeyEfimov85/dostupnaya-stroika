@@ -1,0 +1,40 @@
+.breadcrumbs__item {
+    display: flex;
+    min-width: max-content;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15.6px;
+    color: #000013;
+
+}
+
+.breadcrumbs__item:not(:last-child) {
+    position: relative;
+    padding-right: 16px;
+}
+
+.breadcrumbs__item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 1px;
+    height: 14px;
+    background-color: #565B62;
+    transform: rotate(15deg);
+}
+
+@media screen and (max-width: 768px) {
+    .breadcrumbs__item {
+        color: #000013;
+    }
+}
+
+.breadcrumbs__item:nth-last-of-type(1) {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: 20px;
+    min-width: unset;
+    display: block;
+}

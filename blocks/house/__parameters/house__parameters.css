@@ -1,0 +1,24 @@
+.house__parameters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 24px 0 0 0;
+}
+
+@media screen and (max-width: 1050px) {
+    .house__parameters {
+        grid-template-rows: 76px 86px 76px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .house__parameters {
+        grid-template-rows: 56px 76px 56px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .house__parameters {
+        margin: 24px 0 0 0;
+    }
+}

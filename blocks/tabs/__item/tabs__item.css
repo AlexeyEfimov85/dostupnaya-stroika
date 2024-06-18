@@ -1,0 +1,20 @@
+.tabs__item input[type="radio"] {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.tabs__item input[type="radio"]:checked ~.tab__label{
+    background-color: #ff9900;
+    font-weight: 700;
+}
+
+.tabs__item {
+    width: 33%;
+}
+
+@media screen and (max-width: 625px) {
+    .tabs__item {
+        width: 100%;
+    }
+}

@@ -13,6 +13,11 @@
 @import url("../blocks/text/__subheading/_inactive/text__subheading_inactive.css");
 @import url("../blocks/heading/heading.css");
 @import url("../blocks/heading/__text/heading__text.css");
+@import url("../blocks/breadcrumbs/breadcrumbs.css");
+@import url("../blocks/breadcrumbs/__container/breadcrumbs__container.css");
+@import url("../blocks/breadcrumbs/__item/breadcrumbs__item.css");
+@import url("../blocks/breadcrumbs/__link/breadcrumbs-link.css");
+@import url("../blocks/breadcrumbs/__list/breadcrumbs__list.css");
 @import url("../blocks/logo.css");
 @import url("../blocks/container.css");
 @import url("../blocks/header/header.css");

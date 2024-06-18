@@ -17,6 +17,12 @@
     }
 }
 
+@media screen and (max-width: 710px) {
+    .container {
+        max-width: 98vw;
+    }
+}
+
 @media screen and (max-width: 624px) {
     .container {
         max-width: 92vw;

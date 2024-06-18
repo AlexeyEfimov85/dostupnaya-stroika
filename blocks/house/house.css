@@ -1,0 +1,46 @@
+.house {
+    max-width: 1180px;
+    margin: 28px auto 120px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 775px 405px;
+    column-gap: 32px;
+}
+
+@media screen and (max-width: 1179px) {
+    .house {
+        max-width: 98vw;
+        margin: 28px auto 100px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .house {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .house {
+        max-width: 702px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .house {
+        max-width: 98vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .house {
+        max-width: 85vw;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .house {
+        max-width: 92vw;
+        margin: 28px auto 80px;
+    }
+}

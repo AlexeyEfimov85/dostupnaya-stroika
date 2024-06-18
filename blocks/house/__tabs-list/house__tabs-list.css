@@ -1,0 +1,6 @@
+.house__tabs-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 12px 0 24px;
+}

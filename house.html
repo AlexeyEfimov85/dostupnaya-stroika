@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Доступная стройка</title>
-    <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -17,6 +21,7 @@
 
   <body class="root">
     <header class="header">
+      <div class="main__dropdown-bcgr"></div>
       <div class="header__container header__wrapper">
         <div class="header__wrapper_content">
           <div class="header__nav-burger">
@@ -27,8 +32,9 @@
               <span class="line line3"></span>
             </div>
           </div>
-          <img class="logo" src="./images/logo.png" />
-          <p class="header__text">Строительство каркасных&nbsp;домов</p>
+          <a href="./index.html">
+            <img class="logo" src="./images/logo.png" />
+          </a>
         </div>
         <div class="header__wrapper_content">
           <div class="header__contacts">
@@ -79,17 +85,21 @@
             </div>
             <div class="footer__column">
               <p class="text__main">
-                г. Коломна, площадь Советская, д.8, ТЦ&nbsp;«Глобус», 3 этаж
+                г. Коломна, площадь Советская, д.8, 3 этаж
               </p>
-              <a href="tel:+74994900050" class="text__subheading"
+              <a href="tel:+74994900050" class="text__heading_active"
                 >+7 (499) 490-00-50</a
               >
               <p class="text__small">пн-пт: с 10.00 до 18.00</p>
               <p class="text__small">сб: с 10.00 до 15.00</p>
-              <a href="mailto:dostup-stroi@mail.ru" class="text__main footer__email-link"
+              <a
+                href="mailto:dostup-stroi@mail.ru"
+                class="text__main footer__email-link"
                 >dostup-stroi@mail.ru</a
               >
-              <button class="button button__request-call">Заказать звонок</button>
+              <button class="button button__request-call">
+                Заказать звонок
+              </button>
             </div>
           </div>
         </div>
@@ -99,10 +109,18 @@
             <div class="dropdown-menu__container">
               <p class="dropdown-menu__subheader">Каркасные дома по стилю</p>
               <ul class="dropdown-menu__list">
-                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">Дачные</a></li>
-                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">Финские</a></li>
-                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">Хайтек</a></li>
-                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">Шале</a></li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Дачные</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Финские</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Хайтек</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Шале</a>
+                </li>
               </ul>
               <a href="#" class="dropdown-menu__link"
                 >Посмотреть весь каталог</a
@@ -113,18 +131,32 @@
                 Каркасные дома по этажности
               </p>
               <ul class="dropdown-menu__list">
-                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">1-этажные</a></li>
-                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">С мансардой</a></li>
-                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">2-этажные</a></li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">1-этажные</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">С мансардой</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">2-этажные</a>
+                </li>
               </ul>
             </div>
             <div class="dropdown-menu__container">
               <p class="dropdown-menu__subheader">Каркасные дома по размеру</p>
               <ul class="dropdown-menu__list">
-                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">Небольшие</a></li>
-                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">Большие</a></li>
-                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">до 100 кв м</a></li>
-                <li class="dropdown-menu__listitem"><a class="dropdown-menu__item" href="#">до 150 кв м</a></li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Небольшие</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Большие</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">до 100 кв м</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">до 150 кв м</a>
+                </li>
               </ul>
             </div>
             <img
@@ -133,10 +165,10 @@
               alt="каркасный дом"
             />
             <img
-            class="dropdown-menu__image-mobile"
-            src="./images/dropdown-menu-mobile.png"
-            alt="каркасный дом"
-          />
+              class="dropdown-menu__image-mobile"
+              src="./images/dropdown-menu-mobile.png"
+              alt="каркасный дом"
+            />
           </div>
         </div>
         <!--выпадающее меню "о компании"-->
@@ -152,358 +184,921 @@
               alt="Каркасный дом"
             />
             <img
-            class="dropdown-about__image-mobile"
-            src="./images/dropdown-about-mobile.png"
-            alt="Каркасный дом"
-          />
+              class="dropdown-about__image-mobile"
+              src="./images/dropdown-about-mobile.png"
+              alt="Каркасный дом"
+            />
           </div>
         </div>
       </nav>
     </header>
     <main class="main">
-      <div class="main__dropdown-bcgr"></div>
-      <section class="lead lead__container">
-        <!--левая колонка lead-->
-        <div class="lead__column-left">
-          <img
-            class="lead__rating"
-            src="./images/lead-rating.png"
-            alt="рейтинг яндекс"
-          />
-          <h1 class="lead__heading">
-            Строим <span class="lead__heading-text">загородные</span>&nbsp;дома
-          </h1>
-          <p class="lead__subheading">для комфортного проживания</p>
-          <ul class="lead__benefit-list">
-            <li class="lead__benefit-item">
-              <span class="text__main">Гарантия 5 лет по договору</span>
-            </li>
-            <li class="lead__benefit-item">
-              <span class="text__main">Льготная ипотека от 6%</span>
-            </li>
-            <li class="lead__benefit-item">
-              <span class="text__main">Строим в любое время года</span>
-            </li>
-            <li class="lead__benefit-item">
-              <span class="text__main">Сезонные скидки</span>
-            </li>
-          </ul>
-          <div class="lead__present">
-            <img
-              class="lead__present-image"
-              src="./images/lead-present.svg"
-              alt="подарок при заключении догоора на строительство"
-            />
-            <p class="lead__present-text">
-              При заключении договора на строительство&nbsp;— проект дома<span
-                >&nbsp;бесплатно</span
+      <div class="breadcrumbs">
+        <div class="breadcrumbs__container">
+          <ol
+            class="breadcrumbs__list"
+            itemscope=""
+            itemtype="http://schema.org/BreadcrumbList"
+          >
+            <li
+              class="breadcrumbs__item"
+              id="bx_breadcrumb_0"
+              itemprop="itemListElement"
+              itemscope=""
+              itemtype="http://schema.org/ListItem"
+            >
+              <a
+                href="/"
+                title="Главная"
+                itemprop="item"
+                class="breadcrumbs__link"
+                >Главная</a
               >
-            </p>
-          </div>
-          <button class="button button__request-call">
-            Получить консультацию
-          </button>
+              <meta itemprop="position" content="1" />
+            </li>
+            <li
+              class="breadcrumbs__item"
+              id="bx_breadcrumb_1"
+              itemprop="itemListElement"
+              itemscope=""
+              itemtype="http://schema.org/ListItem"
+            >
+              <a
+                href="/services/"
+                title="Каталог домов"
+                itemprop="item"
+                class="breadcrumbs__link"
+                >Каталог</a
+              >
+              <meta itemprop="position" content="2" />
+            </li>
+            <li
+              class="breadcrumbs__item"
+              id="bx_breadcrumb_1"
+              itemprop="itemListElement"
+              itemscope=""
+              itemtype="http://schema.org/ListItem"
+            >
+              <a
+                href="/services/"
+                title="Каталог домов"
+                itemprop="item"
+                class="breadcrumbs__link"
+                >Каркасные дома</a
+              >
+              <meta itemprop="position" content="3" />
+            </li>
+            <li class="breadcrumbs__item">
+              <span>Каркасный дом КД-110 6х10</span>
+            </li>
+          </ol>
         </div>
-        <div class="lead__column-right">
-          <div class="lead__youtube-link">
-            <span class="text__main">Канал</span>
-            <img
-              class="lead__youtube-link-image"
-              src="./images/lead-youtube.png"
-              alt="лого youtube"
-            />
-            <img
-              src="./images/lead-youtube-arrow.svg"
-              alt="стрелочка"
-              class="lead__youtube-arrow"
-            />
+      </div>
+      <section class="house">
+        <h1 class="house__heading-tablet">Каркасный дом КД-110 6х10</h1>
+        <div class="house__column-image">
+          <div class="f-carousel" id="myCarousel">
+            <div
+              class="f-carousel__slide"
+              data-thumb-src="./images/house-gallery-1-s.png"
+            >
+              <img
+                class="fancybox-carousel__image"
+                alt=""
+                data-lazy-src="./images/house-gallery-1.png"
+              />
+            </div>
+            <div
+              class="f-carousel__slide"
+              data-thumb-src="./images/house-gallery-2.png"
+            >
+              <img
+                class="fancybox-carousel__image"
+                alt=""
+                data-lazy-src="./images/house-gallery-2.png"
+              />
+            </div>
+            <div
+              class="f-carousel__slide"
+              data-thumb-src="./images/house-gallery-1-s.png"
+            >
+              <img
+                class="fancybox-carousel__image"
+                alt=""
+                data-lazy-src="./images/house-gallery-1.png"
+              />
+            </div>
+            <div
+              class="f-carousel__slide"
+              data-thumb-src="./images/house-gallery-1-s.png"
+            >
+              <img
+                class="fancybox-carousel__image"
+                alt=""
+                data-lazy-src="./images/house-gallery-1.png"
+              />
+            </div>
           </div>
-          <img
-            class="lead__image"
-            src="./images/lead-photo.jpg"
-            alt="каркасный дом"
-          />
-          <img
-            class="lead__image-mobile"
-            src="./images/lead-photo-mobile.png"
-            alt="каркасный дом"
-          />
+        </div>
+        <div class="house__column-content">
+          <div>
+            <h1 class="house__content-heading">Каркасный дом КД-110 6х10</h1>
+            <div class="house__tabs">
+              <p class="house__tabs-subheading">Комплектация дома</p>
+              <ul class="house__tabs-list">
+                <li class="house__tabs-item">
+                  <input
+                    type="radio"
+                    name="house-tabs"
+                    id="complectaition-minimum"
+                    checked
+                  />
+                  <label for="complectaition-minimum" class="house__tabs-label"
+                    >Силовой каркас+кровля</label
+                  >
+                </li>
+                <li class="house__tabs-item">
+                  <input
+                    type="radio"
+                    name="house-tabs"
+                    id="complectaition-middle"
+                  />
+                  <label for="complectaition-middle" class="house__tabs-label"
+                    >Тёплый контур</label
+                  >
+                </li>
+                <li class="house__tabs-item">
+                  <input
+                    type="radio"
+                    name="house-tabs"
+                    id="complectaition-maximum"
+                  />
+                  <label for="complectaition-maximum" class="house__tabs-label"
+                    >Под ключ</label
+                  >
+                </li>
+              </ul>
+              <ul class="house__price-list">
+                <div
+                  class="house__price house__price_visible"
+                  id="complectaition-minimum"
+                >
+                  <span class="house__price-sum">от 4 323 000 ₽</span>
+                  <span class="house__price-complectation"
+                    >Стоимость дома в комплектации «Силовой каркас +
+                    кровля»</span
+                  >
+                </div>
+                <div class="house__price" id="complectaition-middle">
+                  <span class="house__price-sum">от 5 633 000 ₽</span>
+                  <span class="house__price-complectation"
+                    >Стоимость дома в комплектации «Теплый контур»</span
+                  >
+                </div>
+                <div class="house__price" id="complectaition-maximum">
+                  <span class="house__price-sum">от 7 860 000 ₽</span>
+                  <span class="house__price-complectation"
+                    >Стоимость дома в комплектации «Под ключ»</span
+                  >
+                </div>
+              </ul>
+            </div>
+            <p class="house__ipoteka-text">
+              В ипотеку от <span>16 000 ₽</span> / месяц
+            </p>
+            <button class="button">Получить расчёт</button>
+          </div>
+          <div class="house__parameters">
+            <div class="house__parameter">
+              <p class="house__parameter-value">131 м²</p>
+              <p class="house__parameter-name">Общая площадь</p>
+            </div>
+            <div class="house__parameter">
+              <p class="house__parameter-value">115 м²</p>
+              <p class="house__parameter-name">Жилая площадь</p>
+            </div>
+            <div class="house__parameter">
+              <p class="house__parameter-value">7×10</p>
+              <p class="house__parameter-name">Габаритные размеры дома</p>
+            </div>
+            <div class="house__parameter">
+              <p class="house__parameter-value">2</p>
+              <p class="house__parameter-name">Санузла</p>
+            </div>
+            <div class="house__parameter">
+              <p class="house__parameter-value">2</p>
+              <p class="house__parameter-name">Этажа</p>
+            </div>
+            <div class="house__parameter">
+              <p class="house__parameter-value">4</p>
+              <p class="house__parameter-name">Спальни</p>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="benefits container">
-        <ul class="benefits__list">
-          <li class="benefits__item">
-            <img src="./images/benefits-icon-1.svg" alt="банкнота" />
-            <p class="text__subheading">Поэтапная оплата</p>
-            <p class="text__main">
-              У нас нет скрытых платежей. Вы платите только за выполненные
-              работы по акту приёмки.
-            </p>
-          </li>
-          <li class="benefits__item">
-            <img src="./images/benefits-icon-2.svg" alt="банкнота" />
-            <p class="text__subheading">Строительство по ГОСТ И СНиП</p>
-            <p class="text__main">
-              Строим только с использованием правильных материалов, отвечающих
-              современным стандартам загородного строительства.
-            </p>
-          </li>
-          <li class="benefits__item">
-            <img src="./images/benefits-icon-3.svg" alt="банкнота" />
-            <p class="text__subheading">Прочный силовой каркас</p>
-            <p class="text__main">
-              Строим силовой каркас дома только калиброванного пиломатериала
-              камерной сушки.
-            </p>
-          </li>
-          <li class="benefits__item">
-            <img src="./images/benefits-icon-4.svg" alt="банкнота" />
-            <p class="text__subheading">Ежедневный контроль над стройкой</p>
-            <p class="text__main">
-              Предоставляем каждодневный фото - и видеоотчет. Стройка постоянно
-              контролируется лично руководством компании.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <!--Галерея-->
-      <section class="gallery container">
-        <h2 class="heading gallery__heading">
-          Строительство
-          <span class="heading__text">загородных</span>&nbsp;домов
-        </h2>
-        <div class="gallery__container">
-          <ul class="gallery__list">
-            <li class="gallery__item">
-              <a href="#" class="gallery__item-link">
-                <img
-                  class="gallery__image"
-                  src="./images/gallery-image-1.png"
-                  alt="каркасный дом"
-                />
-                <p class="gallery__item-heading">Каркасные дома</p>
-              </a>
+      <!-- Комплектация -->
+      <section class="complectaition container">
+        <p class="heading">Комплектация</p>
+        <div class="tabs">
+          <ul class="tabs__list">
+            <li class="tabs__item">
+              <input type="radio" name="tabs" id="minimum" checked />
+              <label for="minimum" id="minimum" class="tab__label"
+                >«Силовой каркас + кровля» от 4 323 000 ₽</label
+              >
             </li>
-            <li class="gallery__item" class="gallery__item-link">
-              <a href="#" class="gallery__item-link">
-                <img
-                  class="gallery__image"
-                  src="./images/gallery-image-2.png"
-                  alt="дачный дом"
-                />
-                <p class="gallery__item-heading">Дачные дома</p>
-              </a>
+            <li class="tabs__item">
+              <input type="radio" name="tabs" id="middle" />
+              <label for="middle" id="middle" class="tab__label">
+                «Тёплый контур» от 5 633 000 ₽</label
+              >
             </li>
-            <li class="gallery__item">
-              <a href="#" class="gallery__item-link">
-                <img
-                  class="gallery__image"
-                  src="./images/gallery-image-3.png"
-                  alt="финский дом"
-                />
-                <p class="gallery__item-heading">Финские дома</p>
-              </a>
-            </li>
-            <li class="gallery__item">
-              <a href="#" class="gallery__item-link">
-                <img
-                  class="gallery__image"
-                  src="./images/gallery-image-4.png"
-                  alt="дома хай-тек"
-                />
-                <p class="gallery__item-heading">Дома Хай-тек</p>
-              </a>
+            <li class="tabs__item">
+              <input type="radio" name="tabs" id="maximum" />
+              <label for="maximum" id="maximum" class="tab__label"
+                >Дом «под ключ» от 7 860 000 ₽</label
+              >
             </li>
           </ul>
         </div>
-        <div class="gallery__link">
-          <a href="#" class="button">Посмотреть все дома</a>
+        <div class="tabs__content-container">
+          <ul class="tabs__content tabs__content_visible" id="minimum">
+            <li class="construct-element">
+              <img
+                class="construct-element__image"
+                src="./images/constructed-element-fundament.svg"
+                alt=""
+              />
+              <div>
+                <p class="construct-element__heading">Фундаменты</p>
+                <p class="construct-element__text">
+                  Свайно-винтовой: СВ-108/300/2500мм; толщина стенки 4 мм,
+                  толщина лопасти 5 мм; внутри сваи заполняются бетонной смесью
+                  М300; металлический оголовок 200х200 мм; свая покрыта
+                  2-компонентным заводским защитным составом
+                </p>
+              </div>
+            </li>
+            <li class="construct-element">
+              <img
+                class="construct-element__image"
+                src="./images/constructed-element-domokomplekt.svg"
+                alt=""
+              />
+              <div>
+                <p class="construct-element__heading">Домокомплект</p>
+                <p class="construct-element__subheading">Обвязка</p>
+                <p class="construct-element__text">
+                  Обвязка из пакета сухих строганных досок камерной сушки
+                  3х45х145 мм
+                </p>
+                <p class="construct-element__subheading">
+                  Перекрытия цоколя, чердачное, межэтажное
+                </p>
+                <p class="construct-element__text">
+                  Обвязка из пакета сухих строганных досок камерной сушки
+                  3х45х145 мм
+                </p>
+                <p class="construct-element__subheading">
+                  Каркас наружных стен
+                </p>
+                <p class="construct-element__text">
+                  Обвязка из пакета сухих строганных досок камерной сушки
+                  3х45х145 мм
+                </p>
+                <p class="construct-element__subheading">
+                  Каркас внутренних стен
+                </p>
+                <p class="construct-element__text">
+                  Обвязка из пакета сухих строганных досок камерной сушки
+                  3х45х145 мм
+                </p>
+                <p class="construct-element__subheading">Стропильная система</p>
+                <p class="construct-element__text">
+                  <span>Стропила:</span>
+                  <span> строганная доска камерной сушки 45х195 мм</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Контр обрешётка:</span> <span> брусок 45х45 мм</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Обрешётка:</span>
+                  <span> доска 25х100 естественной влажности</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Пропитка:</span>
+                  <span>
+                    биозащитный состав обвязки и цокольного перекрытия(всего
+                    каркаса-оговаривается отдельно)</span
+                  >
+                </p>
+              </div>
+            </li>
+            <li class="construct-element">
+              <img
+                class="construct-element__image"
+                src="./images/constructed-element-roof.svg"
+                alt=""
+              />
+              <div>
+                <p class="construct-element__heading">Кровля</p>
+                <p class="construct-element__text">
+                  <span>Кровельное покрытие:</span>
+                  <span
+                    >металлочерепица GRAND LINE CLASSIC Satin. Толщина стали 0,5
+                    мм</span
+                  >
+                </p>
+                <p class="construct-element__text">
+                  <span>Подшивка свесов кровли:</span>
+                  <span
+                    >имитация бруса. Свесы крыши - 500 мм от края наружной
+                    стойки</span
+                  >
+                </p>
+                <p class="construct-element__text">
+                  <span>Открытые пристройки(если есть в проекте):</span>
+                  <span
+                    >покрытие пола строганная доска 45х140; стойки из
+                    строганного бруса 95х95; ограждение из строг. доски 45х95;
+                    черновая входная лестница из доски 150</span
+                  >
+                </p>
+                <p class="construct-element__subheading">Снегозадержание</p>
+                <p class="construct-element__subheading">Водосточная система</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="tabs__content" id="middle">
+            <li class="construct-element">
+              <img
+                class="construct-element__image"
+                src="./images/constructed-element-fundament.svg"
+                alt=""
+              />
+              <div>
+                <p class="construct-element__heading">Фундаменты</p>
+                <p class="construct-element__text">
+                  Свайно-винтовой: СВ-108/300/2500мм; толщина стенки 4 мм,
+                  толщина лопасти 5 мм; внутри сваи заполняются бетонной смесью
+                  М300; металлический оголовок 200х200 мм; свая покрыта
+                  2-компонентным заводским защитным составом
+                </p>
+              </div>
+            </li>
+            <li class="construct-element">
+              <img
+                class="construct-element__image"
+                src="./images/constructed-element-domokomplekt.svg"
+                alt=""
+              />
+              <div>
+                <p class="construct-element__heading">Домокомплект</p>
+                <p class="construct-element__subheading">Обвязка</p>
+                <p class="construct-element__text">
+                  Обвязка из пакета сухих строганных досок камерной сушки
+                  3х45х145 мм
+                </p>
+                <p class="construct-element__subheading">
+                  Перекрытия цоколя, чердачное, межэтажное
+                </p>
+                <p class="construct-element__text">
+                  Обвязка из пакета сухих строганных досок камерной сушки
+                  3х45х145 мм
+                </p>
+                <p class="construct-element__subheading">
+                  Каркас наружных стен
+                </p>
+                <p class="construct-element__text">
+                  Обвязка из пакета сухих строганных досок камерной сушки
+                  3х45х145 мм
+                </p>
+                <p class="construct-element__subheading">
+                  Каркас внутренних стен
+                </p>
+                <p class="construct-element__text">
+                  Обвязка из пакета сухих строганных досок камерной сушки
+                  3х45х145 мм
+                </p>
+                <p class="construct-element__subheading">Стропильная система</p>
+                <p class="construct-element__text">
+                  <span>Стропила:</span>
+                  <span> строганная доска камерной сушки 45х195 мм</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Контр обрешётка:</span> <span> брусок 45х45 мм</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Обрешётка:</span>
+                  <span>доска 25х100 естественной влажности</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Пропитка:</span>
+                  <span
+                    >биозащитный состав обвязки и цокольного перекрытия(всего
+                    каркаса-оговаривается отдельно)</span
+                  >
+                </p>
+                <p class="construct-element__text">
+                  <span>Наружные стены:</span> <span>150+50 мм</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Внутренние несущие стены:</span> <span>150 мм</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Пропитка:</span> <span>100 мм</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Цокольное перекрытие:</span> <span>200 мм</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Межэтажное перекрытие:</span> <span>200 мм</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Чердачное перекрытие:</span> <span>200 мм</span>
+                </p>
+              </div>
+            </li>
+            <li class="construct-element">
+              <img
+                class="construct-element__image"
+                src="./images/constructed-element-isolation.svg"
+                alt=""
+              />
+              <div>
+                <p class="construct-element__heading">
+                  Утепление и пароизоляция
+                </p>
+                <p class="construct-element__subheading">Пароизоляция</p>
+                <p class="construct-element__text">Grand Line</p>
+                <p class="construct-element__subheading">
+                  Гидроизоляция фасада
+                </p>
+                <p class="construct-element__text">
+                  Grand Line с проклейкой стыков скотчем «Delta»
+                </p>
+                <p class="construct-element__subheading">Теплоизоляция</p>
+                <p class="construct-element__text">
+                  Плитный базальтовый утеплитель Rockwool/Технониколь
+                </p>
+                <p class="construct-element__text">
+                  <span>Толщина утепления:</span>
+                  <span
+                    >цокольное и чердачное перекрытия - 200 мм, наружные стены -
+                    150+50 мм, внутренние стены - 100/150 мм</span
+                  >
+                </p>
+              </div>
+            </li>
+            <li class="construct-element">
+              <img
+                class="construct-element__image"
+                src="./images/constructed-element-otdelka.svg"
+                alt=""
+              />
+              <div>
+                <p class="construct-element__heading">Отделка</p>
+                <p class="construct-element__subheading">
+                  Наружная отделка стен
+                </p>
+                <p class="construct-element__text">
+                  Вертикальные направляющие для вент. фасада:  брусок 45х45 мм
+                </p>
+                <p class="construct-element__text">
+                  <span>Обшивка стен:</span>
+                  <span
+                    >имитация бруса 16/17мм класса АВ. Покраска не включена
+                    (возможны другие материалы отделки)</span
+                  >
+                </p>
+                <p class="construct-element__subheading">
+                  Внутренние стены и перегородки
+                </p>
+                <p class="construct-element__text">
+                  Гипсокартонный лист (ГКЛ) 12,5 мм(без шпаклевки швов) по
+                  обрешетке из сухой рейки, (возможна внутренняя отделка
+                  вагонкой или имитацией бруса, стоимость по запросу)
+                </p>
+                <p class="construct-element__subheading">Полы</p>
+                <p class="construct-element__text">Фанера 15 мм</p>
+                <p class="construct-element__subheading">Окна ПВХ</p>
+                <p class="construct-element__text">
+                  Двухкамерные стеклопакеты. Толщина ПВХ профиля 70 мм
+                </p>
+                <p class="construct-element__subheading">Двери</p>
+                <p class="construct-element__text">
+                  Входная металлическая дверь с терморазрывом. Производство
+                  Россия
+                </p>
+              </div>
+            </li>
+            <li class="construct-element">
+              <img
+                class="construct-element__image"
+                src="./images/constructed-element-roof.svg"
+                alt=""
+              />
+              <div>
+                <p class="construct-element__heading">Кровля</p>
+                <p class="construct-element__text">
+                  <span>Кровельное покрытие:</span>
+                  <span
+                    >металлочерепица GRAND LINE CLASSIC Satin. Толщина стали 0,5
+                    мм</span
+                  >
+                </p>
+                <p class="construct-element__text">
+                  <span>Подшивка свесов кровли:</span>
+                  <span
+                    >имитация бруса. Свесы крыши - 500 мм от края наружной
+                    стойки</span
+                  >
+                </p>
+                <p class="construct-element__text">
+                  <span>Открытые пристройки(если есть в проекте):</span>
+                  <span
+                    >покрытие пола строганная доска 45х140; стойки из
+                    строганного бруса 95х95; ограждение из строг. доски 45х95;
+                    черновая входная лестница из доски 150</span
+                  >
+                </p>
+                <p class="construct-element__subheading">Снегозадержание</p>
+                <p class="construct-element__subheading">Водосточная система</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="tabs__content" id="maximum">
+            <li class="construct-element">
+              <img
+                class="construct-element__image"
+                src="./images/constructed-element-fundament.svg"
+                alt=""
+              />
+              <div>
+                <p class="construct-element__heading">Фундаменты</p>
+                <p class="construct-element__text">
+                  Свайно-винтовой: СВ-108/300/2500мм; толщина стенки 4 мм,
+                  толщина лопасти 5 мм; внутри сваи заполняются бетонной смесью
+                  М300; металлический оголовок 200х200 мм; свая покрыта
+                  2-компонентным заводским защитным составом
+                </p>
+              </div>
+            </li>
+            <li class="construct-element">
+              <img
+                class="construct-element__image"
+                src="./images/constructed-element-domokomplekt.svg"
+                alt=""
+              />
+              <div>
+                <p class="construct-element__heading">Домокомплект</p>
+                <p class="construct-element__subheading">Обвязка</p>
+                <p class="construct-element__text">
+                  Обвязка из пакета сухих строганных досок камерной сушки
+                  3х45х145 мм
+                </p>
+                <p class="construct-element__subheading">
+                  Перекрытия цоколя, чердачное, межэтажное
+                </p>
+                <p class="construct-element__text">
+                  Обвязка из пакета сухих строганных досок камерной сушки
+                  3х45х145 мм
+                </p>
+                <p class="construct-element__subheading">
+                  Каркас наружных стен
+                </p>
+                <p class="construct-element__text">
+                  Обвязка из пакета сухих строганных досок камерной сушки
+                  3х45х145 мм
+                </p>
+                <p class="construct-element__subheading">
+                  Каркас внутренних стен
+                </p>
+                <p class="construct-element__text">
+                  Обвязка из пакета сухих строганных досок камерной сушки
+                  3х45х145 мм
+                </p>
+                <p class="construct-element__subheading">Стропильная система</p>
+                <p class="construct-element__text">
+                  <span>Стропила:</span>
+                  <span> строганная доска камерной сушки 45х195 мм</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Контр обрешётка:</span> <span> брусок 45х45 мм</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Обрешётка:</span>
+                  <span>доска 25х100 естественной влажности</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Пропитка:</span>
+                  <span
+                    >биозащитный состав обвязки и цокольного перекрытия(всего
+                    каркаса-оговаривается отдельно)</span
+                  >
+                </p>
+                <p class="construct-element__text">
+                  <span>Наружные стены:</span> <span>150+50 мм</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Внутренние несущие стены:</span> <span>150 мм</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Пропитка:</span> <span>100 мм</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Цокольное перекрытие:</span> <span>200 мм</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Межэтажное перекрытие:</span> <span>200 мм</span>
+                </p>
+                <p class="construct-element__text">
+                  <span>Чердачное перекрытие:</span> <span>200 мм</span>
+                </p>
+              </div>
+            </li>
+            <li class="construct-element">
+              <img
+                class="construct-element__image"
+                src="./images/constructed-element-isolation.svg"
+                alt=""
+              />
+              <div>
+                <p class="construct-element__heading">
+                  Утепление и пароизоляция
+                </p>
+                <p class="construct-element__subheading">Пароизоляция</p>
+                <p class="construct-element__text">Grand Line</p>
+                <p class="construct-element__subheading">
+                  Гидроизоляция фасада
+                </p>
+                <p class="construct-element__text">
+                  Grand Line с проклейкой стыков скотчем «Delta»
+                </p>
+                <p class="construct-element__subheading">Теплоизоляция</p>
+                <p class="construct-element__text">
+                  Плитный базальтовый утеплитель Rockwool/Технониколь
+                </p>
+                <p class="construct-element__text">
+                  <span>Толщина утепления:</span>
+                  <span
+                    >цокольное и чердачное перекрытия - 200 мм, наружные стены -
+                    150+50 мм, внутренние стены - 100/150 мм</span
+                  >
+                </p>
+              </div>
+            </li>
+            <li class="construct-element">
+              <img
+                class="construct-element__image"
+                src="./images/constructed-element-otdelka.svg"
+                alt=""
+              />
+              <div>
+                <p class="construct-element__heading">Отделка</p>
+                <p class="construct-element__subheading">
+                  Наружная отделка стен
+                </p>
+                <p class="construct-element__text">
+                  Вертикальные направляющие для вент. фасада:  брусок 45х45 мм
+                </p>
+                <p class="construct-element__text">
+                  <span>Обшивка стен:</span>
+                  <span
+                    >имитация бруса 16/17мм класса АВ. Покраска не включена
+                    (возможны другие материалы отделки)</span
+                  >
+                </p>
+                <p class="construct-element__subheading">
+                  Внутренние стены и перегородки
+                </p>
+                <p class="construct-element__text">
+                  Гипсокартонный лист (ГКЛ) 12,5 мм(без шпаклевки швов) по
+                  обрешетке из сухой рейки, (возможна внутренняя отделка
+                  вагонкой или имитацией бруса, стоимость по запросу)
+                </p>
+                <p class="construct-element__subheading">Полы</p>
+                <p class="construct-element__text">Фанера 15 мм</p>
+                <p class="construct-element__subheading">Окна ПВХ</p>
+                <p class="construct-element__text">
+                  Двухкамерные стеклопакеты. Толщина ПВХ профиля 70 мм
+                </p>
+                <p class="construct-element__subheading">Двери</p>
+                <p class="construct-element__text">
+                  Входная металлическая дверь с терморазрывом. Производство
+                  Россия
+                </p>
+              </div>
+            </li>
+            <li class="construct-element">
+              <img
+                class="construct-element__image"
+                src="./images/constructed-element-roof.svg"
+                alt=""
+              />
+              <div>
+                <p class="construct-element__heading">Кровля</p>
+                <p class="construct-element__text">
+                  <span>Кровельное покрытие:</span>
+                  <span
+                    >металлочерепица GRAND LINE CLASSIC Satin. Толщина стали 0,5
+                    мм</span
+                  >
+                </p>
+                <p class="construct-element__text">
+                  <span>Подшивка свесов кровли:</span>
+                  <span
+                    >имитация бруса. Свесы крыши - 500 мм от края наружной
+                    стойки</span
+                  >
+                </p>
+                <p class="construct-element__text">
+                  <span>Открытые пристройки(если есть в проекте):</span>
+                  <span
+                    >покрытие пола строганная доска 45х140; стойки из
+                    строганного бруса 95х95; ограждение из строг. доски 45х95;
+                    черновая входная лестница из доски 150</span
+                  >
+                </p>
+                <p class="construct-element__subheading">Снегозадержание</p>
+                <p class="construct-element__subheading">Водосточная система</p>
+              </div>
+            </li>
+            <li class="construct-element">
+              <img
+                class="construct-element__image"
+                src="./images/constructed-element-communications.svg"
+                alt=""
+              />
+              <div>
+                <p class="construct-element__heading">
+                  Инженерные коммуникации
+                </p>
+                <p class="construct-element__subheading">Водоснабжение</p>
+                <p class="construct-element__text">
+                  Скважина глубина до 60 м с  обустройством кессоном, на основе
+                  глубины будет выбран насос, завод воды в дом, прокладка линий
+                  холодного и горячего водоснабжения осуществляется скрыто в
+                  конструкциях пола и стен трубой из сшитого полиэтилена
+                </p>
+                <p class="construct-element__subheading">Водоотведение</p>
+                <p class="construct-element__text">
+                  Водоотведение осуществляется с помощью установки септика на
+                  3-4 человека, канализация от приборов водоотведения
+                  расположена в техническом подполье ростверка
+                </p>
+                <p class="construct-element__subheading">Отопление</p>
+                <p class="construct-element__text">
+                  Организовать нагрев теплоносителя (воды) в доме с помощью
+                  электрического/газового котла. Если электрический, то
+                  предусмотреть возможность подключения газового котла в
+                  будущем. Отопление в доме организовать с помощью радиаторов
+                  скрыто в конструкциях пола и стен трубой из сшитого
+                  полиэтилена, лучевой разводкой с использованием коллектора.
+                  Нагрев горячей воды организовать с помощью бойлера косвенного
+                  нагрева
+                </p>
+                <p class="construct-element__subheading">Электроснабжение</p>
+                <p class="construct-element__text">
+                  организовать подземный ввод с опоры в дом. Систему
+                  электроснабжения и освещения выполнить скрыто в конструкциях
+                  пола и стен с применением материалов по ГОСТу. Наполнение
+                  электрощита выполнить в соответствии с распределением групп
+                  энергопотребления. Организовать контур повторного заземления.
+                  Розетки и выключатели приобретаются заказчиком отдельно в цвет
+                  интерьера
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
-      <!--Ипотека-->
-      <section class="container ipoteka">
-        <h2 class="heading ipoteka__heading">
-          Строительство домов&nbsp;
-          <span class="heading__text">в ипотеку</span>
+      <!--рекомендация-->
+      <section class="recommendation container">
+        <h2 class="heading">
+          похожие&nbsp;<span class="heading__text">проекты</span>
         </h2>
-        <ul class="ipoteka__image">
-          <li class="ipoteka__item">
-            <img src="./images/ipoteka-1.png" alt="пара на фоне дома" />
-          </li>
-          <li class="ipoteka__item">
-            <img src="./images/ipoteka-2.png" alt="пара на фоне дома" />
-          </li>
-          <li class="ipoteka__item">
-            <img src="./images/ipoteka-3.png" alt="пара на фоне дома" />
-          </li>
-        </ul>
-        <div class="ipoteka__content">
-          <h2 class="heading ipoteka__heading">
-            Строительство домов&nbsp;
-            <span class="heading__text">в ипотеку</span>
-          </h2>
-          <div class="ipoteka__wrapper">
-            <div class="ipoteka__row">
-              <img src="./images/ipoteka-icon-1.svg" alt="детская коляска" />
-              <div class="ipoteka__wrapper-2">
-                <p class="text__heading_active">Семейная ипотека</p>
-                <p class="text__main_inactive">для семей с детьми</p>
-                <table class="ipoteka__table">
-                  <tr>
-                    <td class="text__subheading">Процентная ставка</td>
-                    <td class="text__subheading_active">6 %</td>
-                  </tr>
-                  <tr>
-                    <td class="text__subheading">
-                      Максимальная сумма&nbsp;кредита
-                    </td>
-                    <td class="text__subheading_active">
-                      до 12 000 000 &#x20bd;
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text__subheading">Срок кредита</td>
-                    <td class="text__subheading_active">до 30 лет</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <div class="ipoteka__row">
-              <img src="./images/ipoteka-icon-2.svg" alt="домик" />
-              <div class="ipoteka__wrapper-2">
-                <p class="text__heading_active">Льготная ипотека</p>
-                <p class="text__main_inactive">для строительства домов ИЖС</p>
-                <table class="ipoteka__table">
-                  <tr>
-                    <td class="text__subheading">Процентная ставка</td>
-                    <td class="text__subheading_active">6 %</td>
-                  </tr>
-                  <tr>
-                    <td class="text__subheading">
-                      Максимальная сумма&nbsp;кредита
-                    </td>
-                    <td class="text__subheading_active">
-                      до 12 000 000 &#x20bd;
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text__subheading">Срок кредита</td>
-                    <td class="text__subheading_active">до 30 лет</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <p class="text__subheading ipoteka__text">
-              Строительная компания «Доступная стройка» является аккредитованным
-              застройщиком «Почта Банк».
-            </p>
-            <p class="text__subheading ipoteka__text">
-              Подать заявку на предварительное одобрение ипотеки вы сможете
-              прямо из нашего офиса. Наши специалисты помогут вам с оформлением
-              документов, выбором участка, а также будут сопровождать на всех
-              этапах строительства загородного дома в ипотеку.
-            </p>
-            <button class="button button__request-call">
-              Получить консультацию
-            </button>
-          </div>
-        </div>
-      </section>
-      <!--построенные дома-->
-      <section class="constructed container">
-        <h2 class="heading">построенные дома</h2>
-        <p class="text__subheading_emphasize">проекты</p>
-        <div class="swiper sample-slider">
+        <div class="swiper recommendation__slider">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <div class="constructed__item">
+              <div class="recommendation__item">
                 <img
                   class="constructed__image"
                   src="./images/constructed-1.png"
                   alt="каркасный дом"
                 />
                 <p class="text__subheading">Каркасный дом</p>
-                <p class="text__main_inactive">2023</p>
-                <div class="constructed__item-wrapper">
-                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
-                  <a class="button constructed__button">Подробнее</a>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="constructed__item">
+              <div class="recommendation__item">
                 <img
                   class="constructed__image"
                   src="./images/constructed-2.png"
                   alt="каркасный дом"
                 />
                 <p class="text__subheading">Каркасный дом</p>
-                <p class="text__main_inactive">2023</p>
-                <div class="constructed__item-wrapper">
-                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
-                  <a class="button constructed__button">Подробнее</a>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="constructed__item">
+              <div class="recommendation__item">
                 <img
                   class="constructed__image"
                   src="./images/constructed-3.png"
                   alt="каркасный дом"
                 />
                 <p class="text__subheading">Каркасный дом</p>
-                <p class="text__main_inactive">2023</p>
-                <div class="constructed__item-wrapper">
-                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
-                  <a class="button constructed__button">Подробнее</a>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="constructed__item">
+              <div class="recommendation__item">
                 <img
                   class="constructed__image"
                   src="./images/constructed-4.png"
                   alt="каркасный дом"
                 />
                 <p class="text__subheading">Каркасный дом</p>
-                <p class="text__main_inactive">2023</p>
-                <div class="constructed__item-wrapper">
-                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
-                  <a class="button constructed__button">Подробнее</a>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="constructed__item">
+              <div class="recommendation__item">
                 <img
                   class="constructed__image"
                   src="./images/constructed-3.png"
                   alt="каркасный дом"
                 />
                 <p class="text__subheading">Каркасный дом</p>
-                <p class="text__main_inactive">2023</p>
-                <div class="constructed__item-wrapper">
-                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
-                  <a class="button constructed__button">Подробнее</a>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="constructed__item">
+              <div class="recommendation__item">
                 <img
                   class="constructed__image"
                   src="./images/constructed-4.png"
                   alt="каркасный дом"
                 />
                 <p class="text__subheading">Каркасный дом</p>
-                <p class="text__main_inactive">2023</p>
-                <div class="constructed__item-wrapper">
-                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
-                  <a class="button constructed__button">Подробнее</a>
+                <p class="text__main text__emphasize">Площадь дома 72 м²</p>
+                <div class="recommendation__item-wrapper">
+                  <div>
+                    <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
+                    <p class="text__small_inactive">
+                       В ипотеку от 17 000 ₽/ месяц
+                    </p>
+                  </div>
+                  <a class="button recommendation__button">Подробнее</a>
                 </div>
               </div>
             </div>
@@ -513,458 +1108,7 @@
           <div class="swiper-button-next"><span>&rarr;</span></div>
         </div>
       </section>
-      <!--запись на экскурсию-->
-      <section class="excursion container">
-        <h2 class="heading excursion__heading">
-          Записаться на&nbsp;<span class="heading__text">экскурсию</span>
-        </h2>
-        <div class="excursion__image-container">
-          <img
-            class="excursion__image"
-            src="./images/excursion-image.png"
-            alt="процесс постройки дома"
-          />
-          <img
-            class="excursion__image-mobile"
-            src="./images/excursion-image-mobile.png"
-            alt="процесс постройки дома"
-          />
-        </div>
-        <div class="excursion__column">
-          <h2 class="heading excursion__heading">
-            Записаться на&nbsp;<span class="heading__text">экскурсию</span>
-          </h2>
-          <p class="text__subheading">
-            Хотите лично посмотреть на построенные дома? Мы организуем вам
-            экскурсию на наши объекты.
-          </p>
-          <p class="text__subheading">Во время экскурсии расскажем вам:</p>
-          <ul class="excursion__list">
-            <li class="excursion__item">
-              о материалах, которые мы используем;
-            </li>
-            <li class="excursion__item">о технологии строительства;</li>
-            <li class="excursion__item">о выборе планировки дома;</li>
-            <li class="excursion__item">
-              о лайфхаках, которые мы используем при строительстве.
-            </li>
-          </ul>
-          <p class="text__subheading">
-            Вы можете выбрать к просмотру дом, на любом интересующем вас этапе
-            строительства.
-          </p>
-          <button class="button button__request-excursion">
-            Записаться на экскурсию
-          </button>
-        </div>
-      </section>
-      <!--виды работ-->
-      <section class="services container">
-        <p class="heading services__heading">
-          строительство домов <span class="heading__text">под&nbsp;ключ</span>
-        </p>
-        <p class="text__subheading">
-          Мы предоставляем полный комплекс услуг, начиная от проектирования и
-          заканчивая полностью готовым к проживанию домом. Вам не придется
-          самостоятельно заниматься каждым этапом строительства, искать
-          подрядчиков для разных видов работ и контролировать их выполнение. Все
-          это мы берем на себя и несем ответственность за весь проект и сдачу
-          дома "под ключ". Таким образом, вы получаете дом, готовый к
-          проживанию, без необходимости дополнительных работ и вложений.
-        </p>
-        <ul class="services__list">
-          <li class="services__item">
-            <img
-              class="services__icon"
-              src="./images/services-icon-1.svg"
-              alt="#"
-            />
-            <div>
-              <p class="text__subheading">Электромонтажные работы</p>
-              <ul class="services__type-list">
-                <li class="text__main services__type-item">
-                  Проектирование системы
-                </li>
-                <li class="text__main services__type-item">
-                  Монтаж электрозащиты
-                </li>
-                <li class="text__main services__type-item">
-                  Прокладка кабелей
-                </li>
-                <li class="text__main services__type-item">
-                  Установка розеток и выключателей
-                </li>
-                <li class="text__main services__type-item">Монтаж освещения</li>
-              </ul>
-            </div>
-          </li>
-          <li class="services__item">
-            <img
-              class="services__icon"
-              src="./images/services-icon-2.svg"
-              alt="#"
-            />
-            <div>
-              <p class="text__subheading">Водоснабжение и водоотведение</p>
-              <ul class="services__type-list">
-                <li class="text__main services__type-item">
-                  Прокладка водопроводных труб
-                </li>
-                <li class="text__main services__type-item">
-                  Разводка ГВС и ХВС
-                </li>
-                <li class="text__main services__type-item">
-                  Установка сантехники
-                </li>
-                <li class="text__main services__type-item">
-                  Установка септика
-                </li>
-                <li class="text__main services__type-item">Дренажные работы</li>
-              </ul>
-            </div>
-          </li>
-          <li class="services__item">
-            <img
-              class="services__icon"
-              src="./images/services-icon-3.svg"
-              alt="#"
-            />
-            <div>
-              <p class="text__subheading">Монтаж систем отопления</p>
-              <ul class="services__type-list">
-                <li class="text__main services__type-item">
-                  Монтаж тёплого пола
-                </li>
-                <li class="text__main services__type-item">
-                  Монтаж радиаторов отопления
-                </li>
-                <li class="text__main services__type-item">
-                  Монтаж газовых, электрических и твердотопливных котлов
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="services__item">
-            <img
-              class="services__icon"
-              src="./images/services-icon-4.svg"
-              alt="#"
-            />
-            <div>
-              <p class="text__subheading">Монтаж систем вентиляции</p>
-              <ul class="services__type-list">
-                <li class="text__main services__type-item">
-                  Проектирование и монтаж систем приточной и вытяжной вентиляции
-                </li>
-                <li class="text__main services__type-item">
-                  Установка кондиционеров
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="services__item">
-            <img
-              class="services__icon"
-              src="./images/services-icon-5.svg"
-              alt="#"
-            />
-            <div>
-              <p class="text__subheading">Системы видеонаблюдения</p>
-              <ul class="services__type-list">
-                <li class="text__main services__type-item">
-                  Проектирование и монтаж системы охранного видеонаблюдения для
-                  загородного дома
-                </li>
-                <li class="text__main services__type-item">
-                  Настройка передачи изображения с камер на сматрфон клиента
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="services__item">
-            <img
-              class="services__icon"
-              src="./images/services-icon-6.svg"
-              alt="#"
-            />
-            <div>
-              <p class="text__subheading">Установка заборов</p>
-              <ul class="services__type-list">
-                <li class="text__main services__type-item">
-                  Установка заборов по границе участка из любых материалов, по
-                  желанию заказчика
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <!--блог-->
-      <section class="blog container">
-        <p class="heading">
-          Наш блог&nbsp;<span class="heading__text">о строительстве</span>
-        </p>
-        <p class="text__subheading_emphasize">
-          больше видеообзоров на нашем канале
-        </p>
-        <div class="blog__data">
-          <div class="blog__data-item">
-            <p class="text__subheading">Каркасные дома</p>
-            <a
-              class="blog__link"
-              href="https://www.youtube.com/watch?v=hCNOW2lGmkA"
-              data-fancybox
-            >
-              <img
-                src="./images/blog-preview-1.png"
-                alt="превью видеофайла"
-                class="blog__preview"
-              />
-            </a>
-            <p class="text__main_inactive">от 15.02.2023</p>
-          </div>
-          <div class="blog__data-item">
-            <p class="text__subheading">Монтаж кровли</p>
-            <a
-              class="blog__link"
-              href="https://www.youtube.com/watch?v=hCNOW2lGmkA"
-              data-fancybox
-            >
-              <img
-                src="./images/blog-preview-2.png"
-                alt="превью видеофайла"
-                class="blog__preview"
-              />
-            </a>
-            <p class="text__main_inactive">от 24.01.2024</p>
-          </div>
-          <div class="blog__data-item">
-            <div class="blog__youtube-link youtube__link">
-              <span class="text__main">Подписаться</span>
-              <img
-                class="youtube__link-image"
-                src="./images/lead-youtube.png"
-                alt="лого youtube"
-              />
-              <img
-                src="./images/lead-youtube-arrow.svg"
-                alt="стрелочка"
-                class="youtube__arrow"
-              />
-            </div>
-            <p class="text__subheading">Основатель нашей компании</p>
-            <img
-              src="./images/blog-founder.png"
-              alt="Фото основателя компании"
-              class="blog__image"
-            />
-          </div>
-        </div>
-      </section>
-      <!--статьи-->
-      <section class="container">
-        <div class="articles">
-          <div class="articles__card">
-            <div class="articles__card-text">
-              <p class="text__subheading_active">Выбираем материал</p>
-              <p class="text__main text__article-preview">
-                Кровельные материалы для скатной кровли бывают нескольких видов
-              </p>
-              <a href="#" class="text__main">Подробнее</a>
-            </div>
-            <img
-              class="articles__image"
-              src="./images/articles-1.png"
-              alt="крыша"
-            />
-          </div>
-          <div class="articles__card">
-            <div class="articles__card-text">
-              <p class="text__subheading_active">Каркасные дома</p>
-              <p class="text__main text__article-preview">
-                Технология строительства деревянных домов становится все более
-                популярной
-              </p>
-              <a href="#" class="text__main">Подробнее</a>
-            </div>
-            <img
-              class="articles__image"
-              src="./images/articles-2.png"
-              alt="крыша"
-            />
-          </div>
-          <div class="articles__card">
-            <div class="articles__card-text">
-              <p class="text__subheading_active">Защитная обработка</p>
-              <p class="text__main text__article-preview">
-                Как продлить срок эксплуатации каркасного дома?
-              </p>
-              <a href="#" class="text__main">Подробнее</a>
-            </div>
-            <img
-              class="articles__image"
-              src="./images/articles-3.png"
-              alt="крыша"
-            />
-          </div>
-          <div class="articles__card">
-            <a href="#" class="articles__link"
-              >Больше статей о&nbsp;строительстве</a
-            >
-            <img
-              class="articles__image"
-              src="./images/articles-4.png"
-              alt="крыша"
-            />
-          </div>
-        </div>
-        <div class="articles__mobile">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="articles__card">
-                  <div class="articles__card-text">
-                    <p class="text__subheading_active">Выбираем материал</p>
-                    <p class="text__main text__article-preview">
-                      Кровельные материалы для скатной кровли бывают нескольких
-                      видов
-                    </p>
-                    <a href="#" class="text__main">Подробнее</a>
-                  </div>
-                  <img
-                    class="articles__image"
-                    src="./images/articles-1.png"
-                    alt="крыша"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="articles__card">
-                  <div class="articles__card-text">
-                    <p class="text__subheading_active">Каркасные дома</p>
-                    <p class="text__main text__article-preview">
-                      Технология строительства деревянных домов становится все
-                      более популярной
-                    </p>
-                    <a href="#" class="text__main">Подробнее</a>
-                  </div>
-                  <img
-                    class="articles__image"
-                    src="./images/articles-2.png"
-                    alt="крыша"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="articles__card">
-                  <div class="articles__card-text">
-                    <p class="text__subheading_active">Защитная обработка</p>
-                    <p class="text__main text__article-preview">
-                      Как продлить срок эксплуатации каркасного дома?
-                    </p>
-                    <a href="#" class="text__main">Подробнее</a>
-                  </div>
-                  <img
-                    class="articles__image"
-                    src="./images/articles-3.png"
-                    alt="крыша"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="articles__card">
-                  <a href="#" class="articles__link"
-                    >Больше статей о&nbsp;строительстве</a
-                  >
-                  <img
-                    class="articles__image"
-                    src="./images/articles-4.png"
-                    alt="крыша"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--отзывы-->
-      <section class="feedback container">
-        <p class="heading feedback__heading">
-          отзывы наших&nbsp;<span class="heading__text">клиентов</span>
-        </p>
-        <div class="feedback__content">
-          <div class="feedback__column">
-            <div
-              style="
-                width: 100%;
-                height: 692px;
-                overflow: hidden;
-                position: relative;
-              "
-            >
-              <iframe
-                style="
-                  width: 100%;
-                  height: 100%;
-                  border: none;
-                  box-sizing: border-box;
-                "
-                src="https://yandex.ru/maps-reviews-widget/210269045212?comments"
-              ></iframe
-              ><a
-                href="https://yandex.ru/maps/org/dostupnaya_stroyka/210269045212/"
-                target="_blank"
-                style="
-                  box-sizing: border-box;
-                  text-decoration: none;
-                  color: #b3b3b3;
-                  font-size: 10px;
-                  font-family: YS Text, sans-serif;
-                  padding: 0;
-                  position: absolute;
-                  bottom: 8px;
-                  width: 100%;
-                  text-align: center;
-                  left: 0;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                  display: block;
-                  max-height: 14px;
-                  white-space: nowrap;
-                  padding: 0 16px;
-                  box-sizing: border-box;
-                "
-                >Доступная стройка на карте Коломны — Яндекс Карты</a
-              >
-            </div>
-          </div>
-          <div class="feedback__column">
-            <img
-              src="./images/feedback-image.png"
-              alt="фото сотрудников"
-              class="feedback__image"
-            />
-            <p class="text__subheading">
-              Компания «Доступная стройка» — надежный застройщик, которые
-              заботится о своей репутации.
-            </p>
-            <p class="text__subheading">
-              Мы следим за качеством выполненных работ и готовы пройти любой
-              независимый технический
-            </p>
-            <p class="text__subheading">
-              Мы всегда идем навстречу заказчику и можем построить дом в любой
-              комплектации и с любыми отделочными материалами, которые вы
-              выберете.
-            </p>
-            <p class="text__subheading">
-              Мы обеспечиваем открытый процесс строительства. Вы будете получать
-              ежедневные фото- и видеоотчеты.
-            </p>
-          </div>
-        </div>
-      </section>
+
       <!--консультация-->
       <section class="consult container">
         <p class="heading consult__heading">
@@ -1021,7 +1165,6 @@
             alt="логотип"
           />
           <div class="footer__column">
-            <p class="text__subheading">Строительство каркасных&nbsp;домов</p>
             <div class="footer__social">
               <p class="text__main">Мы в социальных сетях</p>
               <a href="https://vk.com/dostup_stroi"
@@ -1078,13 +1221,13 @@
 
         <div class="footer__column">
           <p class="text__subheading">Обратная связь</p>
-          <p class="text__subheading">
+          <p class="text__main">
             г. Коломна, площадь Советская, д.8, ТЦ&nbsp;«Глобус», 3 этаж
           </p>
-          <a href="tel:+74994900050" class="text__subheading"
+          <a href="tel:+74994900050" class="footer__tel-link"
             >+7 (499) 490-00-50</a
           >
-          <a href="tel:+79296100020" class="text__subheading"
+          <a href="tel:+79296100020" class="footer__tel-link"
             >+7 (929) 610-00-20</a
           >
           <p class="text__small">пн-пт: с 10.00 до 18.00</p>
@@ -1105,6 +1248,34 @@
         >
       </p>
     </footer>
+    <div class="fixed-messengers">
+      <ul class="fixed-messengers__list">
+        <li class="fixed-messengers__item">
+          <a
+            target="blank"
+            href="https://t.me/dostupstroi"
+            class="fixed-messengers__link"
+            ><img src="./images/fixed-mesengers-wp.svg" alt="whatsup"
+          /></a>
+        </li>
+        <li class="fixed-messengers__item">
+          <a
+            target="blank"
+            href="https://t.me/dostupstroi"
+            class="fixed-messengers__link"
+            ><img src="./images/fixed-mesengers-tg.svg" alt="telegramm"
+          /></a>
+        </li>
+        <li class="fixed-messengers__item">
+          <a
+            target="blank"
+            href="https://vk.com/dostup_stroi"
+            class="fixed-messengers__link"
+            ><img src="./images/fixed-mesengers-vk.svg" alt="vk"
+          /></a>
+        </li>
+      </ul>
+    </div>
     <div class="popup" id="popup-form">
       <div class="popup__container">
         <button type="button" class="popup__toggle">
@@ -1148,7 +1319,12 @@
               </div></label
             >
           </div>
-          <button type="submit" class="button" name="popup-send-form" id="popup-send-form">
+          <button
+            type="submit"
+            class="button"
+            name="popup-send-form"
+            id="popup-send-form"
+          >
             Получить консультацию
           </button>
         </form>
@@ -1181,43 +1357,16 @@
         </div>
       </div>
     </div>
-    <div class="fixed-messengers">
-      <ul class="fixed-messengers__list">
-        <li class="fixed-messengers__item">
-          <a
-            target="blank"
-            href="https://t.me/dostupstroi"
-            class="fixed-messengers__link"
-            ><img src="./images/fixed-mesengers-wp.svg" alt="whatsup"
-          /></a>
-        </li>
-        <li class="fixed-messengers__item">
-          <a
-            target="blank"
-            href="https://t.me/dostupstroi"
-            class="fixed-messengers__link"
-            ><img src="./images/fixed-mesengers-tg.svg" alt="telegramm"
-          /></a>
-        </li>
-        <li class="fixed-messengers__item">
-          <a
-            target="blank"
-            href="https://vk.com/dostup_stroi"
-            class="fixed-messengers__link"
-            ><img src="./images/fixed-mesengers-vk.svg" alt="vk"
-          /></a>
-        </li>
-      </ul>
-    </div>
-    <script src="./scripts/popup.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script>
-      Fancybox.bind("[data-fancybox]", {});
-    </script>
     <script src="./scripts/dropdown.js"></script>
+    <script src="./scripts/popup.js"></script>
+    <script src="./scripts/tabs-house.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.umd.js"></script>
+    <script src="./scripts/gallery.js"></script>
+
     <script>
-      const swiper = new Swiper(".swiper", {
+      const swiper2 = new Swiper(".recommendation__slider", {
         direction: "horizontal",
         spaceBetween: 31,
         loop: false,
@@ -1229,17 +1378,14 @@
           375: {
             slidesPerView: 1.5,
           },
-          475: {
+          625: {
             slidesPerView: 2.5,
           },
-          625: {
+          768: {
             slidesPerView: 3,
           },
-          1000: {
-            slidesPerView: 3.5,
-          },
           1190: {
-            slidesPerView: 4,
+            slidesPerView: 3,
           },
         },
       });

@@ -1,0 +1,9 @@
+.house__tabs-item  input[type="radio"] {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.house__tabs-item  {
+    display: flex;
+}

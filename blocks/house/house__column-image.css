@@ -1,0 +1,59 @@
+.house__column-image {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 775px;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1050px) {
+    .house__column-image {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .house__column-image {
+        max-width: 702px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .house__column-image {
+        max-width: 98vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .house__column-image {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .house__column-image {
+        max-width: 92vw;
+    }
+}
+
+.f-thumbs__track {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+}
+
+.f-thumbs.is-vertical .f-thumbs__track {
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 700px) {
+    .f-thumbs__track {
+        flex-direction: row;
+        
+    }
+    .f-thumbs.is-horizontal .f-thumbs__track {
+        padding: 0;
+    }
+}

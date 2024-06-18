@@ -1,7 +1,6 @@
 @media screen and (max-width: 800px) {
     .footer__social {
         width: 165px;
-        margin-right: calc(100vw * 0.11);
     }
 }
 

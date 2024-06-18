@@ -54,27 +54,4 @@
         display: block;
     }
 
-/*     .filters::before {
-        content: "";
-        display: block;
-        width: 95%;
-        height: 105px;
-        border-radius: 45px;
-        position: absolute;
-        top: -8px;
-        background-color: #FFFFFF;
-        left: 2.5%;
-        z-index: -1;
-    }
-
-    .filters::after {
-        content: "";
-        display: block;
-        width: 36px;
-        height: 4px;
-        position: absolute;
-        top: -14px;
-        background-color: #D0D7DD;
-        left: calc(50% - 18px)
-    } */
 }

@@ -1,0 +1,39 @@
+.tabs__list {
+    display: flex;
+    gap: 32px;
+    overflow: hidden;
+    margin-top: 6px;
+    margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1050px) {
+    .tabs__list {
+        gap: 12px;
+        width: calc(100% + 150px);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .tabs__list {
+        gap: 12px;
+        width: calc(100% + 300px);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .tabs__list {
+        gap: 12px;
+        width: calc(100% + 400px);
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .tabs__list {
+        gap: 12;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        margin-top: 24px;
+    }
+}
