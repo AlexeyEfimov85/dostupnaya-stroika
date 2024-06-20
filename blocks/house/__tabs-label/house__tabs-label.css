@@ -7,9 +7,9 @@
     width: 100%;
     cursor: pointer;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 16px;
     white-space: nowrap;
     color: #565B62;
 }
