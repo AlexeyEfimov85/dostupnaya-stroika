@@ -1,0 +1,6 @@
+.catalog__cards-item-wrapper {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: auto 124px;
+    align-items: center;
+}

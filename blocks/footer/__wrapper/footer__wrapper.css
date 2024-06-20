@@ -8,9 +8,17 @@
     margin: 8px 0;
 }
 
+.footer__wrapper > .footer__column {
+    padding-left: 90px;
+}
+
 @media screen and (max-width: 950px) {
     .footer__wrapper {
-        gap: 0;
+        gap: 1%;
+    }
+
+    .footer__wrapper > .footer__column {
+        padding-left: 0px;
     }
 }
 

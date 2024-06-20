@@ -4,6 +4,7 @@
 
 .filters .popup__toggle {
     display: none;
+    z-index: 9;
 }
 
 @media screen and (max-width: 1050px) {

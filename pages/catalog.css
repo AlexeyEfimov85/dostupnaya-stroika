@@ -20,6 +20,7 @@
 @import url("../blocks/catalog/__links-list/_visible/catalog__links-list_visible.css");
 @import url("../blocks/catalog/__links/catalog__links.css");
 @import url("../blocks/catalog/__cards/catalog__cards.css");
+@import url("../blocks/catalog/__cards-item-wrapper/catalog__cards-item-wrapper.css");
 @import url("../blocks/filters/filters.css");
 @import url("../blocks/catalog/__wrapper/catalog__wrapper.css");
 @import url("../blocks/slider/noUi-connect.css");

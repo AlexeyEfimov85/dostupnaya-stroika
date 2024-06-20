@@ -3,10 +3,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
+    justify-content: center;
 }
 
 .catalog__cards > li {
    cursor: pointer;
+   max-width: 372px;
 }
 
 @media screen and (max-width: 1050px) {

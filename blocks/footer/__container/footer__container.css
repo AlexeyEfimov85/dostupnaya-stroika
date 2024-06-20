@@ -1,18 +1,19 @@
 .footer__container {
-    max-width: 1180px;
+    width: 1180px;
     position: relative;
     margin: 0 auto;
 }
 
 @media screen and (max-width: 1179px) {
     .footer__container {
-        max-width: 99vw;
+        width: 99vw;
     }
 }
 
 @media screen and (max-width: 768px) {
     .footer__container {
         max-width: 702px;
+        width: 98vw;
     }
 }
 
@@ -25,5 +26,6 @@
 @media screen and (max-width: 624px) {
     .footer__container {
         max-width: 92vw;
+        width: 92vw;
     }
 }
