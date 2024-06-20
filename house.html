@@ -12,6 +12,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
@@ -274,7 +278,7 @@
               class="f-carousel__slide"
               data-thumb-src="./images/house-gallery-2.png"
             >
-              <a href="./images/house-gallery-1.png" data-fancybox="gallery">
+              <a href="./images/house-gallery-2.png" data-fancybox="gallery">
                 <img
                   class="fancybox-carousel__image"
                   alt=""
@@ -1389,35 +1393,6 @@
         </div>
       </div>
     </div>
-    <!--попап для галереи-->
-    <div class="popup" id="popup-image">
-      <div class="popup__container">
-        <div class="swiper swiper_gallery">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./images/house-gallery-1.png" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/house-gallery-2.png" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/house-gallery-1.png" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/house-gallery-1.png" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/house-gallery-1.png" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/house-gallery-1.png" />
-            </div>
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
-    </div>
     <script src="./scripts/dropdown.js"></script>
     <script src="./scripts/popup.js"></script>
     <!--     <script src="./scripts/popup-gallery.js"></script>
@@ -1428,12 +1403,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.umd.js"></script>
     <script src="./scripts/gallery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script>
       Fancybox.bind("[data-fancybox]", {
         // Your custom options
       });
     </script>
-
     <script>
       const swiper2 = new Swiper(".recommendation__slider", {
         direction: "horizontal",
