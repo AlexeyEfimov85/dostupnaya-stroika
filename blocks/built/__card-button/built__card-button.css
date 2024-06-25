@@ -1,0 +1,6 @@
+@media screen and (max-width: 840px) {
+    .built__card-button {
+        line-height: 20px;
+        padding: 6px 16px;
+    }
+}

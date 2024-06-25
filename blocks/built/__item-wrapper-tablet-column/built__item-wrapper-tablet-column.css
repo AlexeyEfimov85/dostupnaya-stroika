@@ -1,0 +1,14 @@
+.built__item-wrapper-tablet-column {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0 0 0;
+    align-items: center;
+}
+
+@media screen and (max-width: 840px) {
+    .built__item-wrapper-tablet-column {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+}

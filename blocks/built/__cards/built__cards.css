@@ -1,0 +1,24 @@
+.built__cards{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.built__cards > li {
+   cursor: pointer;
+}
+
+@media screen and (max-width: 1050px) {
+    .built__cards {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .built__cards {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}

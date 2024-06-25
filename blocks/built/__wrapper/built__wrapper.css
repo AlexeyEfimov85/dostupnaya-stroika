@@ -1,0 +1,6 @@
+.built__wrapper {
+    display: flex;
+    margin-top: 32px;
+    gap: 32px;
+    flex-direction: column;
+}

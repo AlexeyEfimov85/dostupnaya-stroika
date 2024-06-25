@@ -1,0 +1,30 @@
+.built {
+    max-width: 1180px;
+    margin: 32px auto;
+    position: relative;
+}
+
+@media screen and (max-width: 1179px) {
+    .built {
+        max-width: 98vw;
+        margin: 24px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .built {
+        max-width: 702px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .built {
+        max-width: 98vw;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .built {
+        max-width: 92vw;
+    }
+}

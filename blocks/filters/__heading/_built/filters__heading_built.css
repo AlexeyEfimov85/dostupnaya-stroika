@@ -1,0 +1,9 @@
+.filters__heading_built {
+    display: none;
+}
+
+@media screen and (max-width: 625px) {
+    .filters__heading_built {
+        display: block;
+    }
+}
