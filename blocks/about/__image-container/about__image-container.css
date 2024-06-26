@@ -1,0 +1,25 @@
+.about__image-container{
+
+}
+
+
+@media screen and (max-width: 855px) {
+    .about__image-container {
+        width: 51%;
+        height: 490px;
+        position: relative;
+        margin-left: -0.5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about__image-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .about__image-container {
+        height: calc(100vw * 0.70);
+    }
+}

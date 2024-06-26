@@ -6,7 +6,7 @@
 
 .footer > .text__small {  /* политика конфиденциальности */
     display: flex;
-    width: 100%;
+    /* width: 100%; */
 }
 
 @media screen and (max-width: 624px) {

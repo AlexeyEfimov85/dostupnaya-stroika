@@ -1,0 +1,17 @@
+.about__heading {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .about__heading {
+        width: 400px;
+        margin-top: 24px;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .about__heading {
+        width: 290px;
+        margin-top: 24px;
+    }
+}

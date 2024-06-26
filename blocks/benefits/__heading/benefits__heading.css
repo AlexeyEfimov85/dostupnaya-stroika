@@ -1,0 +1,10 @@
+.benefits__heading {
+    width: 400px;
+    margin-bottom: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .benefits__heading {
+        margin-bottom: 24px;
+    }
+}

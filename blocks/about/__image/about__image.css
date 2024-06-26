@@ -1,0 +1,13 @@
+@media screen and (max-width: 855px) {
+    .about__image {
+        width: 403px;
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about__image {
+        display: none;
+    }
+}

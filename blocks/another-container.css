@@ -1,0 +1,31 @@
+.another-container {
+    max-width: 1180px;
+    margin: 24px auto 120px;
+    position: relative;
+}
+
+@media screen and (max-width: 1179px) {
+    .another-container {
+        max-width: 98vw;
+        margin: 24px auto 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .another-container {
+        max-width: 702px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .another-container {
+        max-width: 98vw;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .another-container {
+        max-width: 92vw;
+        margin: 24px auto 80px;
+    }
+}

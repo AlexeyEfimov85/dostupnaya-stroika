@@ -1,0 +1,10 @@
+.about {
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+
+}
