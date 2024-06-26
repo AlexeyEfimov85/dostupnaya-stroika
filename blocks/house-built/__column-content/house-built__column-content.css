@@ -1,0 +1,20 @@
+@media screen and (max-width: 1050px) {
+    .house-built__column-content .house-built__description {
+        order: -1;
+    }
+    .house-built__column-content .house__parameters {
+        grid-column: 2 / 3;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .house-built__column-content .house-built__description {
+        order: 0;
+    }
+    .house-built__column-content .house__parameters {
+        grid-column: 1 / 2;
+    }
+    .house-built__column-content {
+        margin-top: 0;
+    }
+}

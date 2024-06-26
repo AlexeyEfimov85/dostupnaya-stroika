@@ -1,0 +1,18 @@
+.house-built__description {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media screen and (max-width: 1050px) {
+    .house-built__description {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .house-built__description {
+        margin-top: 24px;
+    }
+}
