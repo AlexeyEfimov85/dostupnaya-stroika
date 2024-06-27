@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Доступная стройка</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+  </head>
+
+  <body class="root">
+    <header class="header">
+      <div class="main__dropdown-bcgr"></div>
+      <div class="header__container header__wrapper">
+        <div class="header__wrapper_content">
+          <div class="header__nav-burger">
+            <input class="checkbox" type="checkbox" id="burgerButton" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+          </div>
+          <a href="./index.html">
+            <img class="logo" src="./images/logo.svg" />
+          </a>
+        </div>
+        <div class="header__wrapper_content">
+          <div class="header__contacts">
+            <a class="header__tel" href="tel:+74994900050"
+              ><span>+7&nbsp;(499)&nbsp;490-00-50</span
+              ><img
+                src="./images/header-call-image.png"
+                alt="телефонная трубка"
+            /></a>
+            <span class="header__shedule">пн-пт: с 10.00 до 18.00;</span>
+            <span class="header__shedule"> сб:&nbsp;с 10.00 до 15.00</span>
+          </div>
+          <button class="button button__request-call">Заказать звонок</button>
+        </div>
+      </div>
+      <nav class="navigation">
+        <div class="navigation__container">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item_catalog">
+              Каталог проектов
+            </li>
+            <li class="navigation__item">
+              <a href="./built.html">Построенные дома</a>
+            </li>
+            <li class="navigation__item navigation__item_about">
+              О&nbsp;компании
+            </li>
+            <li class="navigation__item">Отзывы</li>
+            <li class="navigation__item">Видеоблог</li>
+            <li class="navigation__item">Статья</li>
+            <li class="navigation__item">Контакты</li>
+          </ul>
+          <div class="navigation__contacts">
+            <div class="footer__social">
+              <p class="text__main">Мы в социальных сетях</p>
+              <a href="https://vk.com/dostup_stroi"
+                ><img src="./images/social-vk.svg" alt="значок вк"
+              /></a>
+              <a href="https://ok.ru/group/56738929705017"
+                ><img
+                  src="./images/social-odnoklasniki.svg"
+                  alt="значок оноклассников"
+              /></a>
+              <a href="https://t.me/dostupstroi"
+                ><img src="./images/social-telegram.svg" alt="значок телеграмм"
+              /></a>
+              <a href="https://www.youtube.com/@dostup-stroi"
+                ><img src="./images/social-youtube.svg" alt="значок youtube"
+              /></a>
+            </div>
+            <div class="footer__column">
+              <p class="text__main">
+                г. Коломна, площадь Советская, д.8, 3 этаж
+              </p>
+              <a href="tel:+74994900050" class="text__heading_active"
+                >+7 (499) 490-00-50</a
+              >
+              <p class="text__small">пн-пт: с 10.00 до 18.00</p>
+              <p class="text__small">сб: с 10.00 до 15.00</p>
+              <a
+                href="mailto:dostup-stroi@mail.ru"
+                class="text__main footer__email-link"
+                >dostup-stroi@mail.ru</a
+              >
+              <button class="button button__request-call">
+                Заказать звонок
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--выпадающее меню "каталог"-->
+        <div class="dropdown-menu dropdown-menu_closed">
+          <div class="dropdown-menu__wrapper">
+            <div class="dropdown-menu__container">
+              <p class="dropdown-menu__subheader">Каркасные дома по стилю</p>
+              <ul class="dropdown-menu__list">
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Дачные</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Финские</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Хайтек</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Шале</a>
+                </li>
+              </ul>
+              <a href="./catalog.html" class="dropdown-menu__link"
+                >Посмотреть весь каталог</a
+              >
+            </div>
+            <div class="dropdown-menu__container">
+              <p class="dropdown-menu__subheader">
+                Каркасные дома по этажности
+              </p>
+              <ul class="dropdown-menu__list">
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">1-этажные</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">С мансардой</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">2-этажные</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown-menu__container">
+              <p class="dropdown-menu__subheader">Каркасные дома по размеру</p>
+              <ul class="dropdown-menu__list">
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Небольшие</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">Большие</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">до 100 кв м</a>
+                </li>
+                <li class="dropdown-menu__listitem">
+                  <a class="dropdown-menu__item" href="#">до 150 кв м</a>
+                </li>
+              </ul>
+            </div>
+            <img
+              class="dropdown-menu__image"
+              src="./images/dropdown-menu.png"
+              alt="каркасный дом"
+            />
+            <img
+              class="dropdown-menu__image-mobile"
+              src="./images/dropdown-menu-mobile.png"
+              alt="каркасный дом"
+            />
+          </div>
+        </div>
+        <!--выпадающее меню "о компании"-->
+        <div class="dropdown-about dropdown-menu_closed">
+          <div class="dropdown-menu__wrapper">
+            <div>
+              <a href="./team.html" class="dropdown-about__subheader"
+                >Наша команда</a
+              >
+              <a href="./about.html" class="dropdown-about__text"
+                >О компании "Доступная стройка"</a
+              >
+            </div>
+            <img
+              class="dropdown-about__image"
+              src="./images/dropdown-about.png"
+              alt="Каркасный дом"
+            />
+            <img
+              class="dropdown-about__image-mobile"
+              src="./images/dropdown-about-mobile.png"
+              alt="Каркасный дом"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="breadcrumbs">
+        <div class="breadcrumbs__container">
+          <ol
+            class="breadcrumbs__list"
+            itemscope=""
+            itemtype="http://schema.org/BreadcrumbList"
+          >
+            <li
+              class="breadcrumbs__item"
+              id="bx_breadcrumb_0"
+              itemprop="itemListElement"
+              itemscope=""
+              itemtype="http://schema.org/ListItem"
+            >
+              <a
+                href="/"
+                title="Главная"
+                itemprop="item"
+                class="breadcrumbs__link"
+                >Главная</a
+              >
+              <meta itemprop="position" content="1" />
+            </li>
+            <li class="breadcrumbs__item">
+              <span>Видеоблог</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <section class="videoblog another-container">
+        <div class="videoblog__wrapper">
+          <h1 class="heading">Видеоблог</h1>
+          <a
+            href="https://www.youtube.com/channel/UCvDnVRDKjoG38O6JNWJghxg"
+            class="youtube__link videoblog__link"
+          >
+            <span class="text__main">Канал</span>
+            <img
+              class="youtube__link-image"
+              src="./images/lead-youtube.png"
+              alt="лого youtube"
+            />
+            <img
+              src="./images/lead-youtube-arrow.svg"
+              alt="стрелочка"
+              class="youtube__arrow"
+            />
+          </a>
+        </div>
+        <ul class="videoblog__container">
+          <li class="videoblog__item">
+            <a
+              class="videoblog__item-link"
+              href="https://youtu.be/hCNOW2lGmkA?si=_aNbz7gTV5z5BSJK"
+              data-fancybox
+            >
+              <img
+                src="./images/videoblog-image-1.png"
+                alt="превью видеофайла"
+                class="videoblog__preview"
+              />
+            </a>
+          </li>
+          <li class="videoblog__item">
+            <iframe width="100%" height="210" src="https://www.youtube.com/embed/q0YKOM8PiNI?si=VZZJg2BnlnDjNeeZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </li>
+          <li class="videoblog__item">
+            <a
+              class="videoblog__item-link"
+              href="https://youtu.be/jLvCyYvJKAY?si=hheyjtYb4jxsyf-e"
+              data-fancybox
+            >
+              <img
+                src="./images/videoblog-image-1.png"
+                alt="превью видеофайла"
+                class="videoblog__preview"
+              />
+            </a>
+          </li>
+          <li class="videoblog__item">
+            <a
+              class="videoblog__item-link"
+              href="https://youtu.be/MXEflYewKTk?si=nlXScU9bY7QORAU2"
+              data-fancybox
+            >
+              <img
+                src="./images/videoblog-image-1.png"
+                alt="превью видеофайла"
+                class="videoblog__preview"
+              />
+            </a>
+          </li>
+          <li class="videoblog__item">
+            <a
+              class="videoblog__item-link"
+              href="https://youtu.be/hCNOW2lGmkA?si=_aNbz7gTV5z5BSJK"
+              data-fancybox
+            >
+              <img
+                src="./images/videoblog-image-1.png"
+                alt="превью видеофайла"
+                class="videoblog__preview"
+              />
+            </a>
+          </li>
+          <li class="videoblog__item">
+            <a
+              class="videoblog__item-link"
+              href="https://youtu.be/0wD8i2Tix84?si=QgPJJ4H60RB-3RgL"
+              data-fancybox
+            >
+              <img
+                src="./images/videoblog-image-1.png"
+                alt="превью видеофайла"
+                class="videoblog__preview"
+              />
+            </a>
+          </li>
+          <li class="videoblog__item">
+            <a
+              class="videoblog__item-link"
+              href="https://youtu.be/_N4oWs7t5us?si=ChlWNW2X6twvqKo9"
+              data-fancybox
+            >
+              <img
+                src="./images/videoblog-image-1.png"
+                alt="превью видеофайла"
+                class="videoblog__preview"
+              />
+            </a>
+          </li>
+          <li class="videoblog__item">
+            <a
+              class="videoblog__item-link"
+              href="https://youtu.be/1jz5LOncW4I?si=Jgql0lZ4gEosLWNL"
+              data-fancybox
+            >
+              <img
+                src="./images/videoblog-image-1.png"
+                alt="превью видеофайла"
+                class="videoblog__preview"
+              />
+            </a>
+          </li>
+          <li class="videoblog__item">
+            <a
+              class="videoblog__item-link"
+              href="https://youtu.be/GnyO0CaT9Rg?si=3BFNEEWE6B0wdrhT"
+              data-fancybox
+            >
+              <img
+                src="./images/videoblog-image-1.png"
+                alt="превью видеофайла"
+                class="videoblog__preview"
+              />
+            </a>
+          </li>
+          <li class="videoblog__item">
+            <a
+              class="videoblog__item-link"
+              href="https://youtu.be/DkU9-6ecUFU?si=v_m_-8up3yylIGEP"
+              data-fancybox
+            >
+              <img
+                src="./images/videoblog-image-1.png"
+                alt="превью видеофайла"
+                class="videoblog__preview"
+              />
+            </a>
+          </li>
+          <li class="videoblog__item">
+            <a
+              class="videoblog__item-link"
+              href="https://youtu.be/hCNOW2lGmkA?si=_aNbz7gTV5z5BSJK"
+              data-fancybox
+            >
+              <img
+                src="./images/videoblog-image-1.png"
+                alt="превью видеофайла"
+                class="videoblog__preview"
+              />
+            </a>
+          </li>
+          <li class="videoblog__item">
+            <a
+              class="videoblog__item-link"
+              href="https://youtu.be/LIz4p7b8Gx0?si=2rQ-ORnIChFHwrFv"
+              data-fancybox
+            >
+              <img
+                src="./images/videoblog-image-1.png"
+                alt="превью видеофайла"
+                class="videoblog__preview"
+              />
+            </a>
+          </li>
+        </ul>
+        <a
+          href="https://www.youtube.com/@dostup-stroi/videos"
+          target="_blank"
+          class="button videoblog__button"
+          >Посмотреть все видеообзоры</a
+        >
+      </section>
+
+      <!--консультация-->
+      <section class="consult container">
+        <p class="heading consult__heading">
+          получить <span class="heading__text">консультацию</span>
+        </p>
+        <div class="consult__wrapper">
+          <form class="form consult__form">
+            <p class="text__subheading">
+              Оставьте заявку и менеджер свяжется с&nbsp;вами в ближайшее время
+            </p>
+            <label class="form__label text__main" for="name">Имя</label>
+            <input class="form__input" id="name" placeholder="Иван" />
+            <label class="form__label" for="tel">Телефон</label>
+            <input
+              class="form__input"
+              id="tel"
+              placeholder="+7(000)000-00-00"
+            />
+            <div class="form__checkbox-field">
+              <input
+                type="checkbox"
+                id="checkbox"
+                class="form__checkbox"
+                checked
+              />
+              <label for="checkbox" class="form__label form__label_checkbox">
+                <div>
+                  <span class="text__small_inactive">Вы даёте согласие на</span>
+                  <a href="#" class="text__small_inactive"
+                    >обработку персональных данных</a
+                  >
+                </div></label
+              >
+            </div>
+            <button type="submit" class="button">Получить консультацию</button>
+          </form>
+          <div class="consult__image-container">
+            <img
+              class="consult__image"
+              src="./images/consult-image.png"
+              alt="большой дом"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--футтер-->
+    <footer class="footer">
+      <div class="footer__wrapper footer__container">
+        <div class="footer__wrapper-2">
+          <img
+            class="footer__logo"
+            src="./images/logo-footer.svg"
+            alt="логотип"
+          />
+          <div class="footer__column">
+            <div class="footer__social">
+              <p class="text__main">Мы в социальных сетях</p>
+              <a href="https://vk.com/dostup_stroi"
+                ><img src="./images/social-vk.svg" alt="значок вк"
+              /></a>
+              <a href="https://ok.ru/group/56738929705017"
+                ><img
+                  src="./images/social-odnoklasniki.svg"
+                  alt="значок оноклассников"
+              /></a>
+              <a href="https://t.me/dostupstroi"
+                ><img src="./images/social-telegram.svg" alt="значок телеграмм"
+              /></a>
+              <a href="https://www.youtube.com/@dostup-stroi"
+                ><img src="./images/social-youtube.svg" alt="значок youtube"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <ul class="accordion__list">
+          <li class="accordion__item">
+            <input type="checkbox" id="accordionCheckbox" />
+            <i></i>
+            <div class="accordion__wrapper">
+              <p class="accordion__subheading">Каталог</p>
+            </div>
+            <ul class="accordion__text">
+              <li class="text__main"><a href="#">Каркасные дома</a></li>
+              <li class="text__main"><a href="#">Дачные дома</a></li>
+              <li class="text__main"><a href="#">Финские дома</a></li>
+              <li class="text__main"><a href="#">Канадские дома</a></li>
+              <li class="text__main"><a href="#">Дома в стиле Шале</a></li>
+              <li class="text__main"><a href="#">Дома в стиле Хай-тек</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="accordion__list">
+          <li class="accordion__item">
+            <input type="checkbox" id="accordionCheckbox" />
+            <i></i>
+            <div class="accordion__wrapper">
+              <p class="accordion__subheading">Клиентам</p>
+            </div>
+            <ul class="accordion__text">
+              <li class="text__main"><a href="#">О компании</a></li>
+              <li class="text__main"><a href="#">Наша команда</a></li>
+              <li class="text__main"><a href="#">Построенные объекты</a></li>
+              <li class="text__main"><a href="#">Видеоблог</a></li>
+              <li class="text__main"><a href="#">Статьи</a></li>
+              <li class="text__main"><a href="#">Контакты</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="footer__column">
+          <p class="text__subheading">Обратная связь</p>
+          <p class="text__main">
+            г. Коломна, площадь Советская, д.8, ТЦ&nbsp;«Глобус», 3 этаж
+          </p>
+          <a href="tel:+74994900050" class="footer__tel-link"
+            >+7 (499) 490-00-50</a
+          >
+          <a href="tel:+79296100020" class="footer__tel-link"
+            >+7 (929) 610-00-20</a
+          >
+          <p class="text__small">пн-пт: с 10.00 до 18.00</p>
+          <p class="text__small">сб: с 10.00 до 15.00</p>
+          <a
+            href="mailto:dostup-stroi@mail.ru"
+            class="text__main footer__email-link"
+            >dostup-stroi@mail.ru</a
+          >
+          <button class="button button__request-call">Заказать звонок</button>
+        </div>
+      </div>
+      <p class="text__small footer__container">
+        © 2010—2024. Все права защищены.<a
+          class="text__small footer__politic"
+          href="#"
+          >Политика конфиденциальности</a
+        >
+      </p>
+    </footer>
+    <div class="popup" id="popup-form">
+      <div class="popup__container">
+        <button type="button" class="popup__toggle">
+          <img src="./images/popup-toogle.svg" alt="" />
+        </button>
+        <img
+          class="popup__image"
+          src="./images/popup-image-1.png"
+          alt="картинка с домом"
+          id="call"
+        />
+        <img
+          class="popup__image"
+          src="./images/popup-image-2.png"
+          alt="картинка с домом"
+          id="excursion"
+        />
+
+        <form class="form form__popup" name="popup-form">
+          <p class="text__heading_active">Получить консультацию</p>
+          <p class="text__subheading">
+            Оставьте заявку и менеджер свяжется с вами в ближайшее время
+          </p>
+          <label class="form__label text__main" for="name">Имя</label>
+          <input class="form__input" id="name" placeholder="Иван" />
+          <label class="form__label" for="tel">Телефон</label>
+          <input class="form__input" id="tel" placeholder="+7(000)000-00-00" />
+          <div class="form__checkbox-field">
+            <input
+              type="checkbox"
+              id="checkbox"
+              class="form__checkbox"
+              checked
+            />
+            <label for="checkbox" class="form__label form__label_checkbox">
+              <div>
+                <span class="text__small_inactive">Вы даёте согласие на</span>
+                <a href="#" class="text__small_inactive"
+                  >обработку персональных данных</a
+                >
+              </div></label
+            >
+          </div>
+          <button
+            type="submit"
+            class="button"
+            name="popup-send-form"
+            id="popup-send-form"
+          >
+            Получить консультацию
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="popup" id="popup-ok">
+      <div class="popup__container">
+        <button type="button" class="popup__toggle">
+          <img src="./images/popup-toogle.svg" alt="" />
+        </button>
+        <img
+          class="popup__image"
+          src="./images/popup-image-1.png"
+          alt="картинка с домом"
+          id="call"
+        />
+        <img
+          class="popup__image"
+          src="./images/popup-image-2.png"
+          alt="картинка с домом"
+          id="excursion"
+        />
+        <div class="popup__column">
+          <img src="./images/popup-success.svg" alt="значок успеха" />
+          <p class="text__heading_active">
+            Ваша заявка успешно&nbsp;отправлена
+          </p>
+          <p class="text__main">Мы свяжемся с вами в ближайшее время.</p>
+          <button type="button" class="button" id="button-ok">Отлично</button>
+        </div>
+      </div>
+    </div>
+    <div class="fixed-messengers">
+      <ul class="fixed-messengers__list">
+        <li class="fixed-messengers__item">
+          <a
+            target="blank"
+            href="https://t.me/dostupstroi"
+            class="fixed-messengers__link"
+            ><img src="./images/fixed-mesengers-wp.svg" alt="whatsup"
+          /></a>
+        </li>
+        <li class="fixed-messengers__item">
+          <a
+            target="blank"
+            href="https://t.me/dostupstroi"
+            class="fixed-messengers__link"
+            ><img src="./images/fixed-mesengers-tg.svg" alt="telegramm"
+          /></a>
+        </li>
+        <li class="fixed-messengers__item">
+          <a
+            target="blank"
+            href="https://vk.com/dostup_stroi"
+            class="fixed-messengers__link"
+            ><img src="./images/fixed-mesengers-vk.svg" alt="vk"
+          /></a>
+        </li>
+      </ul>
+    </div>
+    <script src="./scripts/popup.js"></script>
+
+    <script src="./scripts/dropdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.videoblog__container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 72px 0 0 0;
+}
+
+@media screen and (max-width: 900px) {
+    .videoblog__container {
+        margin: 24px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .videoblog__container {
+        margin: 24px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .videoblog__container {
+        grid-template-columns: 100%;
+        margin: 24px 0 0 0;
+    }
+}
+
+
+

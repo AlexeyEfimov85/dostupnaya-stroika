@@ -1,0 +1,4 @@
+.videoblog {
+    display: flex;
+    flex-direction: column;
+}
