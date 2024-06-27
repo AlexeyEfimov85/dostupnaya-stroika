@@ -17,6 +17,19 @@
     transform: translate(-50%, -50%);
 }
 
+.videoblog__item:nth-of-type(2n) .videoblog__item-link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    border-radius: 5px;
+    width: calc(18% + 12px* 0.2);
+    height: 21.5%;
+    background-color: #FF0000;
+    transform: translate(-50%, -50%);
+}
+
 .videoblog__item-link::after {
     content: "";
     position: absolute;
@@ -30,3 +43,5 @@
     background-repeat: no-repeat;
     transform: translate(-50%, -50%);
 }
+
+
