@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Доступная стройка</title>
     <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
   </head>
 
   <body class="root">
@@ -52,7 +44,9 @@
             <li class="navigation__item navigation__item_catalog">
               Каталог проектов
             </li>
-            <li class="navigation__item"><a href="./built.html">Построенные дома</a> </li>
+            <li class="navigation__item">
+              <a href="./built.html">Построенные дома</a>
+            </li>
             <li class="navigation__item navigation__item_about">
               О&nbsp;компании
             </li>
@@ -171,8 +165,10 @@
         <div class="dropdown-about dropdown-menu_closed">
           <div class="dropdown-menu__wrapper">
             <div>
-              <a href="./team.html" class="dropdown-about__subheader">Наша команда</a>
-              <a href="./about.html" class="dropdown-about__text">О компании "Доступная стройка"</a>
+              <p class="dropdown-about__subheader">Наша команда</p>
+              <a href="./about.html" class="dropdown-about__text"
+                >О компании "Доступная стройка"</a
+              >
             </div>
             <img
               class="dropdown-about__image"
@@ -189,276 +185,83 @@
       </nav>
     </header>
     <main class="main">
-        <div class="breadcrumbs">
-            <div class="breadcrumbs__container">
-              <ol
-                class="breadcrumbs__list"
-                itemscope=""
-                itemtype="http://schema.org/BreadcrumbList"
+      <div class="breadcrumbs">
+        <div class="breadcrumbs__container">
+          <ol
+            class="breadcrumbs__list"
+            itemscope=""
+            itemtype="http://schema.org/BreadcrumbList"
+          >
+            <li
+              class="breadcrumbs__item"
+              id="bx_breadcrumb_0"
+              itemprop="itemListElement"
+              itemscope=""
+              itemtype="http://schema.org/ListItem"
+            >
+              <a
+                href="/"
+                title="Главная"
+                itemprop="item"
+                class="breadcrumbs__link"
+                >Главная</a
               >
-                <li
-                  class="breadcrumbs__item"
-                  id="bx_breadcrumb_0"
-                  itemprop="itemListElement"
-                  itemscope=""
-                  itemtype="http://schema.org/ListItem"
-                >
-                  <a
-                    href="/"
-                    title="Главная"
-                    itemprop="item"
-                    class="breadcrumbs__link"
-                    >Главная</a
-                  >
-                  <meta itemprop="position" content="1" />
-                </li>
-                <li class="breadcrumbs__item">
-                  <span>О компании</span>
-                </li>
-              </ol>
+              <meta itemprop="position" content="1" />
+            </li>
+            <li
+              class="breadcrumbs__item"
+              id="bx_breadcrumb_1"
+              itemprop="itemListElement"
+              itemscope=""
+              itemtype="http://schema.org/ListItem"
+            >
+              <a
+                href="/services/"
+                title="Каталог домов"
+                itemprop="item"
+                class="breadcrumbs__link"
+                >О компании</a
+              >
+              <meta itemprop="position" content="2" />
+            </li>
+
+            <li class="breadcrumbs__item">
+              <span>Наша команда</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!--Команда-->
+      <section class="team another-container">
+        <div class="team__row">
+            <div class="team__image-container">
+                <img src="./images/team-1.png" alt="фото директора" class="team__image" />
             </div>
-          </div>
-          <section class="excursion another-container about">
-            <div class="about__image-container">
-              <img
-                class="about__image"
-                src="./images/about-desktop-image.png"
-                alt="команда"
-              />
-              <img
-                class="about__image-mobile"
-                src="./images/about-mobile-image.png"
-                alt="команда"
-              />
+            <div class="team__content">
+                <h1 class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Основатель <span class="heading__text">компании</span></h1>
+                <p class="team__name">Михаил Иванов</p>
             </div>
-            <div class="about__column">
-              <h1 class="heading excursion__heading about__heading">
-                О компании <span class="heading__text">доступная&nbsp;стройка</span>
-              </h1>
-              <p class="text__subheading">
-                Наша компания профессионально занимается строительством домов и бань по каркасной технологии в Московской области с 2017 года. За это время было построено более 150 домов.
-              </p>
-              <p class="text__subheading"> Строим дома, как для сезонного использования, так и для круглогодичного проживания. Берем на себя все строительные этапы: начиная с разработки проекта, выбора необходимых материалов , заканчивая монтажом инженерных систем в построенном доме. Полностью организуем весь строительный процесс, вам останется только принять готовый объект . Строго соблюдаем технологии строительства , СП 31-105, СНиПы и ГОСТы, приветствуем любые проверки. Контролируем каждый этап строительства с ежедневным фото/видео отчетом для заказчика. Используем только правильные материалы, соответсвующие технологии и проверенные на собственном опыте . За счет высокого качества выполняемых работ и доступных конкурентноспособных цен, мы заработали авторитет у застройщиков на юго-востоке Московской области — нас с удовольствием  рекомендуют родным и друзьям. </p>
-              
-              <p class="text__subheading">
-                Мы стараемся постоянно совершенствовать свои знания и навыки , следить за инновациями в сфере нашей деятельности , тем самым добиваясь все более высокого исполнения строящихся домов для наших заказчиков.
-              </p>
-              <a href="#" class="button">
-                Наша команда
-              </a>
+        </div>
+        <div class="team__row">
+            <div class="team__content">
+                <h1 class="heading">Менеджер</h1>
+                <p class="team__name">Татьяна Тихомирова</p>
             </div>
-          </section>
-          <!--Преимущества-->
-      <section class="benefits container">
-        <h1 class="heading benefits__heading">Почему <span class="heading__text">именно мы?</span></h1>
-        <ul class="benefits__list">
-          <li class="benefits__item">
-            <img src="./images/benefits-icon-1.svg" alt="банкнота" />
-            <p class="text__subheading">Поэтапная оплата</p>
-            <p class="text__main">
-              У нас нет скрытых платежей. Вы платите только за выполненные
-              работы по акту приёмки.
-            </p>
-          </li>
-          <li class="benefits__item">
-            <img src="./images/benefits-icon-2.svg" alt="банкнота" />
-            <p class="text__subheading">Строительство по ГОСТ И СНиП</p>
-            <p class="text__main">
-              Строим только с использованием правильных материалов, отвечающих
-              современным стандартам загородного строительства.
-            </p>
-          </li>
-          <li class="benefits__item">
-            <img src="./images/benefits-icon-3.svg" alt="банкнота" />
-            <p class="text__subheading">Прочный силовой каркас</p>
-            <p class="text__main">
-              Строим силовой каркас дома только калиброванного пиломатериала
-              камерной сушки.
-            </p>
-          </li>
-          <li class="benefits__item">
-            <img src="./images/benefits-icon-4.svg" alt="банкнота" />
-            <p class="text__subheading">Ежедневный контроль над стройкой</p>
-            <p class="text__main">
-              Предоставляем каждодневный фото - и видеоотчет. Стройка постоянно
-              контролируется лично руководством компании.
-            </p>
-          </li>
-        </ul>
-      </section>
-         <!--блог-->
-         <section class="blog container">
-            <p class="heading">
-              Наш&nbsp;блог <span class="heading__text">о&nbsp;строительстве</span>
-            </p>
-            <p class="text__subheading_emphasize">
-              больше видеообзоров на нашем канале
-            </p>
-            <div class="blog__data">
-              <div class="blog__data-item">
-                <p class="text__subheading">Каркасные дома</p>
-                <a
-                  class="blog__link"
-                  href="https://www.youtube.com/watch?v=hCNOW2lGmkA"
-                  data-fancybox
-                >
-                  <img
-                    src="./images/blog-preview-1.png"
-                    alt="превью видеофайла"
-                    class="blog__preview"
-                  />
-                </a>
-                <p class="text__main_inactive">от 15.02.2023</p>
-              </div>
-              <div class="blog__data-item">
-                <p class="text__subheading">Монтаж кровли</p>
-                <a
-                  class="blog__link"
-                  href="https://www.youtube.com/watch?v=hCNOW2lGmkA"
-                  data-fancybox
-                >
-                  <img
-                    src="./images/blog-preview-2.png"
-                    alt="превью видеофайла"
-                    class="blog__preview"
-                  />
-                </a>
-                <p class="text__main_inactive">от 24.01.2024</p>
-              </div>
-              <div class="blog__data-item">
-                <a
-                  href="https://www.youtube.com/channel/UCvDnVRDKjoG38O6JNWJghxg"
-                  class="blog__youtube-link youtube__link"
-                >
-                  <span class="text__main">Подписаться</span>
-                  <img
-                    class="youtube__link-image"
-                    src="./images/lead-youtube.png"
-                    alt="лого youtube"
-                  />
-                  <img
-                    src="./images/lead-youtube-arrow.svg"
-                    alt="стрелочка"
-                    class="youtube__arrow"
-                  />
-                </a>
-                <p class="text__subheading">Основатель нашей компании</p>
-                <img
-                  src="./images/blog-founder.png"
-                  alt="Фото основателя компании"
-                  class="blog__image"
-                />
-              </div>
+            <div class="team__image-container">
+                <img src="./images/team-2.png" alt="фото менеджера" class="team__image" />
             </div>
-          </section>
-      <!--построенные дома-->
-      <section class="constructed container">
-        <h2 class="heading">построенные <span class="heading__text">дома</span></h2>
-        <p class="text__subheading_emphasize">рекомендуем посмотреть</p>
-        <div class="swiper sample-slider">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="constructed__item">
-                <img
-                  class="constructed__image"
-                  src="./images/constructed-1.png"
-                  alt="каркасный дом"
-                />
-                <p class="text__subheading">Каркасный дом</p>
-                <p class="text__main_inactive">2023</p>
-                <div class="constructed__item-wrapper">
-                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
-                  <a class="button constructed__button">Подробнее</a>
-                </div>
-              </div>
+
+        </div>
+        <div class="team__row">
+            <div class="team__image-container">
+                <img src="./images/team-3.png" alt="фото прораба" class="team__image" />
             </div>
-            <div class="swiper-slide">
-              <div class="constructed__item">
-                <img
-                  class="constructed__image"
-                  src="./images/constructed-2.png"
-                  alt="каркасный дом"
-                />
-                <p class="text__subheading">Каркасный дом</p>
-                <p class="text__main_inactive">2023</p>
-                <div class="constructed__item-wrapper">
-                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
-                  <a class="button constructed__button">Подробнее</a>
-                </div>
-              </div>
+            <div class="team__content">
+                <h1 class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Проектировщик <span class="heading__text">прораб</span></h1>
+                <p class="team__name">Никита Колчин</p>
             </div>
-            <div class="swiper-slide">
-              <div class="constructed__item">
-                <img
-                  class="constructed__image"
-                  src="./images/constructed-3.png"
-                  alt="каркасный дом"
-                />
-                <p class="text__subheading">Каркасный дом</p>
-                <p class="text__main_inactive">2023</p>
-                <div class="constructed__item-wrapper">
-                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
-                  <a class="button constructed__button">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="constructed__item">
-                <img
-                  class="constructed__image"
-                  src="./images/constructed-4.png"
-                  alt="каркасный дом"
-                />
-                <p class="text__subheading">Каркасный дом</p>
-                <p class="text__main_inactive">2023</p>
-                <div class="constructed__item-wrapper">
-                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
-                  <a class="button constructed__button">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="constructed__item">
-                <img
-                  class="constructed__image"
-                  src="./images/constructed-3.png"
-                  alt="каркасный дом"
-                />
-                <p class="text__subheading">Каркасный дом</p>
-                <p class="text__main_inactive">2023</p>
-                <div class="constructed__item-wrapper">
-                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
-                  <a class="button constructed__button">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="constructed__item">
-                <img
-                  class="constructed__image"
-                  src="./images/constructed-4.png"
-                  alt="каркасный дом"
-                />
-                <p class="text__subheading">Каркасный дом</p>
-                <p class="text__main_inactive">2023</p>
-                <div class="constructed__item-wrapper">
-                  <p class="text__heading">2&nbsp;500&nbsp;000&nbsp;₽</p>
-                  <a class="button constructed__button">Подробнее</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- navigation buttons -->
-          <div class="swiper-button-prev"><span>&larr;</span></div>
-          <div class="swiper-button-next"><span>&rarr;</span></div>
         </div>
       </section>
-      
-
-
-   
       <!--консультация-->
       <section class="consult container">
         <p class="heading consult__heading">
@@ -598,6 +401,34 @@
         >
       </p>
     </footer>
+    <div class="fixed-messengers">
+      <ul class="fixed-messengers__list">
+        <li class="fixed-messengers__item">
+          <a
+            target="blank"
+            href="https://t.me/dostupstroi"
+            class="fixed-messengers__link"
+            ><img src="./images/fixed-mesengers-wp.svg" alt="whatsup"
+          /></a>
+        </li>
+        <li class="fixed-messengers__item">
+          <a
+            target="blank"
+            href="https://t.me/dostupstroi"
+            class="fixed-messengers__link"
+            ><img src="./images/fixed-mesengers-tg.svg" alt="telegramm"
+          /></a>
+        </li>
+        <li class="fixed-messengers__item">
+          <a
+            target="blank"
+            href="https://vk.com/dostup_stroi"
+            class="fixed-messengers__link"
+            ><img src="./images/fixed-mesengers-vk.svg" alt="vk"
+          /></a>
+        </li>
+      </ul>
+    </div>
     <div class="popup" id="popup-form">
       <div class="popup__container">
         <button type="button" class="popup__toggle">
@@ -679,68 +510,7 @@
         </div>
       </div>
     </div>
-    <div class="fixed-messengers">
-      <ul class="fixed-messengers__list">
-        <li class="fixed-messengers__item">
-          <a
-            target="blank"
-            href="https://t.me/dostupstroi"
-            class="fixed-messengers__link"
-            ><img src="./images/fixed-mesengers-wp.svg" alt="whatsup"
-          /></a>
-        </li>
-        <li class="fixed-messengers__item">
-          <a
-            target="blank"
-            href="https://t.me/dostupstroi"
-            class="fixed-messengers__link"
-            ><img src="./images/fixed-mesengers-tg.svg" alt="telegramm"
-          /></a>
-        </li>
-        <li class="fixed-messengers__item">
-          <a
-            target="blank"
-            href="https://vk.com/dostup_stroi"
-            class="fixed-messengers__link"
-            ><img src="./images/fixed-mesengers-vk.svg" alt="vk"
-          /></a>
-        </li>
-      </ul>
-    </div>
-    <script src="./scripts/popup.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script>
-      Fancybox.bind("[data-fancybox]", {});
-    </script>
     <script src="./scripts/dropdown.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".swiper", {
-        direction: "horizontal",
-        spaceBetween: 31,
-        loop: false,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          375: {
-            slidesPerView: 1.5,
-          },
-          475: {
-            slidesPerView: 2.5,
-          },
-          625: {
-            slidesPerView: 3,
-          },
-          1000: {
-            slidesPerView: 3.5,
-          },
-          1190: {
-            slidesPerView: 4,
-          },
-        },
-      });
-    </script>
+    <script src="./scripts/popup.js"></script>
   </body>
 </html>

@@ -13,13 +13,13 @@
 @media screen and (max-width: 768px) {
     .footer__container {
         max-width: 702px;
-        width: 98vw;
+        width: 98%;
     }
 }
 
 @media screen and (max-width: 710px) {
     .footer__container {
-        max-width: 98vw;
+        max-width: 98%;
     }
 }
 

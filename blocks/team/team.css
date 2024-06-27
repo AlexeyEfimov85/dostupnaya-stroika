@@ -1,0 +1,11 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .team {
+        gap: 80px;
+    }
+}

@@ -5,6 +5,11 @@
     margin: 0 0 8px 0;
 }
 
+.dropdown-about__subheader:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 625px) {
     .dropdown-about__subheader {
         margin: 0 0 22px 0;

@@ -1,0 +1,12 @@
+.team__row {
+    display: grid;
+    grid-template-columns: 40% 49%;
+    gap: 11%;
+}
+
+@media screen and (max-width: 625px) {
+    .team__row {
+        grid-template-columns: 100%;
+        gap: 24px;
+    }
+}

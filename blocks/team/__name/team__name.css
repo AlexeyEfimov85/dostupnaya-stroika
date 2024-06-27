@@ -1,0 +1,15 @@
+.team__name {
+    margin-top: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .team__name {
+        margin-top: 24px;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .team__name {
+        margin-top: 16px;
+    }
+}
