@@ -3,6 +3,7 @@
     font-weight: 700;
     line-height: 20px;
     margin: 0 0 8px 0;
+    display: block;
 }
 
 .dropdown-about__subheader:hover {
