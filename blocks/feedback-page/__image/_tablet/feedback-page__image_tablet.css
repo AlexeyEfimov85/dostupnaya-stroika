@@ -1,0 +1,15 @@
+.feedback-page__image_tablet {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .feedback-page__image_tablet {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .feedback-page__image_tablet {
+        display: none;
+    }
+}

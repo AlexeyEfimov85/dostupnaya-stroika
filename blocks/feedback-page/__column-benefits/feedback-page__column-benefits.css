@@ -1,0 +1,7 @@
+.feedback-page__column-benefits {
+    padding: 32px;
+    background-color: #F5F5F5;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}

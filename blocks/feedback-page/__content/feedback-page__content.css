@@ -1,0 +1,12 @@
+.feedback-page__content {
+    display: grid;
+    grid-template-columns: 57% 31%;
+    gap: 12%;
+}
+
+@media screen and (max-width: 768px) {
+    .feedback-page__content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}

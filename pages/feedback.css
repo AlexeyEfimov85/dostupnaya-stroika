@@ -1,0 +1,8 @@
+@import url('../blocks/feedback-page/__benefits-list/feedback-page__benefits-list.css');
+@import url('../blocks/feedback-page/__column-benefits/feedback-page__column-benefits.css');
+@import url('../blocks/feedback-page/__subheading/feedback-page__subheading.css');
+@import url("../blocks/feedback-page/__content/feedback-page__content.css");
+@import url("../blocks/feedback-page/__heading/feedback-page__heading.css");
+@import url("../blocks/feedback-page/__image/feedback-page__image.css");
+@import url("../blocks/feedback-page/__image/_desktop/feedback-page__image_desktop.css");
+@import url("../blocks/feedback-page/__image/_tablet/feedback-page__image_tablet.css");
