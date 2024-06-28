@@ -1,0 +1,12 @@
+@import url('../blocks/contacts/__messengers-list/contacts__messengers-list.css');
+@import url('../blocks/contacts/contacts.css');
+@import url('../blocks/ratio/ratio.css');
+@import url('../blocks/contacts/__subheading/contacts__subheading.css');
+@import url('../blocks/contacts/__content/contacts__content.css');
+@import url('../blocks/contacts/__adress/contacts__adress.css');
+@import url('../blocks/contacts/__notification/contacts__notification.css');
+@import url('../blocks/contacts/__content-row/contacts__content-row.css');
+@import url('../blocks/contacts/__email/contacts__email.css');
+@import url('../blocks/contacts/__mesengers-heading/contacts__mesengers-heading.css');
+@import url('../blocks/contacts/__ratio/contacts__ratio.css');
+@import url('../blocks/contacts/__tel/contacts__tel.css');

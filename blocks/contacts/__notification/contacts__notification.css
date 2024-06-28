@@ -1,0 +1,29 @@
+.contacts__notification {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #1f1f22;
+    padding-left: 18px;
+    position: relative;
+}
+
+.contacts__notification::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ff9900;
+    left: 0;
+}
+
+.contacts__notification::after {
+    content: "!";
+    display: inline-block;
+    position: absolute;
+    font-size: 10px;
+    left: 6.5px;
+    color: #ffffff;
+    top: 0;
+}

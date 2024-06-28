@@ -50,8 +50,12 @@
             <li class="navigation__item navigation__item_about">
               О&nbsp;компании
             </li>
-            <li class="navigation__item"><a href="./feedback.html">Отзывы</a></li>
-            <li class="navigation__item"><a href="./videoblog.html">Видеоблог</a></li>
+            <li class="navigation__item">
+              <a href="./feedback.html">Отзывы</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./videoblog.html">Видеоблог</a>
+            </li>
             <li class="navigation__item">Статья</li>
             <li class="navigation__item"><a href="./contacts.html">Контакты</a></li>
           </ul>
@@ -112,7 +116,7 @@
                   <a class="dropdown-menu__item" href="#">Шале</a>
                 </li>
               </ul>
-              <a href="./catalog.html" class="dropdown-menu__link"
+              <a href="#" class="dropdown-menu__link"
                 >Посмотреть весь каталог</a
               >
             </div>
@@ -165,7 +169,9 @@
         <div class="dropdown-about dropdown-menu_closed">
           <div class="dropdown-menu__wrapper">
             <div>
-              <p class="dropdown-about__subheader">Наша команда</p>
+              <a href="./team.html" class="dropdown-about__subheader"
+                >Наша команда</a
+              >
               <a href="./about.html" class="dropdown-about__text"
                 >О компании "Доступная стройка"</a
               >
@@ -208,58 +214,125 @@
               >
               <meta itemprop="position" content="1" />
             </li>
-            <li
-              class="breadcrumbs__item"
-              id="bx_breadcrumb_1"
-              itemprop="itemListElement"
-              itemscope=""
-              itemtype="http://schema.org/ListItem"
-            >
-              <a
-                href="/services/"
-                title="Каталог домов"
-                itemprop="item"
-                class="breadcrumbs__link"
-                >О компании</a
-              >
-              <meta itemprop="position" content="2" />
-            </li>
-
             <li class="breadcrumbs__item">
-              <span>Наша команда</span>
+              <span>Контакты</span>
             </li>
           </ol>
         </div>
       </div>
-      <!--Команда-->
-      <section class="team another-container">
-        <div class="team__row">
-            <div class="team__image-container">
-                <img src="./images/team-1.png" alt="фото директора" class="team__image" />
-            </div>
-            <div class="team__content">
-                <h1 class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Основатель <span class="heading__text">компании</span></h1>
-                <p class="team__name">Михаил Иванов</p>
+      <section class=" another-container contacts">
+        <h1 class="heading">Контакты</h1>
+        <div class="ratio contacts__ratio">
+            <div class="ratio-inner ratio-4-3">
+                <div class="ratio-content">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2282.9972668587393!2d38.76184967636508!3d55.09581197284803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414a70ed204162a7%3A0xb98be30236ce7907!2z0KLQpiDQk9C70L7QsdGD0YE!5e0!3m2!1sru!2sru!4v1719557111904!5m2!1sru!2sru"
+                    width="100%"
+                    height="100%"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
             </div>
         </div>
-        <div class="team__row">
-            <div class="team__content">
-                <h1 class="heading">Менеджер</h1>
-                <p class="team__name">Татьяна Тихомирова</p>
+   
+ 
+        <div class="contacts__content">
+          <div class="contacts__content-row">
+            <p class="contacts__subheading">Адрес офиса</p>
+            <p class="contacts__adress">
+              г. Коломна, Советская площадь, дом 8, 3 этаж, ТК «Глобус»
+            </p>
+            <p class="contacts__notification">Пожалуйста, позвоните нам перед приездом.</p>
+          </div>
+          <div class="contacts__content-row">
+            <p class="contacts__subheading">Телефон</p>
+            <p class="contacts__tel">8&nbsp;(499)&nbsp;490-00-50</p>
+            <p class="contacts__tel">8&nbsp;(929)&nbsp;610-00-20</p>
+          </div>
+          <div class="contacts__content-row">
+            <p class="contacts__subheading">Почта</p>
+            <div>
+                <p class="contacts__email">dostup-stroi@mail.ru</p>
+                <button class="button button__request-call">Написать на почту</button>
             </div>
-            <div class="team__image-container">
-                <img src="./images/team-2.png" alt="фото менеджера" class="team__image" />
+            <div>
+                <p class="contacts__mesengers-heading">Задайте нам вопрос</p>
+                <ul class="contacts__messengers-list">
+                    <li class="fixed-messengers__item">
+                      <a
+                        target="blank"
+                        href="https://t.me/dostupstroi"
+                        class="fixed-messengers__link"
+                        ><img src="./images/fixed-mesengers-wp.svg" alt="whatsup"
+                      /></a>
+                    </li>
+                    <li class="fixed-messengers__item">
+                      <a
+                        target="blank"
+                        href="https://t.me/dostupstroi"
+                        class="fixed-messengers__link"
+                        ><img src="./images/fixed-mesengers-tg.svg" alt="telegramm"
+                      /></a>
+                    </li>
+                    <li class="fixed-messengers__item">
+                      <a
+                        target="blank"
+                        href="https://vk.com/dostup_stroi"
+                        class="fixed-messengers__link"
+                        ><img src="./images/fixed-mesengers-vk.svg" alt="vk"
+                      /></a>
+                    </li>
+                  </ul>
             </div>
-
+          </div>
         </div>
-        <div class="team__row">
-            <div class="team__image-container">
-                <img src="./images/team-3.png" alt="фото прораба" class="team__image" />
-            </div>
-            <div class="team__content">
-                <h1 class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Проектировщик <span class="heading__text">прораб</span></h1>
-                <p class="team__name">Никита Колчин</p>
-            </div>
+      </section>
+      <!--запись на экскурсию-->
+      <section class="excursion container">
+        <h2 class="heading excursion__heading">
+          Записаться на&nbsp;<span class="heading__text">экскурсию</span>
+        </h2>
+        <div class="excursion__image-container">
+          <img
+            class="excursion__image"
+            src="./images/excursion-image.png"
+            alt="процесс постройки дома"
+          />
+          <img
+            class="excursion__image-mobile"
+            src="./images/excursion-image-mobile.png"
+            alt="процесс постройки дома"
+          />
+        </div>
+        <div class="excursion__column">
+          <h2 class="heading excursion__heading">
+            Записаться на&nbsp;<span class="heading__text">экскурсию</span>
+          </h2>
+          <p class="text__subheading">
+            Хотите лично посмотреть на построенные дома? Мы организуем вам
+            экскурсию на наши объекты.
+          </p>
+          <p class="text__subheading">Во время экскурсии расскажем вам:</p>
+          <ul class="excursion__list">
+            <li class="excursion__item">
+              о материалах, которые мы используем;
+            </li>
+            <li class="excursion__item">о технологии строительства;</li>
+            <li class="excursion__item">о выборе планировки дома;</li>
+            <li class="excursion__item">
+              о лайфхаках, которые мы используем при строительстве.
+            </li>
+          </ul>
+          <p class="text__subheading">
+            Вы можете выбрать к просмотру дом, на любом интересующем вас этапе
+            строительства.
+          </p>
+          <button class="button button__request-excursion">
+            Записаться на экскурсию
+          </button>
         </div>
       </section>
       <!--консультация-->
@@ -364,8 +437,12 @@
             <ul class="accordion__text">
               <li class="text__main"><a href="./about.html">О компани</a></li>
               <li class="text__main"><a href="./team.html">Наша команда</a></li>
-              <li class="text__main"><a href="./built.html">Построенные объекты</a></li>
-              <li class="text__main"><a href="./videoblog.html">Видеоблог</a></li>
+              <li class="text__main">
+                <a href="./built.html">Построенные объекты</a>
+              </li>
+              <li class="text__main">
+                <a href="./videoblog.html">Видеоблог</a>
+              </li>
               <li class="text__main"><a href="#">Статьи</a></li>
               <li class="text__main"><a href="./contacts.html">Контакты</a></li>
             </ul>
@@ -401,35 +478,7 @@
         >
       </p>
     </footer>
-    <div class="fixed-messengers">
-      <ul class="fixed-messengers__list">
-        <li class="fixed-messengers__item">
-          <a
-            target="blank"
-            href="https://t.me/dostupstroi"
-            class="fixed-messengers__link"
-            ><img src="./images/fixed-mesengers-wp.svg" alt="whatsup"
-          /></a>
-        </li>
-        <li class="fixed-messengers__item">
-          <a
-            target="blank"
-            href="https://t.me/dostupstroi"
-            class="fixed-messengers__link"
-            ><img src="./images/fixed-mesengers-tg.svg" alt="telegramm"
-          /></a>
-        </li>
-        <li class="fixed-messengers__item">
-          <a
-            target="blank"
-            href="https://vk.com/dostup_stroi"
-            class="fixed-messengers__link"
-            ><img src="./images/fixed-mesengers-vk.svg" alt="vk"
-          /></a>
-        </li>
-      </ul>
-    </div>
-    <div class="popup" id="popup-form">
+     <div class="popup" id="popup-form">
       <div class="popup__container">
         <button type="button" class="popup__toggle">
           <img src="./images/popup-toogle.svg" alt="" />
@@ -512,5 +561,32 @@
     </div>
     <script src="./scripts/dropdown.js"></script>
     <script src="./scripts/popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper2 = new Swiper(".recommendation__slider", {
+        direction: "horizontal",
+        spaceBetween: 31,
+        loop: false,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          375: {
+            slidesPerView: 1.5,
+          },
+          625: {
+            slidesPerView: 2.5,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1190: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

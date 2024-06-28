@@ -1,0 +1,11 @@
+.contacts__ratio {
+    padding-top: 42px;
+}
+
+@media screen and (max-width: 625px) {
+    .contacts__ratio {
+        padding-top: 24px;
+        width: 92vw;
+        margin: 0 auto;
+    }
+}

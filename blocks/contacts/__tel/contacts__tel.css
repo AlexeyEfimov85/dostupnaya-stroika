@@ -1,0 +1,12 @@
+.contacts__tel {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 868px) {
+    .contacts__tel {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

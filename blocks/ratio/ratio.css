@@ -1,0 +1,26 @@
+.ratio {
+    width: 100%; /* здесь можно установить любую нужную ширину */
+}
+
+.ratio-inner {
+    position: relative;
+    height: 0;
+    border: none;
+}
+
+.ratio-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #eee;
+}
+
+.ratio-4-3 {
+    padding-top: 65%; /* 100% ширины делим на 4 и умножаем на 3 */
+}
+
+.ratio-5-1 {
+    padding-top: 20%; /* 100% ширины делим на 5 и умножаем на 1 */
+}

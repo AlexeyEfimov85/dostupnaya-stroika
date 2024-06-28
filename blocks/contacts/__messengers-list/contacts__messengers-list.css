@@ -1,0 +1,4 @@
+.contacts__messengers-list {
+    display: flex;
+    gap: 16px;
+}
