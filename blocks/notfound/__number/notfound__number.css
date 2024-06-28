@@ -1,0 +1,14 @@
+.notfound__number {
+    font-size: 100px;
+    line-height: 112px;
+    font-weight: 700;
+}
+
+
+
+@media screen and (max-width: 625px) {
+    .notfound__number {
+        font-size: 72px;
+        line-height: 80px;
+    }
+}

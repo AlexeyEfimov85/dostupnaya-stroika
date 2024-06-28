@@ -1,0 +1,16 @@
+.notfound {
+    background-image: url('../../images/notfound.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    background-position-x: 58%;
+}
+
+@media screen and (max-width: 500px) {
+    .notfound {
+        background-image: url('../../images/notfound-mobile.png');
+        height: 70vh;
+        background-size: cover;
+        background-position-x: 28%;
+    }
+}

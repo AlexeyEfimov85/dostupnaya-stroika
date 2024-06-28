@@ -1,0 +1,35 @@
+.notfound__container {
+
+}
+
+.notfound__container {
+    max-width: 1180px;
+    margin: 70px auto;
+    position: relative;
+}
+
+@media screen and (max-width: 1179px) {
+    .notfound__container {
+        max-width: 98vw;
+        margin: 60px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .notfound__container {
+        max-width: 702px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .notfound__container {
+        max-width: 98vw;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .notfound__container {
+        max-width: 92vw;
+        margin: 60px auto;
+    }
+}
