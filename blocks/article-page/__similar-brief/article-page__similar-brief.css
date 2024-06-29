@@ -1,0 +1,10 @@
+.article-page__similar-brief {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #565b62;
+    height: 48px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 4px 0 8px;
+}

@@ -1,0 +1,7 @@
+.article-page__article-date {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #565b62;
+    grid-column: 1/3;
+}

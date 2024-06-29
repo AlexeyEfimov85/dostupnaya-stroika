@@ -1,0 +1,14 @@
+.article-page__article-heading {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    margin: 32px 0 16px;
+}
+
+@media screen and (max-width: 625px) {
+    .article-page__article-heading {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 24px 0 16px;
+    }
+}

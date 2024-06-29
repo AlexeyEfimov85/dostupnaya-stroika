@@ -1,0 +1,27 @@
+.article-page__similar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 0 24px 12px;
+    background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 768px) {
+    .article-page__similar {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 100%;
+        box-sizing: border-box;
+        gap: 0;
+        row-gap: 16px;
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .article-page__similar {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}

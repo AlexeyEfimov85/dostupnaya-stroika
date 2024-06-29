@@ -1,0 +1,10 @@
+.article-page__similar-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.article-page__similar-link::after {
+    content: "\2192";
+    display: inline-block;
+}

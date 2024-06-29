@@ -1,0 +1,4 @@
+.article-page__article-social-wrapper {
+    display: flex;
+    gap: 10px;
+}
