@@ -1,0 +1,7 @@
+
+@media screen and (max-width: 768px) {
+    .articles-pages__articles .articles__card  .articles__card-text .articles-pages__articles-card-link {
+        color: #000000;
+    }
+    
+}

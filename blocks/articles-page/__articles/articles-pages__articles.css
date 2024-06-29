@@ -1,0 +1,28 @@
+.articles-pages__articles {
+
+}
+
+@media screen and (max-width: 624px) {
+    .articles-pages__articles {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .articles-pages__articles > .articles__card {
+        max-width: 100%;
+    }
+
+    .articles-pages__articles .articles__card .articles__card-text .text__subheading_active {
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+    }
+
+    .articles-pages__articles .articles__card  .articles__card-text .text__main {
+        font-size: 14px;
+        line-height: 16px;
+        color: #565B62;
+    }
+
+
+}
+

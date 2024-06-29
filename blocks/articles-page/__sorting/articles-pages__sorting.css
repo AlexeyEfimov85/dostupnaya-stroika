@@ -1,0 +1,21 @@
+.articles-pages__sorting {
+    display: flex;
+    margin-bottom: 17px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #565b62;
+    white-space: nowrap;
+}
+
+.articles-pages__sorting > .sorting__form {
+    gap: 24px;
+    margin-left: 24px;
+}
+
+@media screen and (max-width: 624px) {
+    .articles-pages__sorting > .sorting__form {
+        gap: 16px;
+        margin-left: 16px;
+    }
+}

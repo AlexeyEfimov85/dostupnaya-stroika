@@ -1,0 +1,8 @@
+@import url('../blocks/articles-page/articles-page.css');
+@import url('../blocks/articles-page/__button/articles-page__button.css');
+@import url('../blocks/articles-page/__tabs-list/articles-page__tabs-list.css');
+@import url('../blocks/articles-page/__tabs-item/articles-pages__tabs-item.css');
+@import url('../blocks/articles-page/__articles/articles-pages__articles.css');
+@import url('../blocks/articles-page/__sorting/articles-pages__sorting.css');
+@import url('../blocks/articles-page/__sorting-label/articles-pages__sorting-label.css');
+@import url('../blocks/articles-page/__articles-card-link/articles-pages__articles-card-link.css');

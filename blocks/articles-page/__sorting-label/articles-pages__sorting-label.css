@@ -1,0 +1,8 @@
+.articles-pages__sorting-label {
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.sorting__field input[type="radio"]:checked ~ .articles-pages__sorting-label {
+    color: #FF9900;
+}

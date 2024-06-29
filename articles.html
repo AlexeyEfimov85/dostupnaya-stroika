@@ -50,10 +50,16 @@
             <li class="navigation__item navigation__item_about">
               О&nbsp;компании
             </li>
-            <li class="navigation__item"><a href="./feedback.html">Отзывы</a></li>
-            <li class="navigation__item"><a href="./videoblog.html">Видеоблог</a></li>
+            <li class="navigation__item">
+              <a href="./feedback.html">Отзывы</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./videoblog.html">Видеоблог</a>
+            </li>
             <li class="navigation__item"><a href="./articles.html">Статьи</a></li>
-            <li class="navigation__item"><a href="./contacts.html">Контакты</a></li>
+            <li class="navigation__item">
+              <a href="./contacts.html">Контакты</a>
+            </li>
           </ul>
           <div class="navigation__contacts">
             <div class="footer__social">
@@ -165,7 +171,9 @@
         <div class="dropdown-about dropdown-menu_closed">
           <div class="dropdown-menu__wrapper">
             <div>
-              <p class="dropdown-about__subheader">Наша команда</p>
+              <a href="./team.html" class="dropdown-about__subheader"
+                >Наша команда</a
+              >
               <a href="./about.html" class="dropdown-about__text"
                 >О компании "Доступная стройка"</a
               >
@@ -208,104 +216,270 @@
               >
               <meta itemprop="position" content="1" />
             </li>
-            <li
-              class="breadcrumbs__item"
-              id="bx_breadcrumb_1"
-              itemprop="itemListElement"
-              itemscope=""
-              itemtype="http://schema.org/ListItem"
-            >
-              <a
-                href="/services/"
-                title="Каталог домов"
-                itemprop="item"
-                class="breadcrumbs__link"
-                >О компании</a
-              >
-              <meta itemprop="position" content="2" />
-            </li>
-
             <li class="breadcrumbs__item">
-              <span>Наша команда</span>
+              <span>Статьи</span>
             </li>
           </ol>
         </div>
       </div>
-      <!--Команда-->
-      <section class="team another-container">
-        <div class="team__row">
-            <div class="team__image-container">
-                <img src="./images/team-1.png" alt="фото директора" class="team__image" />
-            </div>
-            <div class="team__content">
-                <h1 class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Основатель <span class="heading__text">компании</span></h1>
-                <p class="team__name">Михаил Иванов</p>
-            </div>
+      <section class="articles-page another-container">
+        <h1 class="heading">
+          Полезные <span class="heading__text">статьи</span>
+        </h1>
+        <div class="catalog__tabs">
+          <ul class="articles-page__tabs-list">
+            <li class="articles-pages__tabs-item">
+              <a href="#">#&nbsp;Крыша</a>
+            </li>
+            <li class="articles-pages__tabs-item">
+              <a href="#">#&nbsp;Теплый контур</a>
+            </li>
+            <li class="articles-pages__tabs-item">
+              <a href="#">#&nbsp;Каркас</a>
+            </li>
+            <li class="articles-pages__tabs-item">
+              <a href="#">#&nbsp;Черепица</a>
+            </li>
+            <li class="articles-pages__tabs-item">
+              <a href="#">#&nbsp;Крыша</a>
+            </li>
+            <li class="articles-pages__tabs-item">
+              <a href="#">#&nbsp;Фахверк</a>
+            </li>
+            <li class="articles-pages__tabs-item">
+              <a href="#">#&nbsp;Свайный фундамент</a>
+            </li>
+          </ul>
         </div>
-        <div class="team__row">
-            <div class="team__content">
-                <h1 class="heading">Менеджер</h1>
-                <p class="team__name">Татьяна Тихомирова</p>
-            </div>
-            <div class="team__image-container">
-                <img src="./images/team-2.png" alt="фото менеджера" class="team__image" />
-            </div>
-
-        </div>
-        <div class="team__row">
-            <div class="team__image-container">
-                <img src="./images/team-3.png" alt="фото прораба" class="team__image" />
-            </div>
-            <div class="team__content">
-                <h1 class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Проектировщик <span class="heading__text">прораб</span></h1>
-                <p class="team__name">Никита Колчин</p>
-            </div>
-        </div>
-      </section>
-      <!--консультация-->
-      <section class="consult container">
-        <p class="heading consult__heading">
-          получить <span class="heading__text">консультацию</span>
-        </p>
-        <div class="consult__wrapper">
-          <form class="form consult__form">
-            <p class="text__subheading">
-              Оставьте заявку и менеджер свяжется с&nbsp;вами в ближайшее время
-            </p>
-            <label class="form__label text__main" for="name">Имя</label>
-            <input class="form__input" id="name" placeholder="Иван" />
-            <label class="form__label" for="tel">Телефон</label>
-            <input
-              class="form__input"
-              id="tel"
-              placeholder="+7(000)000-00-00"
-            />
-            <div class="form__checkbox-field">
+        <div class="articles-pages__sorting">
+          <p class="sorting__heading">Сортировать по:</p>
+          <form class="sorting__form">
+            <div class="sorting__field">
               <input
-                type="checkbox"
-                id="checkbox"
-                class="form__checkbox"
-                checked
+                type="radio"
+                class="sorting__input"
+                id="date"
+                value="date"
+                name="sorting"
+                checked=""
               />
-              <label for="checkbox" class="form__label form__label_checkbox">
-                <div>
-                  <span class="text__small_inactive">Вы даёте согласие на</span>
-                  <a href="#" class="text__small_inactive"
-                    >обработку персональных данных</a
-                  >
-                </div></label
+              <label for="date" class="articles-pages__sorting-label"
+                >Дате</label
               >
             </div>
-            <button type="submit" class="button">Получить консультацию</button>
+            <div class="sorting__field">
+              <input
+                type="radio"
+                class="sorting__input"
+                id="popularity"
+                value="popularity"
+                name="sorting"
+              />
+              <label for="popularity" class="articles-pages__sorting-label"
+                >Популярности</label
+              >
+            </div>
           </form>
-          <div class="consult__image-container">
+        </div>
+        <div class="articles articles-pages__articles">
+          <div class="articles__card">
+            <div class="articles__card-text">
+              <p class="text__subheading_active">Выбираем материал</p>
+              <p class="text__main text__article-preview">
+                Кровельные материалы для скатной кровли бывают нескольких видов
+              </p>
+              <a href="#" class="text__main articles-pages__articles-card-link"
+                >Подробнее</a
+              >
+            </div>
             <img
-              class="consult__image"
-              src="./images/consult-image.png"
-              alt="большой дом"
+              class="articles__image"
+              src="./images/articles-1.png"
+              alt="крыша"
+            />
+          </div>
+          <div class="articles__card">
+            <div class="articles__card-text">
+              <p class="text__subheading_active">Каркасные дома</p>
+              <p class="text__main text__article-preview">
+                Технология строительства деревянных домов становится все более
+                популярной
+              </p>
+              <a href="#" class="text__main articles-pages__articles-card-link"
+                >Подробнее</a
+              >
+            </div>
+            <img
+              class="articles__image"
+              src="./images/articles-2.png"
+              alt="крыша"
+            />
+          </div>
+          <div class="articles__card">
+            <div class="articles__card-text">
+              <p class="text__subheading_active">Защитная обработка</p>
+              <p class="text__main text__article-preview">
+                Как продлить срок эксплуатации каркасного дома?
+              </p>
+              <a href="#" class="text__main articles-pages__articles-card-link"
+                >Подробнее</a
+              >
+            </div>
+            <img
+              class="articles__image"
+              src="./images/articles-3.png"
+              alt="крыша"
+            />
+          </div>
+          <div class="articles__card">
+            <div class="articles__card-text">
+              <p class="text__subheading_active">Защитная обработка</p>
+              <p class="text__main text__article-preview">
+                Как продлить срок эксплуатации каркасного дома?
+              </p>
+              <a href="#" class="text__main articles-pages__articles-card-link"
+                >Подробнее</a
+              >
+            </div>
+            <img
+              class="articles__image"
+              src="./images/articles-3.png"
+              alt="крыша"
+            />
+          </div>
+          <div class="articles__card">
+            <div class="articles__card-text">
+              <p class="text__subheading_active">Защитная обработка</p>
+              <p class="text__main text__article-preview">
+                Как продлить срок эксплуатации каркасного дома?
+              </p>
+              <a href="#" class="text__main articles-pages__articles-card-link"
+                >Подробнее</a
+              >
+            </div>
+            <img
+              class="articles__image"
+              src="./images/articles-3.png"
+              alt="крыша"
+            />
+          </div>
+          <div class="articles__card">
+            <div class="articles__card-text">
+              <p class="text__subheading_active">Защитная обработка</p>
+              <p class="text__main text__article-preview">
+                Как продлить срок эксплуатации каркасного дома?
+              </p>
+              <a href="#" class="text__main articles-pages__articles-card-link"
+                >Подробнее</a
+              >
+            </div>
+            <img
+              class="articles__image"
+              src="./images/articles-3.png"
+              alt="крыша"
+            />
+          </div>
+          <div class="articles__card">
+            <div class="articles__card-text">
+              <p class="text__subheading_active">Выбираем материал</p>
+              <p class="text__main text__article-preview">
+                Кровельные материалы для скатной кровли бывают нескольких видов
+              </p>
+              <a href="#" class="text__main articles-pages__articles-card-link"
+                >Подробнее</a
+              >
+            </div>
+            <img
+              class="articles__image"
+              src="./images/articles-1.png"
+              alt="крыша"
+            />
+          </div>
+          <div class="articles__card">
+            <div class="articles__card-text">
+              <p class="text__subheading_active">Каркасные дома</p>
+              <p class="text__main text__article-preview">
+                Технология строительства деревянных домов становится все более
+                популярной
+              </p>
+              <a href="#" class="text__main articles-pages__articles-card-link"
+                >Подробнее</a
+              >
+            </div>
+            <img
+              class="articles__image"
+              src="./images/articles-2.png"
+              alt="крыша"
+            />
+          </div>
+          <div class="articles__card">
+            <div class="articles__card-text">
+              <p class="text__subheading_active">Защитная обработка</p>
+              <p class="text__main text__article-preview">
+                Как продлить срок эксплуатации каркасного дома?
+              </p>
+              <a href="#" class="text__main articles-pages__articles-card-link"
+                >Подробнее</a
+              >
+            </div>
+            <img
+              class="articles__image"
+              src="./images/articles-3.png"
+              alt="крыша"
+            />
+          </div>
+          <div class="articles__card">
+            <div class="articles__card-text">
+              <p class="text__subheading_active">Защитная обработка</p>
+              <p class="text__main text__article-preview">
+                Как продлить срок эксплуатации каркасного дома?
+              </p>
+              <a href="#" class="text__main articles-pages__articles-card-link"
+                >Подробнее</a
+              >
+            </div>
+            <img
+              class="articles__image"
+              src="./images/articles-3.png"
+              alt="крыша"
+            />
+          </div>
+          <div class="articles__card">
+            <div class="articles__card-text">
+              <p class="text__subheading_active">Защитная обработка</p>
+              <p class="text__main text__article-preview">
+                Как продлить срок эксплуатации каркасного дома?
+              </p>
+              <a href="#" class="text__main articles-pages__articles-card-link"
+                >Подробнее</a
+              >
+            </div>
+            <img
+              class="articles__image"
+              src="./images/articles-3.png"
+              alt="крыша"
+            />
+          </div>
+          <div class="articles__card">
+            <div class="articles__card-text">
+              <p class="text__subheading_active">Защитная обработка</p>
+              <p class="text__main text__article-preview">
+                Как продлить срок эксплуатации каркасного дома?
+              </p>
+              <a href="#" class="text__main articles-pages__articles-card-link"
+                >Подробнее</a
+              >
+            </div>
+            <img
+              class="articles__image"
+              src="./images/articles-3.png"
+              alt="крыша"
             />
           </div>
         </div>
+        <button class="button articles-page__button">
+          Посмотреть все статьи
+        </button>
       </section>
     </main>
     <!--футтер-->
@@ -364,8 +538,12 @@
             <ul class="accordion__text">
               <li class="text__main"><a href="./about.html">О компани</a></li>
               <li class="text__main"><a href="./team.html">Наша команда</a></li>
-              <li class="text__main"><a href="./built.html">Построенные объекты</a></li>
-              <li class="text__main"><a href="./videoblog.html">Видеоблог</a></li>
+              <li class="text__main">
+                <a href="./built.html">Построенные объекты</a>
+              </li>
+              <li class="text__main">
+                <a href="./videoblog.html">Видеоблог</a>
+              </li>
               <li class="text__main"><a href="./articles.html">Статьи</a></li>
               <li class="text__main"><a href="./contacts.html">Контакты</a></li>
             </ul>
@@ -401,34 +579,6 @@
         >
       </p>
     </footer>
-    <div class="fixed-messengers">
-      <ul class="fixed-messengers__list">
-        <li class="fixed-messengers__item">
-          <a
-            target="blank"
-            href="https://t.me/dostupstroi"
-            class="fixed-messengers__link"
-            ><img src="./images/fixed-mesengers-wp.svg" alt="whatsup"
-          /></a>
-        </li>
-        <li class="fixed-messengers__item">
-          <a
-            target="blank"
-            href="https://t.me/dostupstroi"
-            class="fixed-messengers__link"
-            ><img src="./images/fixed-mesengers-tg.svg" alt="telegramm"
-          /></a>
-        </li>
-        <li class="fixed-messengers__item">
-          <a
-            target="blank"
-            href="https://vk.com/dostup_stroi"
-            class="fixed-messengers__link"
-            ><img src="./images/fixed-mesengers-vk.svg" alt="vk"
-          /></a>
-        </li>
-      </ul>
-    </div>
     <div class="popup" id="popup-form">
       <div class="popup__container">
         <button type="button" class="popup__toggle">
@@ -510,7 +660,9 @@
         </div>
       </div>
     </div>
-    <script src="./scripts/dropdown.js"></script>
+
     <script src="./scripts/popup.js"></script>
+
+    <script src="./scripts/dropdown.js"></script>
   </body>
 </html>

@@ -1,0 +1,17 @@
+.articles-page__tabs-list {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    left: 0;
+    gap: 12px;
+    margin: 32px 0;
+}
+
+@media screen and (max-width: 625px) {
+    .articles-page__tabs-list {
+      width: calc(100% + 232px);
+      flex-wrap: nowrap;
+    }
+  }
