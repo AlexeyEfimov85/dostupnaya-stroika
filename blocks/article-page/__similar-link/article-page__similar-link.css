@@ -8,3 +8,8 @@
     content: "\2192";
     display: inline-block;
 }
+
+.article-page__similar-link:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

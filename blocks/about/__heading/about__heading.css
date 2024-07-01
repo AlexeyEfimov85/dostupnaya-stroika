@@ -11,8 +11,8 @@
 
 @media screen and (max-width: 800px) {
     .about__heading {
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 32px;
+        line-height: 36px;
     }
 }
 
@@ -21,6 +21,7 @@
     .about__heading {
         width: 400px;
         margin-top: 24px;
+        text-align: left;
     }
 }
 
@@ -28,5 +29,7 @@
     .about__heading {
         width: 290px;
         margin-top: 24px;
+        font-size: 24px;
+        line-height: 28px;
     }
 }

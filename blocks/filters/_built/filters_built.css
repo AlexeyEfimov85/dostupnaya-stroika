@@ -5,6 +5,10 @@
     row-gap: 24px;
 }
 
+.filters_built .filters__accordion .filters__accordion-list {
+    margin: 0;
+}
+
 @media screen and (max-width: 1150px) {
     .filters_built {
         grid-template-columns: 274px 274px;

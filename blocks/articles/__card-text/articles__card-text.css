@@ -5,6 +5,12 @@
     bottom: 0;
     padding-left: 8px;
     box-sizing: border-box;
+    display: grid;
+    min-height: 45%;
+}
+
+.articles__card-text > .articles-pages__articles-card-link {
+    align-self: flex-end;
 }
 
 .articles__card-text p {
@@ -19,6 +25,9 @@
 .articles__card-text .text__article-preview {
     margin-top: 4px;
     margin-bottom: 8px;
+    height: 48px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .articles__card-text a:hover {
@@ -29,6 +38,8 @@
 .articles__card-text .text__article-preview {
     min-height: 48px;
 }
+
+
 
 @media screen and (max-width: 768px) {
     .articles__card-text .text__main {
@@ -41,4 +52,13 @@
         line-height: 14px;
         color: #565B62;
     }
+}
+
+
+@media screen and (max-width: 625px) {
+    .articles__card-text {
+        min-height: min-content;
+    }
+
+
 }
